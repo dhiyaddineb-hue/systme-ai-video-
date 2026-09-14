@@ -143,6 +143,60 @@ def render_wordcut(ff, stills, v_sched, a_sched, win, ass, title, end, out):
     _run(cmd)
     return out
 
+def render_dynamic(ff, stills, v_sched, a_sched, sfx, win, ass, title, end, out):
+    """§4.8: رندر سينمائي — حركة لكل لقطة + فلاش لحظات القوة + SFX.
+    v_sched[i]: {scene_dur, shot:{type,mood}} · sfx: {whoosh:[t], impact:[t], riser:[t],
+    flash:[t], whoosh_file, impact_file, riser_file}."""
+    from .dynamics import beat_video_chain
+    B, S = len(v_sched), len(a_sched)
+    W, I, R = len(sfx["whoosh"]), len(sfx["impact"]), len(sfx["riser"])
+    parts = [beat_video_chain(i, s["scene_dur"], s["shot"]) for i, s in enumerate(v_sched)]
+    parts.append("".join(f"[v{i}]" for i in range(B)) +
+                 f"concat=n={B}:v=1:a=0,noise=alls=4:allf=t,fps=25[basev]")
+    a, _ = narr_chain(a_sched, 0.0, off=B)
+    v = B + S
+    wp = [f"[{v + i}:a]adelay={int(t * 1000)}|{int(t * 1000)},volume=0.12[w{i}]"
+          for i, t in enumerate(sfx["whoosh"])]
+    ip = [f"[{v + W + i}:a]adelay={int(t * 1000)}|{int(t * 1000)},volume=0.5[im{i}]"
+          for i, t in enumerate(sfx["impact"])]
+    rp = [f"[{v + W + I + i}:a]adelay={int(t * 1000)}|{int(t * 1000)},volume=0.3[rs{i}]"
+          for i, t in enumerate(sfx["riser"])]
+    wp.append("".join(f"[w{i}]" for i in range(W)) + f"amix=inputs={W}:duration=longest:normalize=0[wh]")
+    ip.append("".join(f"[im{i}]" for i in range(I)) + f"amix=inputs={I}:duration=longest:normalize=0[im]")
+    if R:
+        rp.append("".join(f"[rs{i}]" for i in range(R)) + f"amix=inputs={R}:duration=longest:normalize=0[rs]")
+        sfxmix = "[amb][wh][im][rs]amix=inputs=4:normalize=0[amb0]"
+    else:
+        sfxmix = "[amb][wh][im]amix=inputs=3:normalize=0[amb0]"
+    flashes = "".join(
+        f",drawbox=x=0:y=0:w=1280:h=720:color=white@0.8:t=fill:enable='between(t,{t:.2f},{t + 0.1:.2f})'"
+        for t in sfx["flash"])
+    fc = (";".join(parts) + ";" + a + ";" + beds(win) + ";" + ";".join(wp + ip + rp) + ";"
+          + sfxmix + ";"
+          "[amb0][vo1]sidechaincompress=threshold=0.03:ratio=6:attack=25:release=400[ambd];"
+          "[ambd][vo2]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-16:TP=-1.5:LRA=11[aout];"
+          f"[basev]drawbox=y=0:h=74:color=black:t=fill,drawbox=y=646:h=74:color=black:t=fill{flashes}[b1];"
+          f"[b1]ass={ass}[b2];"
+          f"[b2]drawbox=x=0:y=0:w=1280:h=720:color=black@0.6:t=fill:enable='gte(t,{win - 4.2:.1f})'[b3];"
+          f"[{v + W + I + R}:v]scale=1280:720,format=rgba,fade=t=in:st=0.6:d=1.0:alpha=1,fade=t=out:st=4.2:d=1.0:alpha=1[ti];"
+          f"[{v + W + I + R + 1}:v]scale=1280:720,format=rgba,fade=t=in:st={win - 4.0:.1f}:d=0.9:alpha=1[en];"
+          f"[b3][ti]overlay=0:0:enable='between(t,0.4,5.3)'[b4];"
+          f"[b4][en]overlay=0:0:enable='gte(t,{win - 4.1:.1f})'[vout]")
+    cmd = [ff, "-hide_banner", "-loglevel", "warning"]
+    for i, s in enumerate(v_sched):
+        cmd += ["-loop", "1", "-framerate", "25", "-t", f"{s['scene_dur']}", "-i", stills[i]]
+    cmd += [x for s in a_sched for x in ("-i", s["file"])]
+    cmd += [x for _ in sfx["whoosh"] for x in ("-i", sfx["whoosh_file"])]
+    cmd += [x for _ in sfx["impact"] for x in ("-i", sfx["impact_file"])]
+    cmd += [x for _ in sfx["riser"] for x in ("-i", sfx["riser_file"])]
+    cmd += ["-loop", "1", "-i", title, "-loop", "1", "-i", end,
+            "-filter_complex", fc, "-map", "[vout]", "-map", "[aout]",
+            "-t", f"{win:.2f}", "-r", "25", *ENC[:6], "-crf", "23", "-level", "4.0",
+            "-preset", "fast", "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-ac", "2",
+            "-movflags", "+faststart", "-y", out]
+    _run(cmd)
+    return out
+
 def render_manga(ff, base, sched, win, ass, title, end, out):
     a, n = narr_chain(sched, 0.0)
     fc = (f"{a};{duck_mix(beds(win))};"

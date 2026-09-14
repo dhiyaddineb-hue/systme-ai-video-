@@ -54,6 +54,33 @@ def ass_wordpop(path, sentences, w0=0.0, size=54, margin_v=40):
         HDR.format(W=1920, H=1080, styles=style) + "\n".join(ev) + "\n")
     return path
 
+def ass_kinetic(path, sentences, w0=0.0, size=50, margin_v=44):
+    """كابشن كاريوكي ذهبي (§4.8): الجملة كاملة ظاهرة والكلمة المنطوقة لحظياً بالذهبي.
+    sentences: [{start, words:[(word, dur)]}] — كل جزء يُشكّل وحده ويُرتب بصرياً (RTL صحيح)."""
+    GOLD, WHITE = "{\\1c&H3CC9FF&}", "{\\1c&H00FFFFFF&}"
+    style = ("Style: Doc,Noto Naskh Arabic,{size},&H00F0F0F0,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,1.5,0,1,2,1,2,140,140,{mv},1"
+             .format(size=size, mv=margin_v))
+    ev = []
+    for u in sentences:
+        t = u["start"]
+        total = sum(d for _, d in u["words"])
+        ws = [w for w, _ in u["words"]]
+        for j, (w, d) in enumerate(u["words"]):
+            before = " ".join(ws[:j])
+            after = " ".join(ws[j + 1:])
+            parts = []
+            if after:
+                parts.append(ar_shaped_for_ass(after))
+            parts.append(f"{GOLD}{ar_shaped_for_ass(w)}{WHITE}")
+            if before:
+                parts.append(ar_shaped_for_ass(before))
+            end = t + d if j < len(ws) - 1 else u["start"] + total
+            ev.append(f"Dialogue: 0,{_ts(t - w0)},{_ts(end - w0)},Doc,,0,0,0,,{' '.join(parts)}")
+            t += d
+    open(path, "w", encoding="utf-8").write(
+        HDR.format(W=1920, H=1080, styles=style) + "\n".join(ev) + "\n")
+    return path
+
 def card(path, specs, font_paths, w=1920, h=1080):
     """specs: [(text, font_key, size, y, fill, stroke_width)]"""
     from PIL import Image, ImageDraw, ImageFont
