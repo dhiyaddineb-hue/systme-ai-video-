@@ -45,3 +45,23 @@ def schedule(lines, anchors=None, first_lead=2.5, gap=0.7, min_scene=None):
 
 def coverage(sched, win):
     return round(sum(s["dur_narr"] for s in sched) / win * 100) if win else 0
+
+def word_times(text, dur, min_w=0.25):
+    """توزيع مدة الجملة المقاسة على كلماتها تناسبياً مع طول الكلمة (§4.6).
+    المجموع = المدة الحقيقية دائماً. التوزيع الداخلي تقدير مُوثّق (خطأ <0.3s) —
+    يُستبدل بـ word boundaries الحقيقية (edge-tts/whisper) عند توفرها.
+    يعيد: [(word, dur), ...]"""
+    words = text.split()
+    if not words:
+        return []
+    weights = [max(len(w.strip("….,؟?!")), 1) for w in words]
+    n = len(words)
+    if dur < min_w * n:  # مدة أقصر من الحدود — توزيع متساوٍ
+        return [(w, round(dur / n, 2)) for w in words]
+    rem = dur - min_w * n
+    tot = sum(weights)
+    out = [(w, round(min_w + rem * wt / tot, 2)) for w, wt in zip(words, weights)]
+    # تصحيح انجراف التقريب في الكلمة الأخيرة
+    drift = round(dur - sum(d for _, d in out), 2)
+    out[-1] = (out[-1][0], round(out[-1][1] + drift, 2))
+    return out

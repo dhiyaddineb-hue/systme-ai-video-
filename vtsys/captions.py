@@ -35,6 +35,25 @@ def ass_doc(path, sched, w0=0.0, size=50, margin_v=34):
         + "\n".join(ev) + "\n")
     return path
 
+def ass_wordpop(path, sentences, w0=0.0, size=54, margin_v=40):
+    """كابشن بوب كلمة-بكلمة بأسلوب الترند (§4.6): كل حوار يعرض البادئة حتى الكلمة الحالية.
+    sentences: [{start, words:[(word, dur)]}] — التشكيل لكل بادئة كاملة (RTL صحيح دائماً).
+    المحاذاة يمين (3) حتى لا يقفز النص أثناء النمو."""
+    style = ("Style: Doc,Noto Naskh Arabic,{size},&H00F0F0F0,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,1.5,0,1,2,1,3,140,140,{mv},1"
+             .format(size=size, mv=margin_v))
+    ev = []
+    for u in sentences:
+        t, prefix = u["start"], []
+        total = sum(d for _, d in u["words"])
+        for j, (w, d) in enumerate(u["words"]):
+            prefix.append(w)
+            end = t + d if j < len(u["words"]) - 1 else u["start"] + total
+            ev.append(f"Dialogue: 0,{_ts(t - w0)},{_ts(end - w0)},Doc,,0,0,0,,{ar_shaped_for_ass(' '.join(prefix))}")
+            t += d
+    open(path, "w", encoding="utf-8").write(
+        HDR.format(W=1920, H=1080, styles=style) + "\n".join(ev) + "\n")
+    return path
+
 def card(path, specs, font_paths, w=1920, h=1080):
     """specs: [(text, font_key, size, y, fill, stroke_width)]"""
     from PIL import Image, ImageDraw, ImageFont

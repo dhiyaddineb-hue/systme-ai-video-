@@ -109,6 +109,40 @@ def render_manga_panels(ff, panels, sched, win, ass, title, end, out):
     _run(cmd)
     return out
 
+def render_wordcut(ff, stills, v_sched, a_sched, win, ass, title, end, out):
+    """§4.6: فيديو مقطّع على إيقاع الكلمات (stills من sprite sheets) + صوت على الجُمل.
+    stills: مسار still لكل beat بالترتيب (v_sched[i] ↔ stills[i]).
+    v_sched: [{scene_dur}] للصورة · a_sched: [{file,start,dur_narr}] للصوت (مستقلان)."""
+    B, S = len(v_sched), len(a_sched)
+    parts = []
+    for i, s in enumerate(v_sched):
+        N = max(1, int(s["scene_dur"] * 25)); pan = 0.18 if i % 2 == 0 else 0.82
+        parts.append(f"[{i}:v]scale=1920:1080,"
+                     f"zoompan=z='1+0.10*on/{N}':x='(iw-iw/zoom)*{pan}':y='(ih-ih/zoom)/2':d=1:"
+                     f"s=1280x720:fps=25,vignette=PI/5,setsar=1[v{i}]")
+    parts.append("".join(f"[v{i}]" for i in range(B)) +
+                 f"concat=n={B}:v=1:a=0,noise=alls=4:allf=t,fps=25[basev]")
+    a, _ = narr_chain(a_sched, 0.0, off=B)
+    fc = (";".join(parts) + ";" + a + ";" + duck_mix(beds(win)) + ";"
+          f"[basev]drawbox=y=0:h=74:color=black:t=fill,drawbox=y=646:h=74:color=black:t=fill[b1];"
+          f"[b1]ass={ass}[b2];"
+          f"[b2]drawbox=x=0:y=0:w=1280:h=720:color=black@0.6:t=fill:enable='gte(t,{win-4.2:.1f})'[b3];"
+          f"[{B+S}:v]scale=1280:720,format=rgba,fade=t=in:st=0.6:d=1.0:alpha=1,fade=t=out:st=4.2:d=1.0:alpha=1[ti];"
+          f"[{B+S+1}:v]scale=1280:720,format=rgba,fade=t=in:st={win-4.0:.1f}:d=0.9:alpha=1[en];"
+          f"[b3][ti]overlay=0:0:enable='between(t,0.4,5.3)'[b4];"
+          f"[b4][en]overlay=0:0:enable='gte(t,{win-4.1:.1f})'[vout]")
+    cmd = [ff, "-hide_banner", "-loglevel", "warning"]
+    for i, s in enumerate(v_sched):
+        cmd += ["-loop", "1", "-framerate", "25", "-t", f"{s['scene_dur']}", "-i", stills[i]]
+    cmd += [x for s in a_sched for x in ("-i", s["file"])]
+    cmd += ["-loop", "1", "-i", title, "-loop", "1", "-i", end,
+            "-filter_complex", fc, "-map", "[vout]", "-map", "[aout]",
+            "-t", f"{win:.2f}", "-r", "25", *ENC[:6], "-crf", "23", "-level", "4.0",
+            "-preset", "fast", "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-ac", "2",
+            "-movflags", "+faststart", "-y", out]
+    _run(cmd)
+    return out
+
 def render_manga(ff, base, sched, win, ass, title, end, out):
     a, n = narr_chain(sched, 0.0)
     fc = (f"{a};{duck_mix(beds(win))};"

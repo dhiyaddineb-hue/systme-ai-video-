@@ -1,6 +1,25 @@
 # -*- coding: utf-8 -*-
-"""الخط 🅲: لوحات → قطع Ken Burns → قاعدة concat (§4)."""
+"""الخط 🅲: لوحات → قطع Ken Burns → قاعدة concat (§4) + sprite sheets (§4.6)."""
 import os, subprocess
+
+# أرباع الـ sprite sheet (كسور، مع هامش يبتلع الفواصل بين المربعات)
+QUADRANTS = {"q1": (0.02, 0.02, 0.46, 0.46), "q2": (0.52, 0.02, 0.46, 0.46),
+             "q3": (0.02, 0.52, 0.46, 0.46), "q4": (0.52, 0.52, 0.46, 0.46)}
+
+def extract_regions(ff, sheet, regions, outdir, prefix):
+    """قص مناطق من sprite sheet إلى stills (§4.6). regions: {name:(x,y,w,h)} كسور.
+    يعيد {name: path}. الـ stills مشتقة (تُعاد بقص واحد) — تعيش في build/ خارج git."""
+    os.makedirs(outdir, exist_ok=True)
+    outs = {}
+    for name, (x, y, w, h) in regions.items():
+        o = os.path.join(outdir, f"{prefix}_{name}.png")
+        if not os.path.exists(o):
+            subprocess.run([ff, "-hide_banner", "-loglevel", "error", "-i", sheet,
+                            "-vf", f"crop=iw*{w}:ih*{h}:iw*{x}:ih*{y}",
+                            "-frames:v", "1", "-y", o],
+                           check=True, capture_output=True)
+        outs[name] = o
+    return outs
 
 def build_base(ff, panels, sched, workdir, res=(1280, 720)):
     os.makedirs(workdir, exist_ok=True)
