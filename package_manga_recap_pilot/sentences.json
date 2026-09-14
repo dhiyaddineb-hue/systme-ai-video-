@@ -1,0 +1,20 @@
+{
+  "_note": "قاعدة الجملة-مشهد (§4.5): 15 جملة = 15 مشهداً. base: مشهد عادي 6s / سؤال 4s / ختام 3.5s.",
+  "units": [
+    {"id": 1, "beat": "hook", "panel": "panels/p1.jpg", "vo": "vo_sent/s01.mp3", "base": 6, "text": "النهارده… في أكاديمية السيف الملكي… أضعف طالب دخل امتحان القبول… وخرج منه أسطورة."},
+    {"id": 2, "beat": "hook", "panel": "panels/p7.jpg", "vo": "vo_sent/s02.mp3", "base": 4, "text": "إزاي؟"},
+    {"id": 3, "beat": "hook", "panel": "panels/p8.jpg", "vo": "vo_sent/s03.mp3", "base": 6, "text": "اقعد واسمع الحكاية من الأول."},
+    {"id": 4, "beat": "hero", "panel": "panels/p2.jpg", "vo": "vo_sent/s04.mp3", "base": 6, "text": "اسمه كريم… سبعتاشر سنة… من حارة ضيقة في مدينة النحاس."},
+    {"id": 5, "beat": "hero", "panel": "panels/p9.jpg", "vo": "vo_sent/s05.mp3", "base": 4, "text": "ودخل الأكاديمية إزاي؟"},
+    {"id": 6, "beat": "hero", "panel": "panels/p10.jpg", "vo": "vo_sent/s06.mp3", "base": 6, "text": "بالعافية… واسطة من معلمه القديم."},
+    {"id": 7, "beat": "humiliation", "panel": "panels/p3.jpg", "vo": "vo_sent/s07.mp3", "base": 6, "text": "يوم الاختبار… المصنف الأول، الواد المغرور ابن الوزير… مسح بكريم الأرض قدام الدفعة كلها."},
+    {"id": 8, "beat": "humiliation", "panel": "panels/p11.jpg", "vo": "vo_sent/s08.mp3", "base": 6, "text": "والكل ضحك… إلا واحد."},
+    {"id": 9, "beat": "awakening", "panel": "panels/p4.jpg", "vo": "vo_sent/s09.mp3", "base": 6, "text": "وفي نفس الليلة… كريم هرب لمقبرة السيوف القديمة… وهناك… سيف أسود مدفون من ميت سنة… نادى عليه باسمه."},
+    {"id": 10, "beat": "power", "panel": "panels/p12.jpg", "vo": "vo_sent/s10.mp3", "base": 6, "text": "أول ما لمس المقبض… الظل نفسه اتحرك… وبقى درعه وسيفه."},
+    {"id": 11, "beat": "power", "panel": "panels/p5.jpg", "vo": "vo_sent/s11.mp3", "base": 6, "text": "ضربة واحدة… والصخرة اللي وراه… اتشقت نصين."},
+    {"id": 12, "beat": "cliffhanger", "panel": "panels/p13.jpg", "vo": "vo_sent/s12.mp3", "base": 6, "text": "وتاني يوم الصبح… المصنف الأول طلب نزال علني… قدام الأكاديمية كلها."},
+    {"id": 13, "beat": "cliffhanger", "panel": "panels/p14.jpg", "vo": "vo_sent/s13.mp3", "base": 4, "text": "وكريم؟"},
+    {"id": 14, "beat": "cliffhanger", "panel": "panels/p6.jpg", "vo": "vo_sent/s14.mp3", "base": 6, "text": "ما ردش… ابتسم بس."},
+    {"id": 15, "beat": "cliffhanger", "panel": "panels/p6.jpg", "vo": "vo_sent/s15.mp3", "base": 3.5, "text": "يتبع."}
+  ]
+}

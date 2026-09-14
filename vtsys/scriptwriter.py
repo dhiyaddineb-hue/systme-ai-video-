@@ -87,3 +87,22 @@ RECAP_SCRIPT_PROMPT = (
 def recap_title(title, part_from, part_to, hook_words):
     """صيغة عناوين الملخصات: ملخص كامل 1~8 | … 🔥"""
     return f"ملخص كامل {part_from}~{part_to} | {title} {' '.join(hook_words)}"
+
+# ── §4.5 قاعدة الجملة-مشهد ──────────────────────────────────
+import re as _re
+
+def split_sentences(text):
+    """تقسيم السرد إلى جُمل: كل جملة = مشهد خاص.
+    الفواصل: [.؟?!] + سطر جديد. (… تبقى داخل الجملة كوقفة نطق طبيعية)."""
+    parts = _re.split(r"(?<=[.!؟?!])\s+|\n+", text.strip())
+    return [p.strip() for p in parts if p.strip()]
+
+def expand_to_sentences(lines):
+    """lines: [{text, ...}] → وحدات جُمل تحمل beat/panel الأصل."""
+    units = []
+    for l in lines:
+        for s in split_sentences(l["text"]):
+            u = dict(l)
+            u["text"] = s
+            units.append(u)
+    return units
