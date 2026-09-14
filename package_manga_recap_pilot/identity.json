@@ -1,0 +1,44 @@
+{
+  "_note": "ميثاق الهوية المقفلة (§4.10) — مصدر الحقيقة الوحيد لتوليد صور v6. ممنوع توليد أي صورة من خارج هذا الملف.",
+  "style_lock": "dark manga anime style, cinematic lighting, dramatic composition, high detail, wide 16:9 frame, no text, no words, no letters, no watermark",
+  "characters": {
+    "karim": {
+      "label": "كريم",
+      "lock": "17-year-old Arab boy, messy short black hair, amber eyes, thin scar over left eyebrow, worn gray trainee swordsman robe with brown leather sash and small copper pendant",
+      "refs": ["panels_v6/ref_karim.jpg"]
+    },
+    "rashid": {
+      "label": "الغريم",
+      "lock": "18-year-old proud noble youth, slicked-back dark hair, cold arrogant grin, ornate white-and-gold academy uniform with red sash, jeweled rapier",
+      "refs": []
+    },
+    "master": {
+      "label": "المعلم القديم",
+      "lock": "old gray-bearded swordsman, blind white left eye, weathered kind face, dark blue patched cloak, wooden training sword on back",
+      "refs": []
+    },
+    "sword": {
+      "label": "السيف الأسود",
+      "lock": "long black blade that drinks the light, faint violet shadow-mist coiling around it, ancient bronze guard shaped like wings",
+      "refs": []
+    }
+  },
+  "face_ref": "panels_v6/ref_karim_face.jpg",
+  "scenes": {
+    "s01": {"chars": ["karim"], "face": false, "shot": "Wide cinematic shot: grand Royal Sword Academy gates at dawn, giant stone archway with crossed-sword emblem, the small weak boy walking in among proud noble students in white uniforms who mock him, epic ironic atmosphere"},
+    "s02": {"chars": ["karim"], "face": true, "shot": "Extreme close-up of the boy's amber eye snapping open in shock and curiosity, dramatic eye highlight, dark background, question energy"},
+    "s03": {"chars": ["karim"], "face": false, "shot": "The boy seen from behind walking away into mist toward the giant looming silhouette of a sword academy, story-beginning mood"},
+    "s04": {"chars": ["karim"], "face": false, "shot": "The boy standing in a narrow poor copper-market alley at sunset, old copper workshops and hanging pots around, humble poverty, hero establishing shot"},
+    "s05": {"chars": ["karim"], "face": false, "shot": "Close-up of the boy's trembling hands holding an academy acceptance letter with a red wax seal, nervous hope, shallow depth of field, dark interior"},
+    "s06": {"chars": ["karim", "master"], "face": false, "shot": "The boy standing with bowed head behind an old gray-bearded swordsman in dark blue cloak who hands an acceptance letter to a stern academy official at a desk, favoritism atmosphere, office interior"},
+    "s07": {"chars": ["karim", "rashid"], "face": false, "shot": "Training arena aftermath: arrogant noble youth in ornate white-and-gold uniform raising a wooden sword in triumph, the boy sitting in the dust catching his breath while laughing students cheer around them, dust clouds, harsh daylight"},
+    "s08": {"chars": ["karim"], "face": false, "shot": "Blurred laughing crowd of students in white uniforms, except ONE sharp focused quiet hooded figure watching intently from the shadows, fallen boy in gray robe in foreground, dramatic selective focus, arena dusk"},
+    "s09": {"chars": ["karim", "sword"], "face": false, "shot": "Night graveyard of broken ancient swords under a full moon, a long black blade that drinks the light stuck in a stone glowing faintly with violet mist, the boy reaching his hand toward it in awe, fog, mystical awakening mood"},
+    "s10": {"chars": ["karim", "sword"], "face": false, "shot": "The boy with glowing amber eyes gripping a black sword hilt, living liquid shadows coiling up his arm forming a shield and blade, power awakening explosion of violet-black energy at night, dynamic low angle"},
+    "s11": {"chars": ["karim", "sword"], "face": false, "shot": "Single slash aftermath: a giant rock split into two flying halves, the boy in follow-through pose with a shadow blade trailing violet mist, debris and shockwave, night clearing"},
+    "s12": {"chars": ["rashid"], "face": false, "shot": "Academy courtyard in the morning: an official duel poster being nailed to a board by a herald, the arrogant noble youth in white-and-gold uniform watching smugly, crowd of students gathering, tension"},
+    "s13": {"chars": ["karim"], "face": true, "shot": "Close-up: the boy's calm face turning slowly toward the camera, a faint confident smile beginning, wind in his messy black hair, sunset side-light"},
+    "s14": {"chars": ["karim", "sword"], "face": true, "shot": "Confident smile close-up, the boy's hand resting on a black sword hilt at his side, violet shadow mist curling at his feet, sunset arena bokeh behind"},
+    "s15": {"chars": ["karim", "rashid"], "face": false, "shot": "Epic cliffhanger wide: two figures facing off in an arena at dusk, the boy's silhouette with a shadow-wreathed black sword against the noble youth with a gleaming rapier, to-be-continued energy"}
+  }
+}
