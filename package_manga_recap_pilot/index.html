@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>سيف الظل — الحلقة الأولى (معاينة)</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #0b0b12; color: #f2f2f5; font-family: "Segoe UI", Tahoma, Arial, sans-serif; }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 24px 16px 64px; }
+  header { text-align: center; margin-bottom: 20px; }
+  header h1 { font-size: 2rem; color: #ffc93c; }
+  header p { color: #b9b9c7; margin-top: 6px; }
+  .player { border: 2px solid #ffc93c; border-radius: 14px; overflow: hidden; background: #000;
+            box-shadow: 0 0 40px rgba(255,201,60,.15); }
+  video { width: 100%; display: block; aspect-ratio: 16/9; background: #000; }
+  .stats { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin: 18px 0; }
+  .chip { background: #17171f; border: 1px solid #2c2c38; border-radius: 999px;
+          padding: 6px 16px; font-size: .9rem; color: #e6d69c; }
+  h2 { color: #ffc93c; margin: 26px 0 12px; font-size: 1.2rem; }
+  .beats { list-style: none; display: grid; gap: 10px; }
+  .beats li { background: #14141c; border: 1px solid #262633; border-radius: 10px; padding: 12px 14px; }
+  .beats b { color: #ffc93c; display: block; margin-bottom: 4px; font-size: .85rem; }
+  .beats span { color: #d7d7e0; line-height: 1.9; }
+  .panels { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .panels img { width: 100%; border-radius: 10px; border: 1px solid #262633; display: block; }
+  footer { text-align: center; color: #77778a; margin-top: 32px; font-size: .85rem; }
+  @media (max-width: 640px) { .panels { grid-template-columns: repeat(2, 1fr); } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>⚔️ سيف الظل</h1>
+    <p>ملخص مانهوا — الحلقة الأولى (تجريبية 🅲-B)</p>
+  </header>
+
+  <div class="player">
+    <video controls preload="metadata" poster="thumb.jpg" playsinline>
+      <source src="sief_eldel_ep1.mp4" type="video/mp4">
+      متصفحك لا يدعم تشغيل الفيديو.
+    </video>
+  </div>
+
+  <div class="stats">
+    <span class="chip">⏱ 95.2 ثانية</span>
+    <span class="chip">🎙 تغطية السرد 75%</span>
+    <span class="chip">🎞 720p25</span>
+    <span class="chip">🗣 عامية مصرية</span>
+  </div>
+
+  <h2>📜 نبضات الحلقة</h2>
+  <ul class="beats">
+    <li><b>1 — الهوك</b><span>النهارده… في أكاديمية السيف الملكي… أضعف طالب دخل امتحان القبول… وخرج منه أسطورة.</span></li>
+    <li><b>2 — البطل</b><span>اسمه كريم… سبعتاشر سنة… من حارة ضيقة في مدينة النحاس.</span></li>
+    <li><b>3 — الإهانة</b><span>المصنف الأول مسح بكريم الأرض قدام الدفعة كلها… والكل ضحك.</span></li>
+    <li><b>4 — الصحوة</b><span>سيف أسود مدفون من ميت سنة… نادى عليه باسمه.</span></li>
+    <li><b>5 — القوة</b><span>ضربة واحدة… والصخرة اتشقت نصين.</span></li>
+    <li><b>6 — الكليفهانغر</b><span>نزال علني قدام الأكاديمية كلها… وكريم ابتسم بس. يتبع.</span></li>
+  </ul>
+
+  <h2>🖼 اللوحات</h2>
+  <div class="panels">
+    <img src="panels/p1.jpg" alt="لوحة 1" loading="lazy">
+    <img src="panels/p2.jpg" alt="لوحة 2" loading="lazy">
+    <img src="panels/p3.jpg" alt="لوحة 3" loading="lazy">
+    <img src="panels/p4.jpg" alt="لوحة 4" loading="lazy">
+    <img src="panels/p5.jpg" alt="لوحة 5" loading="lazy">
+    <img src="panels/p6.jpg" alt="لوحة 6" loading="lazy">
+  </div>
+
+  <footer>نظام AI Video — الخط 🅲-B · الصوت يقود التايم-لاين</footer>
+</div>
+</body>
+</html>

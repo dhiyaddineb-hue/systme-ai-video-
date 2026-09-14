@@ -1,0 +1,11 @@
+{
+  "ffmpeg": "/home/user/systme-ai-video-/bin/ffmpeg",
+  "raqm(Pillow shaping)": false,
+  "fonts": {
+    "sans": "/home/user/systme-ai-video-/assets/fonts/NotoSansArabic-Bold.ttf",
+    "naskh": "/home/user/systme-ai-video-/assets/fonts/NotoNaskhArabic.ttf",
+    "latin": "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
+  },
+  "python": "3.11.2"
+}
+💾 {'used_mb': 2, 'budget_mb': 120, 'ok': True}

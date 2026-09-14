@@ -1,0 +1,56 @@
+[
+ {
+  "idx": 0,
+  "panel": 1,
+  "text": "النهارده… في أكاديمية السيف الملكي… أضعف طالب دخل امتحان القبول… وخرج منه أسطورة. إزاي؟ اقعد واسمع الحكاية من الأول.",
+  "file": "/home/user/systme-ai-video-/package_manga_recap_pilot/vo/n0.mp3",
+  "dur_narr": 13.13,
+  "start": 2.5,
+  "scene_dur": 16.1
+ },
+ {
+  "idx": 1,
+  "panel": 2,
+  "text": "اسمه كريم… سبعتاشر سنة… من حارة ضيقة في مدينة النحاس. ودخل الأكاديمية إزاي؟ بالعافية… واسطة من معلمه القديم.",
+  "file": "/home/user/systme-ai-video-/package_manga_recap_pilot/vo/n1.mp3",
+  "dur_narr": 11.69,
+  "start": 19.2,
+  "scene_dur": 14.7
+ },
+ {
+  "idx": 2,
+  "panel": 3,
+  "text": "يوم الاختبار… المصنف الأول، الواد المغرور ابن الوزير… مسح بكريم الأرض قدام الدفعة كلها. والكل ضحك… إلا واحد.",
+  "file": "/home/user/systme-ai-video-/package_manga_recap_pilot/vo/n2.mp3",
+  "dur_narr": 14.18,
+  "start": 34.5,
+  "scene_dur": 17.2
+ },
+ {
+  "idx": 3,
+  "panel": 4,
+  "text": "وفي نفس الليلة… كريم هرب لمقبرة السيوف القديمة… وهناك… سيف أسود مدفون من ميت سنة… نادى عليه باسمه.",
+  "file": "/home/user/systme-ai-video-/package_manga_recap_pilot/vo/n3.mp3",
+  "dur_narr": 10.58,
+  "start": 52.3,
+  "scene_dur": 13.6
+ },
+ {
+  "idx": 4,
+  "panel": 5,
+  "text": "أول ما لمس المقبض… الظل نفسه اتحرك… وبقى درعه وسيفه. ضربة واحدة… والصخرة اللي وراه… اتشقت نصين.",
+  "file": "/home/user/systme-ai-video-/package_manga_recap_pilot/vo/n4.mp3",
+  "dur_narr": 9.86,
+  "start": 66.5,
+  "scene_dur": 12.9
+ },
+ {
+  "idx": 5,
+  "panel": 6,
+  "text": "وتاني يوم الصبح… المصنف الأول طلب نزال علني… قدام الأكاديمية كلها. وكريم؟ ما ردش… ابتسم بس. يتبع.",
+  "file": "/home/user/systme-ai-video-/package_manga_recap_pilot/vo/n5.mp3",
+  "dur_narr": 12.22,
+  "start": 80.0,
+  "scene_dur": 15.2
+ }
+]

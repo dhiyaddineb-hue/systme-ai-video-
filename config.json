@@ -1,0 +1,9 @@
+{
+  "threshold": 70,
+  "niche": ["english", "learning", "bushcraft", "survival", "asmr"],
+  "quota_per_day": 5,
+  "gap_minutes": [40, 90],
+  "active_hours": [16, 24],
+  "storage_budget_mb": 120,
+  "max_deliverable_mb": 30
+}

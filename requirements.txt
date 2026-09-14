@@ -1,0 +1,6 @@
+yt-dlp
+edge-tts
+imageio-ffmpeg
+arabic-reshaper
+python-bidi
+Pillow

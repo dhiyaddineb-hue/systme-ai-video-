@@ -1,0 +1,51 @@
+# ثقيل / مؤقت — خارج git
+build/
+bin/
+__pycache__/
+*.pyc
+*.pyo
+
+# runs: تُحفظ الملفات النصية الصغيرة (إعادة بناء) — الثقيلة مستثناة
+runs/**
+!runs/**/
+!runs/**/*.json
+!runs/**/*.md
+!runs/**/*.ass
+!runs/**/*.txt
+!runs/**/*.srt
+vt/runs/**
+!vt/runs/**/
+!vt/runs/**/*.json
+!vt/runs/**/*.md
+!vt/runs/**/*.ass
+!vt/runs/**/*.txt
+!vt/runs/**/*.srt
+
+# وسائط ثقيلة (قابلة لإعادة التوليد) — عدا باكجات التسليم
+*.mp4
+*.m4a
+*.mp3
+*.wav
+!package_*/**.mp4
+seg/
+base_*.mp4
+vfull*
+afull*
+clip*.mp4
+chk*
+*_small.jpg
+
+# ترجمات خام
+*.json3
+subs*
+
+# بيئة
+.venv/
+venv/
+*.egg-info/
+.env
+
+# ملاحظة: queue.json و memory/ و examples/ متتبَّعة عمداً (ذاكرة سجلية)
+
+# نظام
+.DS_Store
