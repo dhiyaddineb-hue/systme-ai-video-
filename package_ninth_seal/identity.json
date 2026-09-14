@@ -1,0 +1,42 @@
+{
+  "_note": "ميثاق هوية الختم التاسع (§4.10) — مصدر الحقيقة الوحيد.",
+  "style_lock": "dark manga anime style, cinematic lighting, dramatic composition, high detail, no text, no words, no letters, no watermark",
+  "characters": {
+    "rayan": {
+      "label": "ريّان",
+      "lock": "16-year-old servant boy, shaggy black hair with one white streak, gray-green eyes, burn scar on right hand, patched brown servant tunic with guild rope belt",
+      "refs": ["refs/ref_rayan.jpg"]
+    },
+    "seal": {
+      "label": "الختم التاسع",
+      "lock": "the ninth seal: a fist-sized floating black iron cube with glowing violet cracks, shattered chains dangling from it",
+      "refs": []
+    },
+    "vex": {
+      "label": "المعلم فيكس",
+      "lock": "guild grandmaster, tall bald elder, golden mask covering upper face, black-and-gold robes, iron staff",
+      "refs": []
+    },
+    "dragon": {
+      "label": "وشم التنين",
+      "lock": "living ash-dragon tattoo coiling on a shoulder, ember-orange eyes, smoke wisps rising from it",
+      "refs": []
+    }
+  },
+  "face_ref": "refs/ref_rayan_face.jpg",
+  "layout_sheet": "six-panel manga page, 3 columns x 2 rows, thick black gutters, same characters with identical faces and outfits in every panel",
+  "scenes": {
+    "s01": {"chars": ["rayan"], "shot": "city of seven towers at dawn, a small cowardly servant boy entering a grand guildhall among proud armored members"},
+    "s02": {"chars": ["rayan"], "shot": "extreme close-up of a gray-green eye snapping open in shock, white-streaked hair strand visible"},
+    "s03": {"chars": ["rayan"], "shot": "the servant boy mopping a vast guildhall floor, buckets and rags, looked down upon by passing members"},
+    "s04": {"chars": ["rayan"], "shot": "seal festival ceremony in a golden hall, elders distributing glowing seals, the boy peeking from behind a door"},
+    "s05": {"chars": ["rayan", "seal"], "shot": "a black iron cube with violet cracks flying out of an open chest toward the stunned boy, chains whipping"},
+    "s06": {"chars": ["rayan", "seal"], "shot": "the boy's scarred hand reaching out and touching the floating black cube, spark of violet light"},
+    "s07": {"chars": ["rayan"], "shot": "black flames engulfing the boy as a horrified crowd screams, guildhall interior burning with dark fire"},
+    "s08": {"chars": ["rayan", "dragon"], "shot": "morning: the boy walking out of gray ash unharmed, a living ash-dragon tattoo moving on his shoulder"},
+    "s09": {"chars": ["rayan"], "shot": "the furious boy with glowing eyes as the tallest tower splits from top to bottom behind him, debris flying"},
+    "s10": {"chars": ["vex"], "shot": "terrified guild masters around a table, the golden-masked grandmaster standing, dread and panic"},
+    "s11": {"chars": ["vex"], "shot": "night council in a dark chamber, masked elders raising hands to vote, a full moon through a round window"},
+    "s12": {"chars": ["rayan"], "shot": "the boy standing outside a window at night listening, faint smile, dragon tattoo glowing on his shoulder"}
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "_note": "12 جملة = 12 بانل فريد (شيتان 3×2). البانل يُقصّ في توقيت جملته فقط — ممنوع التكرار (§4.11).",
+  "gap": 0.4,
+  "units": [
+    {"id": 1, "beat": "hook", "sheet": "sheetA", "region": 0, "vo": "vo_sent/s01.mp3", "text": "النهارده… في مدينة الأبراج السبعة… أجبن خادم في النقابة… بقى صاحب الختم التاسع."},
+    {"id": 2, "beat": "question", "sheet": "sheetA", "region": 1, "vo": "vo_sent/s02.mp3", "text": "إزاي؟"},
+    {"id": 3, "beat": "hero", "sheet": "sheetA", "region": 2, "vo": "vo_sent/s03.mp3", "text": "اسمه ريّان… ستاشر سنة… بيمسح بلاط النقابة من وهو عيّل."},
+    {"id": 4, "beat": "hero", "sheet": "sheetA", "region": 3, "vo": "vo_sent/s04.mp3", "text": "ويوم عيد الأختام… الكبار كانوا بيوزعوا القوة… وهو بيتفرج من ورا الباب."},
+    {"id": 5, "beat": "turn", "sheet": "sheetA", "region": 4, "vo": "vo_sent/s05.mp3", "text": "لحد ما الختم التاسع… الملعون اللي حرق كل اللي لمسه… طار من الصندوق… ووقع قدامه."},
+    {"id": 6, "beat": "turn", "sheet": "sheetA", "region": 5, "vo": "vo_sent/s06.mp3", "text": "ومدّ إيده… ومسكه."},
+    {"id": 7, "beat": "shock", "sheet": "sheetB", "region": 0, "vo": "vo_sent/s07.mp3", "text": "النار السودة بلعته… والكل صرخ: خلاص… مات."},
+    {"id": 8, "beat": "power", "sheet": "sheetB", "region": 1, "vo": "vo_sent/s08.mp3", "text": "بس الصبح… ريّان خرج من الرماد… وعلى كتفه وشم تنين بيتحرك."},
+    {"id": 9, "beat": "power", "sheet": "sheetB", "region": 2, "vo": "vo_sent/s09.mp3", "text": "وأول ما غضب… البرج الأول… اتشق من فوقه لتحته."},
+    {"id": 10, "beat": "question", "sheet": "sheetB", "region": 3, "vo": "vo_sent/s10.mp3", "text": "والنقابة؟"},
+    {"id": 11, "beat": "threat", "sheet": "sheetB", "region": 4, "vo": "vo_sent/s11.mp3", "text": "اجتمعت في نفس الليلة… وقررت: الولد ده لازم يموت قبل اكتمال القمر."},
+    {"id": 12, "beat": "cliff", "sheet": "sheetB", "region": 5, "vo": "vo_sent/s12.mp3", "text": "وريّان؟… كان واقف ورا الشباك… وسامع كل حاجة."}
+  ]
+}
