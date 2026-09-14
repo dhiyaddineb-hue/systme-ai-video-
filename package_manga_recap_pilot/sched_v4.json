@@ -1,0 +1,202 @@
+[
+ {
+  "idx": 0,
+  "scene_dur": 2.39,
+  "start": 2.0
+ },
+ {
+  "idx": 1,
+  "scene_dur": 2.13,
+  "start": 4.39
+ },
+ {
+  "idx": 2,
+  "scene_dur": 1.95,
+  "start": 6.52
+ },
+ {
+  "idx": 3,
+  "scene_dur": 1.95,
+  "start": 8.47
+ },
+ {
+  "idx": 4,
+  "scene_dur": 1.2,
+  "start": 10.42
+ },
+ {
+  "idx": 5,
+  "scene_dur": 1.74,
+  "start": 11.62
+ },
+ {
+  "idx": 6,
+  "scene_dur": 2.31,
+  "start": 13.36
+ },
+ {
+  "idx": 7,
+  "scene_dur": 1.59,
+  "start": 15.67
+ },
+ {
+  "idx": 8,
+  "scene_dur": 2.11,
+  "start": 17.26
+ },
+ {
+  "idx": 9,
+  "scene_dur": 2.17,
+  "start": 19.37
+ },
+ {
+  "idx": 10,
+  "scene_dur": 2.34,
+  "start": 21.54
+ },
+ {
+  "idx": 11,
+  "scene_dur": 2.49,
+  "start": 23.88
+ },
+ {
+  "idx": 12,
+  "scene_dur": 2.23,
+  "start": 26.37
+ },
+ {
+  "idx": 13,
+  "scene_dur": 1.99,
+  "start": 28.6
+ },
+ {
+  "idx": 14,
+  "scene_dur": 2.09,
+  "start": 30.59
+ },
+ {
+  "idx": 15,
+  "scene_dur": 2.16,
+  "start": 32.68
+ },
+ {
+  "idx": 16,
+  "scene_dur": 2.34,
+  "start": 34.84
+ },
+ {
+  "idx": 17,
+  "scene_dur": 1.93,
+  "start": 37.18
+ },
+ {
+  "idx": 18,
+  "scene_dur": 0.98,
+  "start": 39.11
+ },
+ {
+  "idx": 19,
+  "scene_dur": 2.0,
+  "start": 40.09
+ },
+ {
+  "idx": 20,
+  "scene_dur": 2.22,
+  "start": 42.09
+ },
+ {
+  "idx": 21,
+  "scene_dur": 2.37,
+  "start": 44.31
+ },
+ {
+  "idx": 22,
+  "scene_dur": 2.03,
+  "start": 46.68
+ },
+ {
+  "idx": 23,
+  "scene_dur": 2.04,
+  "start": 48.71
+ },
+ {
+  "idx": 24,
+  "scene_dur": 2.2,
+  "start": 50.75
+ },
+ {
+  "idx": 25,
+  "scene_dur": 2.78,
+  "start": 52.95
+ },
+ {
+  "idx": 26,
+  "scene_dur": 2.31,
+  "start": 55.73
+ },
+ {
+  "idx": 27,
+  "scene_dur": 1.95,
+  "start": 58.04
+ },
+ {
+  "idx": 28,
+  "scene_dur": 2.36,
+  "start": 59.99
+ },
+ {
+  "idx": 29,
+  "scene_dur": 2.64,
+  "start": 62.35
+ },
+ {
+  "idx": 30,
+  "scene_dur": 2.28,
+  "start": 64.99
+ },
+ {
+  "idx": 31,
+  "scene_dur": 1.14,
+  "start": 67.27
+ },
+ {
+  "idx": 32,
+  "scene_dur": 1.92,
+  "start": 68.41
+ },
+ {
+  "idx": 33,
+  "scene_dur": 2.01,
+  "start": 70.33
+ },
+ {
+  "idx": 34,
+  "scene_dur": 1.83,
+  "start": 72.34
+ },
+ {
+  "idx": 35,
+  "scene_dur": 2.13,
+  "start": 74.17
+ },
+ {
+  "idx": 36,
+  "scene_dur": 1.74,
+  "start": 76.3
+ },
+ {
+  "idx": 37,
+  "scene_dur": 2.35,
+  "start": 78.04
+ },
+ {
+  "idx": 38,
+  "scene_dur": 0.98,
+  "start": 80.39
+ },
+ {
+  "idx": 39,
+  "scene_dur": 1.62,
+  "start": 81.37
+ }
+]

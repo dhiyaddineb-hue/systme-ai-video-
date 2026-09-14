@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""بناء v3: تقطيع على إيقاع الكلمات من sprite sheets (§4.6).
+"""بناء v4 (من storyboard معتمد): تقطيع على إيقاع الكلمات من sprite sheets (§4.6).
 الاستخدام: python3 package_manga_recap_pilot/build_wordcut.py
 المداخل: sentences.json (المدد المقاسة) + sheets/sheet1..6.jpg + vo_sent/
-المخرج: sief_eldel_ep1_v3.mp4 — قطع كل ~2s + كابشن بوب كلمة-بكلمة.
+المخرج: sief_eldel_ep1_v4.mp4 — قطع كل ~2s + كابشن بوب كلمة-بكلمة.
 """
 import json, os, sys
 
@@ -77,12 +77,12 @@ for si, s in enumerate(sents):
                         start=sent_start[si], scene_dur=None))
 narr = sum(s["dur"] for s in sents)
 print(f"🎬 المدة: {win}s | التغطية: {round(narr / win * 100)}% | beats: {len(beats)}")
-json.dump(v_sched, open(os.path.join(PKG, "sched_v3.json"), "w", encoding="utf-8"),
+json.dump(v_sched, open(os.path.join(PKG, "sched_v4.json"), "w", encoding="utf-8"),
           ensure_ascii=False, indent=1)
 
 print("📝 كابشن البوب + بطاقات…")
 pop = [dict(start=sent_start[i], words=s["words"]) for i, s in enumerate(sents)]
-ass = captions.ass_wordpop(os.path.join(PKG, "manga_v3.ass"), pop, 0.0)
+ass = captions.ass_wordpop(os.path.join(PKG, "manga_v4.ass"), pop, 0.0)
 captions.card(os.path.join(PKG, "title.png"),
               [(story["title"], "naskh", 150, 290, (255, 255, 255, 255), 6),
                (story.get("subtitle", ""), "naskh", 64, 500, (230, 214, 160, 255), 3),
@@ -92,7 +92,7 @@ captions.card(os.path.join(PKG, "end.png"),
                (story.get("endcard2", ""), "naskh", 50, 600, (230, 214, 160, 255), 3)], fp)
 
 print("🎞️ الرندر النهائي (ترميز واحد)…")
-out = os.path.join(PKG, "sief_eldel_ep1_v3.mp4")
+out = os.path.join(PKG, "sief_eldel_ep1_v4.mp4")
 render.render_wordcut(ff, [b["still"] for b in beats], v_sched, a_sched,
                       win, ass, os.path.join(PKG, "title.png"),
                       os.path.join(PKG, "end.png"), out)
