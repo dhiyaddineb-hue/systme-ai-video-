@@ -155,7 +155,7 @@ def render_dynamic(ff, stills, v_sched, a_sched, sfx, win, ass, title, end, out)
                  f"concat=n={B}:v=1:a=0,noise=alls=4:allf=t,fps=25[basev]")
     a, _ = narr_chain(a_sched, 0.0, off=B)
     v = B + S
-    wp = [f"[{v + i}:a]adelay={int(t * 1000)}|{int(t * 1000)},volume=0.12[w{i}]"
+    wp = [f"[{v + i}:a]adelay={int(t * 1000)}|{int(t * 1000)},volume=0.35[w{i}]"
           for i, t in enumerate(sfx["whoosh"])]
     ip = [f"[{v + W + i}:a]adelay={int(t * 1000)}|{int(t * 1000)},volume=0.5[im{i}]"
           for i, t in enumerate(sfx["impact"])]
@@ -165,16 +165,16 @@ def render_dynamic(ff, stills, v_sched, a_sched, sfx, win, ass, title, end, out)
     ip.append("".join(f"[im{i}]" for i in range(I)) + f"amix=inputs={I}:duration=longest:normalize=0[im]")
     if R:
         rp.append("".join(f"[rs{i}]" for i in range(R)) + f"amix=inputs={R}:duration=longest:normalize=0[rs]")
-        sfxmix = "[amb][wh][im][rs]amix=inputs=4:normalize=0[amb0]"
+        sfxmix = "[amb][wh][rs]amix=inputs=3:normalize=0[amb0]"
     else:
-        sfxmix = "[amb][wh][im]amix=inputs=3:normalize=0[amb0]"
+        sfxmix = "[amb][wh]amix=inputs=2:normalize=0[amb0]"
     flashes = "".join(
         f",drawbox=x=0:y=0:w=1280:h=720:color=white@0.8:t=fill:enable='between(t,{t:.2f},{t + 0.1:.2f})'"
         for t in sfx["flash"])
     fc = (";".join(parts) + ";" + a + ";" + beds(win) + ";" + ";".join(wp + ip + rp) + ";"
           + sfxmix + ";"
           "[amb0][vo1]sidechaincompress=threshold=0.03:ratio=6:attack=25:release=400[ambd];"
-          "[ambd][vo2]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-16:TP=-1.5:LRA=11[aout];"
+          "[ambd][vo2][im]amix=inputs=3:duration=first:normalize=0,loudnorm=I=-16:TP=-1.5:LRA=11[aout];"
           f"[basev]drawbox=y=0:h=74:color=black:t=fill,drawbox=y=646:h=74:color=black:t=fill{flashes}[b1];"
           f"[b1]ass={ass}[b2];"
           f"[b2]drawbox=x=0:y=0:w=1280:h=720:color=black@0.6:t=fill:enable='gte(t,{win - 4.2:.1f})'[b3];"
