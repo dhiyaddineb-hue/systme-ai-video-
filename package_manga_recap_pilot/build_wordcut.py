@@ -11,10 +11,11 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
 from vtsys import config, env, captions, render  # noqa: E402
 from vtsys.tts import word_times  # noqa: E402
+from vtsys.storyboard import split_beats, LEAD as SB_LEAD  # noqa: E402
 from vtsys.manga import extract_regions, QUADRANTS  # noqa: E402
 from vtsys.scenes import duration  # noqa: E402
 
-BEAT_MIN, GAP_SENT, LEAD = 1.8, 0.4, 2.0
+BEAT_MIN, GAP_SENT, LEAD = 1.8, 0.4, SB_LEAD  # مطابقة vtsys/storyboard (مصدر وحيد)
 BEAT_SHEET = {"hook": 0, "hero": 1, "humiliation": 2, "awakening": 3,
               "power": 4, "cliffhanger": 5}
 REGS = ["q1", "q2", "q3", "q4"]
@@ -46,20 +47,21 @@ for b in range(6):
 print(f"   {6 * 4} stills جاهزة")
 
 print("🎞️ تجميع الـ beats (~2s)…")
+raw = split_beats([s["words"] for s in sents])
 beats, ri = [], 0  # {sheet, still, dur, sent}
-for si, s in enumerate(sents):
-    sh = BEAT_SHEET[s["beat"]]
-    acc = 0.0
-    for _, d in s["words"]:
-        acc += d
-        if acc >= BEAT_MIN:
-            beats.append(dict(sheet=sh, still=stills[sh][REGS[ri % 4]], dur=round(acc, 2), sent=si))
-            ri += 1
-            acc = 0.0
-    if acc > 0.01:  # بقية كلمات الجملة = beat أخير
-        beats.append(dict(sheet=sh, still=stills[sh][REGS[ri % 4]], dur=round(acc, 2), sent=si))
-        ri += 1
-    beats[-1]["dur"] = round(beats[-1]["dur"] + GAP_SENT, 2)  # تنفس بين الجمل
+for b in raw:
+    sh = BEAT_SHEET[sents[b["sent"]]["beat"]]
+    beats.append(dict(sheet=sh, still=stills[sh][REGS[ri % 4]], dur=b["dur"], sent=b["sent"]))
+    ri += 1
+SB = os.path.join(PKG, "storyboard.json")
+if os.path.exists(SB):
+    shots = json.load(open(SB, encoding="utf-8"))["shots"]
+    assert len(shots) == len(beats), "الـ storyboard لا يطابق الـ beats!"
+    for b, s_ in zip(beats, shots):
+        st = s_["still"]
+        b["still"] = (stills[st["sheet"]][st["region"]] if st["kind"] == "quad"
+                       else os.path.join(PKG, st["file"]))
+    print("   📋 يُبنى من الـ storyboard المعتمد ✅")
 print(f"   {len(beats)} beat بصري")
 
 t = LEAD

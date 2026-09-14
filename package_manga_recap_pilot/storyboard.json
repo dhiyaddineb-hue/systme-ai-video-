@@ -1,0 +1,809 @@
+{
+ "episode": "سيف الظل / الحلقة الأولى",
+ "status": "مسودة — بانتظار الاعتماد البشري",
+ "policy": "سقف استخدام + فجوة دنيا + لا تكرار داخل الجملة (§4.7)",
+ "stats": {
+  "shots": 40,
+  "stills": 38,
+  "unique": 16,
+  "v3_violations": 8,
+  "v4_violations": 0
+ },
+ "v3_violations": [
+  {
+   "beat": 8,
+   "sent": 3,
+   "still": "sh1_q4",
+   "reason": "فجوة 7.2s < 8s"
+  },
+  {
+   "beat": 14,
+   "sent": 6,
+   "still": "sh2_q2",
+   "reason": "تكرار ممنوع/فوق السقف (detail)"
+  },
+  {
+   "beat": 20,
+   "sent": 8,
+   "still": "sh3_q4",
+   "reason": "تكرار ممنوع/فوق السقف (detail)"
+  },
+  {
+   "beat": 21,
+   "sent": 8,
+   "still": "sh3_q1",
+   "reason": "تكرار ممنوع/فوق السقف (key_action)"
+  },
+  {
+   "beat": 26,
+   "sent": 9,
+   "still": "sh4_q2",
+   "reason": "تكرار ممنوع/فوق السقف (detail)"
+  },
+  {
+   "beat": 31,
+   "sent": 11,
+   "still": "sh5_q3",
+   "reason": "تكرار ممنوع/فوق السقف (key_action)"
+  },
+  {
+   "beat": 37,
+   "sent": 13,
+   "still": "sh6_q1",
+   "reason": "تكرار ممنوع/فوق السقف (key_action)"
+  },
+  {
+   "beat": 39,
+   "sent": 14,
+   "still": "sh6_q3",
+   "reason": "تكرار ممنوع/فوق السقف (key_action)"
+  }
+ ],
+ "shots": [
+  {
+   "id": "SH01",
+   "sent": 1,
+   "time": 2.0,
+   "dur": 2.39,
+   "words": "النهارده… في أكاديمية",
+   "still": {
+    "kind": "panel",
+    "file": "panels/p1.jpg"
+   },
+   "ref": "panels/p1.jpg",
+   "desc": "البوابة (لوحة)",
+   "type": "establishing",
+   "reusable": true,
+   "max_uses": 2,
+   "camera": "push-in + pan-right",
+   "mood": "تشويق"
+  },
+  {
+   "id": "SH02",
+   "sent": 1,
+   "time": 4.39,
+   "dur": 2.13,
+   "words": "السيف الملكي… أضعف",
+   "still": {
+    "kind": "panel",
+    "file": "panels/p7.jpg"
+   },
+   "ref": "panels/p7.jpg",
+   "desc": "إزاي؟ (لوحة)",
+   "type": "reaction",
+   "reusable": true,
+   "max_uses": 2,
+   "camera": "push-in + pan-left",
+   "mood": "تشويق"
+  },
+  {
+   "id": "SH03",
+   "sent": 1,
+   "time": 6.52,
+   "dur": 1.95,
+   "words": "طالب دخل امتحان",
+   "still": {
+    "kind": "panel",
+    "file": "panels/p8.jpg"
+   },
+   "ref": "panels/p8.jpg",
+   "desc": "المدينة (لوحة)",
+   "type": "establishing",
+   "reusable": true,
+   "max_uses": 2,
+   "camera": "push-in + pan-right",
+   "mood": "تشويق"
+  },
+  {
+   "id": "SH04",
+   "sent": 1,
+   "time": 8.47,
+   "dur": 1.95,
+   "words": "القبول… وخرج منه",
+   "still": {
+    "kind": "quad",
+    "sheet": 0,
+    "region": "q1"
+   },
+   "ref": "sheets/sheet1.jpg#q1",
+   "desc": "البوابة الذهبية فجراً",
+   "type": "establishing",
+   "reusable": true,
+   "max_uses": 3,
+   "camera": "push-in + pan-left",
+   "mood": "تشويق"
+  },
+  {
+   "id": "SH05",
+   "sent": 1,
+   "time": 10.42,
+   "dur": 1.2,
+   "words": "أسطورة.",
+   "still": {
+    "kind": "quad",
+    "sheet": 0,
+    "region": "q2"
+   },
+   "ref": "sheets/sheet1.jpg#q2",
+   "desc": "عينا كريم المشتعلتان",
+   "type": "reaction",
+   "reusable": true,
+   "max_uses": 2,
+   "camera": "push-in + pan-right",
+   "mood": "تشويق"
+  },
+  {
+   "id": "SH06",
+   "sent": 2,
+   "time": 11.62,
+   "dur": 1.74,
+   "words": "إزاي؟",
+   "still": {
+    "kind": "quad",
+    "sheet": 0,
+    "region": "q3"
+   },
+   "ref": "sheets/sheet1.jpg#q3",
+   "desc": "شروق مدينة النحاس",
+   "type": "establishing",
+   "reusable": true,
+   "max_uses": 3,
+   "camera": "push-in + pan-left",
+   "mood": "تشويق"
+  },
+  {
+   "id": "SH07",
+   "sent": 3,
+   "time": 13.36,
+   "dur": 2.31,
+   "words": "اقعد واسمع الحكاية",
+   "still": {
+    "kind": "quad",
+    "sheet": 0,
+    "region": "q4"
+   },
+   "ref": "sheets/sheet1.jpg#q4",
+   "desc": "قاعة الامتحان",
+   "type": "establishing",
+   "reusable": true,
+   "max_uses": 2,
+   "camera": "push-in + pan-right",
+   "mood": "تشويق"
+  },
+  {
+   "id": "SH08",
+   "sent": 3,
+   "time": 15.67,
+   "dur": 1.59,
+   "words": "من الأول.",
+   "still": {
+    "kind": "panel",
+    "file": "panels/p8.jpg"
+   },
+   "ref": "panels/p8.jpg",
+   "desc": "المدينة (لوحة)",
+   "type": "establishing",
+   "reusable": true,
+   "max_uses": 2,
+   "camera": "push-in + pan-left",
+   "mood": "تشويق"
+  },
+  {
+   "id": "SH09",
+   "sent": 4,
+   "time": 17.26,
+   "dur": 2.11,
+   "words": "اسمه كريم… سبعتاشر",
+   "still": {
+    "kind": "panel",
+    "file": "panels/p2.jpg"
+   },
+   "ref": "panels/p2.jpg",
+   "desc": "الزقاق (لوحة)",
+   "type": "establishing",
+   "reusable": true,
+   "max_uses": 2,
+   "camera": "push-in + pan-right",
+   "mood": "دفء"
+  },
+  {
+   "id": "SH10",
+   "sent": 4,
+   "time": 19.37,
+   "dur": 2.17,
+   "words": "سنة… من حارة ضيقة",
+   "still": {
+    "kind": "quad",
+    "sheet": 1,
+    "region": "q1"
+   },
+   "ref": "sheets/sheet2.jpg#q1",
+   "desc": "زقاق النحاس صباحاً",
+   "type": "establishing",
+   "reusable": true,
+   "max_uses": 2,
+   "camera": "push-in + pan-left",
+   "mood": "دفء"
+  },
+  {
+   "id": "SH11",
+   "sent": 4,
+   "time": 21.54,
+   "dur": 2.34,
+   "words": "في مدينة النحاس.",
+   "still": {
+    "kind": "quad",
+    "sheet": 1,
+    "region": "q2"
+   },
+   "ref": "sheets/sheet2.jpg#q2",
+   "desc": "خطاب القبول بالختم",
+   "type": "detail",
+   "reusable": false,
+   "max_uses": 1,
+   "camera": "push-in + pan-right",
+   "mood": "دفء"
+  },
+  {
+   "id": "SH12",
+   "sent": 5,
+   "time": 23.88,
+   "dur": 2.49,
+   "words": "ودخل الأكاديمية إزاي؟",
+   "still": {
+    "kind": "panel",
+    "file": "panels/p9.jpg"
+   },
+   "ref": "panels/p9.jpg",
+   "desc": "الخطاب (لوحة)",
+   "type": "detail",
+   "reusable": false,
+   "max_uses": 1,
+   "camera": "push-in + pan-left",
+   "mood": "دفء"
+  },
+  {
+   "id": "SH13",
+   "sent": 6,
+   "time": 26.37,
+   "dur": 2.23,
+   "words": "بالعافية… واسطة من",
+   "still": {
+    "kind": "panel",
+    "file": "panels/p10.jpg"
+   },
+   "ref": "panels/p10.jpg",
+   "desc": "المعلم (لوحة)",
+   "type": "reaction",
+   "reusable": true,
+   "max_uses": 2,
+   "camera": "push-in + pan-right",
+   "mood": "دفء"
+  },
+  {
+   "id": "SH14",
+   "sent": 6,
+   "time": 28.6,
+   "dur": 1.99,
+   "words": "معلمه القديم.",
+   "still": {
+    "kind": "quad",
+    "sheet": 1,
+    "region": "q3"
+   },
+   "ref": "sheets/sheet2.jpg#q3",
+   "desc": "يد المعلم على الكتف",
+   "type": "reaction",
+   "reusable": true,
+   "max_uses": 2,
+   "camera": "push-in + pan-left",
+   "mood": "دفء"
+  },
+  {
+   "id": "SH15",
+   "sent": 7,
+   "time": 30.59,
+   "dur": 2.09,
+   "words": "يوم الاختبار… المصنف",
+   "still": {
+    "kind": "panel",
+    "file": "panels/p3.jpg"
+   },
+   "ref": "panels/p3.jpg",
+   "desc": "الهزيمة (لوحة)",
+   "type": "key_action",
+   "reusable": false,
+   "max_uses": 1,
+   "camera": "push-in + pan-right",
+   "mood": "انكسار"
+  },
+  {
+   "id": "SH16",
+   "sent": 7,
+   "time": 32.68,
+   "dur": 2.16,
+   "words": "الأول، الواد المغرور",
+   "still": {
+    "kind": "quad",
+    "sheet": 2,
+    "region": "q1"
+   },
+   "ref": "sheets/sheet3.jpg#q1",
+   "desc": "لحظة الهزيمة",
+   "type": "key_action",
+   "reusable": false,
+   "max_uses": 1,
+   "camera": "push-in + pan-left",
+   "mood": "انكسار"
+  },
+  {
+   "id": "SH17",
+   "sent": 7,
+   "time": 34.84,
+   "dur": 2.34,
+   "words": "ابن الوزير… مسح بكريم",
+   "still": {
+    "kind": "quad",
+    "sheet": 2,
+    "region": "q2"
+   },
+   "ref": "sheets/sheet3.jpg#q2",
+   "desc": "ضحك الدفعة",
+   "type": "reaction",
+   "reusable": true,
+   "max_uses": 3,
+   "camera": "push-in + pan-right",
+   "mood": "انكسار"
+  },
+  {
+   "id": "SH18",
+   "sent": 7,
+   "time": 37.18,
+   "dur": 1.93,
+   "words": "الأرض قدام الدفعة",
+   "still": {
+    "kind": "quad",
+    "sheet": 2,
+    "region": "q3"
+   },
+   "ref": "sheets/sheet3.jpg#q3",
+   "desc": "المعلم الصارم",
+   "type": "reaction",
+   "reusable": true,
+   "max_uses": 2,
+   "camera": "push-in + pan-left",
+   "mood": "انكسار"
+  },
+  {
+   "id": "SH19",
+   "sent": 7,
+   "time": 39.11,
+   "dur": 0.98,
+   "words": "كلها.",
+   "still": {
+    "kind": "quad",
+    "sheet": 2,
+    "region": "q4"
+   },
+   "ref": "sheets/sheet3.jpg#q4",
+   "desc": "السيف المكسور",
+   "type": "detail",
+   "reusable": false,
+   "max_uses": 1,
+   "camera": "push-in + pan-right",
+   "mood": "انكسار"
+  },
+  {
+   "id": "SH20",
+   "sent": 8,
+   "time": 40.09,
+   "dur": 2.0,
+   "words": "والكل ضحك…",
+   "still": {
+    "kind": "panel",
+    "file": "panels/p11.jpg"
+   },
+   "ref": "panels/p11.jpg",
+   "desc": "إلا واحد (لوحة)",
+   "type": "reaction",
+   "reusable": true,
+   "max_uses": 2,
+   "camera": "push-in + pan-left",
+   "mood": "انكسار"
+  },
+  {
+   "id": "SH21",
+   "sent": 8,
+   "time": 42.09,
+   "dur": 2.22,
+   "words": "إلا واحد.",
+   "still": {
+    "kind": "quad",
+    "sheet": 2,
+    "region": "q2"
+   },
+   "ref": "sheets/sheet3.jpg#q2",
+   "desc": "ضحك الدفعة",
+   "type": "reaction",
+   "reusable": true,
+   "max_uses": 3,
+   "camera": "push-in + pan-right",
+   "mood": "انكسار"
+  },
+  {
+   "id": "SH22",
+   "sent": 9,
+   "time": 44.31,
+   "dur": 2.37,
+   "words": "وفي نفس الليلة… كريم",
+   "still": {
+    "kind": "panel",
+    "file": "panels/p4.jpg"
+   },
+   "ref": "panels/p4.jpg",
+   "desc": "المقبرة (لوحة)",
+   "type": "establishing",
+   "reusable": true,
+   "max_uses": 2,
+   "camera": "push-in + pan-left",
+   "mood": "رهبة"
+  },
+  {
+   "id": "SH23",
+   "sent": 9,
+   "time": 46.68,
+   "dur": 2.03,
+   "words": "هرب لمقبرة السيوف",
+   "still": {
+    "kind": "quad",
+    "sheet": 3,
+    "region": "q1"
+   },
+   "ref": "sheets/sheet4.jpg#q1",
+   "desc": "مقبرة السيوف ليلاً",
+   "type": "establishing",
+   "reusable": true,
+   "max_uses": 3,
+   "camera": "push-in + pan-right",
+   "mood": "رهبة"
+  },
+  {
+   "id": "SH24",
+   "sent": 9,
+   "time": 48.71,
+   "dur": 2.04,
+   "words": "القديمة… وهناك… سيف",
+   "still": {
+    "kind": "quad",
+    "sheet": 3,
+    "region": "q2"
+   },
+   "ref": "sheets/sheet4.jpg#q2",
+   "desc": "السيف الأسود (الكشف)",
+   "type": "detail",
+   "reusable": false,
+   "max_uses": 1,
+   "camera": "push-in + pan-left",
+   "mood": "رهبة"
+  },
+  {
+   "id": "SH25",
+   "sent": 9,
+   "time": 50.75,
+   "dur": 2.2,
+   "words": "أسود مدفون من ميت",
+   "still": {
+    "kind": "quad",
+    "sheet": 3,
+    "region": "q3"
+   },
+   "ref": "sheets/sheet4.jpg#q3",
+   "desc": "اليد تقترب",
+   "type": "key_action",
+   "reusable": false,
+   "max_uses": 1,
+   "camera": "push-in + pan-right",
+   "mood": "رهبة"
+  },
+  {
+   "id": "SH26",
+   "sent": 9,
+   "time": 52.95,
+   "dur": 2.78,
+   "words": "سنة… نادى عليه باسمه.",
+   "still": {
+    "kind": "quad",
+    "sheet": 3,
+    "region": "q4"
+   },
+   "ref": "sheets/sheet4.jpg#q4",
+   "desc": "الظلال تلتف",
+   "type": "key_action",
+   "reusable": false,
+   "max_uses": 1,
+   "camera": "push-in + pan-left",
+   "mood": "رهبة"
+  },
+  {
+   "id": "SH27",
+   "sent": 10,
+   "time": 55.73,
+   "dur": 2.31,
+   "words": "أول ما لمس المقبض…",
+   "still": {
+    "kind": "panel",
+    "file": "panels/p12.jpg"
+   },
+   "ref": "panels/p12.jpg",
+   "desc": "المقبض (لوحة)",
+   "type": "key_action",
+   "reusable": false,
+   "max_uses": 1,
+   "camera": "push-in + pan-right",
+   "mood": "انفجار"
+  },
+  {
+   "id": "SH28",
+   "sent": 10,
+   "time": 58.04,
+   "dur": 1.95,
+   "words": "الظل نفسه اتحرك…",
+   "still": {
+    "kind": "quad",
+    "sheet": 4,
+    "region": "q1"
+   },
+   "ref": "sheets/sheet5.jpg#q1",
+   "desc": "القبضة على المقبض",
+   "type": "key_action",
+   "reusable": false,
+   "max_uses": 1,
+   "camera": "push-in + pan-left",
+   "mood": "انفجار"
+  },
+  {
+   "id": "SH29",
+   "sent": 10,
+   "time": 59.99,
+   "dur": 2.36,
+   "words": "وبقى درعه وسيفه.",
+   "still": {
+    "kind": "quad",
+    "sheet": 4,
+    "region": "q2"
+   },
+   "ref": "sheets/sheet5.jpg#q2",
+   "desc": "انفجار الظل",
+   "type": "key_action",
+   "reusable": false,
+   "max_uses": 1,
+   "camera": "push-in + pan-right",
+   "mood": "انفجار"
+  },
+  {
+   "id": "SH30",
+   "sent": 11,
+   "time": 62.35,
+   "dur": 2.64,
+   "words": "ضربة واحدة… والصخرة",
+   "still": {
+    "kind": "panel",
+    "file": "panels/p5.jpg"
+   },
+   "ref": "panels/p5.jpg",
+   "desc": "الانفجار (لوحة)",
+   "type": "key_action",
+   "reusable": false,
+   "max_uses": 1,
+   "camera": "push-in + pan-left",
+   "mood": "انفجار"
+  },
+  {
+   "id": "SH31",
+   "sent": 11,
+   "time": 64.99,
+   "dur": 2.28,
+   "words": "اللي وراه… اتشقت",
+   "still": {
+    "kind": "quad",
+    "sheet": 4,
+    "region": "q3"
+   },
+   "ref": "sheets/sheet5.jpg#q3",
+   "desc": "تحطم الصخرة",
+   "type": "key_action",
+   "reusable": false,
+   "max_uses": 1,
+   "camera": "push-in + pan-right",
+   "mood": "انفجار"
+  },
+  {
+   "id": "SH32",
+   "sent": 11,
+   "time": 67.27,
+   "dur": 1.14,
+   "words": "نصين.",
+   "still": {
+    "kind": "quad",
+    "sheet": 4,
+    "region": "q4"
+   },
+   "ref": "sheets/sheet5.jpg#q4",
+   "desc": "وقفة النصر",
+   "type": "reaction",
+   "reusable": true,
+   "max_uses": 3,
+   "camera": "push-in + pan-left",
+   "mood": "انفجار"
+  },
+  {
+   "id": "SH33",
+   "sent": 12,
+   "time": 68.41,
+   "dur": 1.92,
+   "words": "وتاني يوم الصبح…",
+   "still": {
+    "kind": "panel",
+    "file": "panels/p13.jpg"
+   },
+   "ref": "panels/p13.jpg",
+   "desc": "التحدي (لوحة)",
+   "type": "key_action",
+   "reusable": false,
+   "max_uses": 1,
+   "camera": "push-in + pan-right",
+   "mood": "توتر"
+  },
+  {
+   "id": "SH34",
+   "sent": 12,
+   "time": 70.33,
+   "dur": 2.01,
+   "words": "المصنف الأول طلب",
+   "still": {
+    "kind": "quad",
+    "sheet": 5,
+    "region": "q1"
+   },
+   "ref": "sheets/sheet6.jpg#q1",
+   "desc": "إعلان التحدي",
+   "type": "key_action",
+   "reusable": false,
+   "max_uses": 1,
+   "camera": "push-in + pan-left",
+   "mood": "توتر"
+  },
+  {
+   "id": "SH35",
+   "sent": 12,
+   "time": 72.34,
+   "dur": 1.83,
+   "words": "نزال علني… قدام",
+   "still": {
+    "kind": "quad",
+    "sheet": 5,
+    "region": "q2"
+   },
+   "ref": "sheets/sheet6.jpg#q2",
+   "desc": "ابتسامة كريم",
+   "type": "reaction",
+   "reusable": true,
+   "max_uses": 2,
+   "camera": "push-in + pan-right",
+   "mood": "توتر"
+  },
+  {
+   "id": "SH36",
+   "sent": 12,
+   "time": 74.17,
+   "dur": 2.13,
+   "words": "الأكاديمية كلها.",
+   "still": {
+    "kind": "quad",
+    "sheet": 5,
+    "region": "q3"
+   },
+   "ref": "sheets/sheet6.jpg#q3",
+   "desc": "المواجهة",
+   "type": "key_action",
+   "reusable": false,
+   "max_uses": 1,
+   "camera": "push-in + pan-left",
+   "mood": "توتر"
+  },
+  {
+   "id": "SH37",
+   "sent": 13,
+   "time": 76.3,
+   "dur": 1.74,
+   "words": "وكريم؟",
+   "still": {
+    "kind": "panel",
+    "file": "panels/p14.jpg"
+   },
+   "ref": "panels/p14.jpg",
+   "desc": "وكريم؟ (لوحة)",
+   "type": "reaction",
+   "reusable": true,
+   "max_uses": 2,
+   "camera": "push-in + pan-right",
+   "mood": "توتر"
+  },
+  {
+   "id": "SH38",
+   "sent": 14,
+   "time": 78.04,
+   "dur": 2.35,
+   "words": "ما ردش… ابتسم",
+   "still": {
+    "kind": "panel",
+    "file": "panels/p6.jpg"
+   },
+   "ref": "panels/p6.jpg",
+   "desc": "النزال (لوحة)",
+   "type": "reaction",
+   "reusable": true,
+   "max_uses": 2,
+   "camera": "push-in + pan-left",
+   "mood": "توتر"
+  },
+  {
+   "id": "SH39",
+   "sent": 14,
+   "time": 80.39,
+   "dur": 0.98,
+   "words": "بس.",
+   "still": {
+    "kind": "quad",
+    "sheet": 5,
+    "region": "q4"
+   },
+   "ref": "sheets/sheet6.jpg#q4",
+   "desc": "الجمهور الصاخب",
+   "type": "reaction",
+   "reusable": true,
+   "max_uses": 4,
+   "camera": "push-in + pan-right",
+   "mood": "توتر"
+  },
+  {
+   "id": "SH40",
+   "sent": 15,
+   "time": 81.37,
+   "dur": 1.62,
+   "words": "يتبع.",
+   "still": {
+    "kind": "quad",
+    "sheet": 5,
+    "region": "q2"
+   },
+   "ref": "sheets/sheet6.jpg#q2",
+   "desc": "ابتسامة كريم",
+   "type": "reaction",
+   "reusable": true,
+   "max_uses": 2,
+   "camera": "push-in + pan-left",
+   "mood": "توتر"
+  }
+ ]
+}
