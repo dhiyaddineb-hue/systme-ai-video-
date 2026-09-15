@@ -12,7 +12,7 @@
     {"id": 8, "beat": "power", "sheet": "sheetB", "region": 1, "vo": "vo_sent/s08.mp3", "text": "بس الصبح… ريّان خرج من الرماد… وعلى كتفه وشم تنين بيتحرك."},
     {"id": 9, "beat": "power", "sheet": "sheetB", "region": 2, "vo": "vo_sent/s09.mp3", "text": "وأول ما غضب… البرج الأول… اتشق من فوقه لتحته."},
     {"id": 10, "beat": "question", "sheet": "sheetB", "region": 3, "vo": "vo_sent/s10.mp3", "text": "والنقابة؟"},
-    {"id": 11, "beat": "threat", "sheet": "sheetB", "region": 4, "vo": "vo_sent/s11.mp3", "text": "اجتمعت في نفس الليلة… وقررت: الولد ده لازم يموت قبل اكتمال القمر."},
+    {"id": 11, "beat": "threat", "sheet": "sheetB", "region": 4, "vo": "vo_sent/s11.mp3", "text": "اجتمعت في نفس الليلة… وقررت: الولد ده لازم يختفي قبل اكتمال القمر."},
     {"id": 12, "beat": "cliff", "sheet": "sheetB", "region": 5, "vo": "vo_sent/s12.mp3", "text": "وريّان؟… كان واقف ورا الشباك… وسامع كل حاجة."}
   ]
 }
