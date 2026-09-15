@@ -1,0 +1,12 @@
+{
+  "LOC-001": {"name": "Seven Towers city", "type": "exterior",
+              "anchors": ["seven towers", "guildhall gate", "dawn sky"]},
+  "LOC-002": {"name": "guildhall interior", "type": "interior",
+              "anchors": ["marble floor", "columns", "golden hall", "wooden door", "chest"]},
+  "LOC-003": {"name": "first tower", "type": "exterior",
+              "anchors": ["tallest tower", "split crack", "debris"]},
+  "LOC-004": {"name": "council chamber", "type": "interior",
+              "anchors": ["round table", "round window", "full moon", "masked elders"]},
+  "LOC-005": {"name": "window exterior night", "type": "exterior", "time": "night",
+              "anchors": ["window", "night sky", "dragon glow"]}
+}

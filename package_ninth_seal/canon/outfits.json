@@ -1,0 +1,6 @@
+{
+  "OUT-001": {"name": "servant tunic", "owner": "CH-001",
+              "desc": "patched brown servant tunic with guild rope belt", "season": "all"},
+  "OUT-002": {"name": "grandmaster robes", "owner": "CH-002",
+              "desc": "black-and-gold robes", "season": "all"}
+}

@@ -1,0 +1,19 @@
+{
+  "CH-001": {
+    "name": "ريّان", "level": "A",
+    "aliases": ["rayan", "الخادم", "بطلنا"],
+    "fixed": {"age": 16, "eyes": "gray-green", "hair": "black + one white streak",
+              "scar": "burn on right hand",
+              "lock": "16-year-old servant boy, shaggy black hair with one white streak, gray-green eyes, burn scar on right hand, patched brown servant tunic with guild rope belt"},
+    "outfits": ["OUT-001"],
+    "refs": {"master": "refs/ref_rayan.jpg", "version": 1, "status": "canon"}
+  },
+  "CH-002": {
+    "name": "المعلم فيكس", "level": "A",
+    "aliases": ["vex", "الأستاذ الأعظم"],
+    "fixed": {"bald": true, "mask": "golden, upper face", "staff": "iron",
+              "lock": "guild grandmaster, tall bald elder, golden mask covering upper face, black-and-gold robes, iron staff"},
+    "outfits": ["OUT-002"],
+    "refs": {"master": null, "version": 0, "status": "draft"}
+  }
+}

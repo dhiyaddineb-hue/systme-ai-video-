@@ -1,0 +1,13 @@
+{
+  "time": "day1 06:00", "season": "spring", "weather": {"type": "clear"},
+  "characters": {
+    "CH-001": {"location": "LOC-001", "outfit": "OUT-001", "injuries": [],
+               "held": {"right": null, "left": null}, "emotion": "fearful"},
+    "CH-002": {"location": "LOC-004", "outfit": "OUT-002", "injuries": [],
+               "held": {}, "emotion": "calm"}
+  },
+  "props": {"PROP-001": {"holder": null, "location": "LOC-002", "condition": "sealed"}},
+  "events": [], "changelog": [],
+  "knowledge": {"reader": [], "CH-001": [], "CH-002": []},
+  "threads": ["seal awakening", "council verdict"]
+}

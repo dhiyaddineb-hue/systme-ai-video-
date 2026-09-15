@@ -402,4 +402,11 @@ bash assets/fonts/download.sh
 - `pip install` يحتاج `--break-system-packages` هنا (PEP 668).
 - `Pillow` هنا **بدون raqm** (`raqm=false`) — مسار `arabic_reshaper+bidi` الاحتياطي يعمل وتم التحقق منه بصرياً (بانر سليم، RTL صحيح).
 
+## §5.0 محرك الاستمرارية البشرية (2026-09-15)
+- المواصفة الأم: `docs/CONTINUITY_SYSTEM_SPEC.md` (181 بنداً — Canon/State/Events/References).
+- التنفيذ: `vtsys/canon.py` — سجل Canon + عقود مشاهد + تحقق C0-C4 + منع C3/C4 + تحديث حالة + مُجمّع برومبتات (§106) + نقاط §86.
+- كل قصة تحمل `canon/` (شخصيات/ملابس/أماكن/أغراض/حالة عالم).
+- مُختبَر: عقد سليم = 100 PASS / عقد فاسد = 56.2 BLOCKED (زمن عكسي C4 + انتقال آني C4 + ...).
+- القاعدة الذهبية: لا Panel مستقل — كل مشهد = `WORLD STATE(t) + EVENT(t) + CAMERA`.
+
 *نهاية ملف المعرفة — كل ما يُبنى لاحقاً يُضاف هنا كدرس جديد (§7).*

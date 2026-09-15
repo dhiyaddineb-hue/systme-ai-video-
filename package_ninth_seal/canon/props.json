@@ -1,0 +1,6 @@
+{
+  "PROP-001": {"name": "ninth seal",
+               "desc": "fist-sized floating black iron cube with glowing violet cracks, shattered chains",
+               "shape_lock": true, "color_lock": true,
+               "owner": "CH-001", "holder": null, "location": "LOC-002", "condition": "sealed"}
+}
