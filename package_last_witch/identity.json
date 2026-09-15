@@ -1,0 +1,43 @@
+{
+  "_note": "ميثاق هوية آخر ساحرة (§4.10).",
+  "style_lock": "dark manga anime style, cinematic lighting, dramatic composition, high detail, no text, no words, no letters, no watermark",
+  "characters": {
+    "salma": {
+      "label": "سلمى",
+      "lock": "19-year-old maid girl, sharp green eyes, short uneven black hair, soot smudge on cheek, patched gray maid dress with rope belt, old burn scars on wrists",
+      "refs": ["refs/ref_salma.jpg"]
+    },
+    "hassan": {
+      "label": "حسن",
+      "lock": "24-year-old tall hunter captain, long braided black hair, cold gray eyes, dark leather hunter uniform with silver falcon badge, curved sword",
+      "refs": []
+    },
+    "flame": {
+      "label": "النار الزرقاء",
+      "lock": "magical blue fire with white core, elegant smoke ribbons, embers rising",
+      "refs": []
+    }
+  },
+  "face_ref": "refs/ref_salma_face.jpg",
+  "layout_sheet": "six-panel manga page, 3 columns x 2 rows, thick black gutters, same characters with identical faces and outfits in every panel",
+  "scenes": {
+    "s01": {"chars": ["salma"], "shot": "ash kingdom at dawn, gray towers under smoky sky, a small maid girl entering the palace square among armored guards"},
+    "s02": {"chars": ["salma"], "shot": "extreme close-up of a sharp green eye snapping open, soot-smudged skin, shock"},
+    "s03": {"chars": ["salma"], "shot": "the maid girl scrubbing a vast palace floor, buckets and rags, nobles passing above her"},
+    "s04": {"chars": ["salma"], "shot": "the disguised girl hiding behind a palace column, short uneven hair, soot-covered face, watching carefully"},
+    "s05": {"chars": ["salma", "flame"], "shot": "eclipse night in a torch-lit hall: blue fire erupting from the girl's hands before terrified guards"},
+    "s06": {"chars": ["salma"], "shot": "guards seizing the girl with iron chains, torch light, a verdict scroll held by an officer, dread"},
+    "s07": {"chars": ["salma"], "shot": "dark dungeon cell: a mysterious old woman whispering to the chained girl, single torch, hope in despair"},
+    "s08": {"chars": ["salma", "flame"], "shot": "the girl learning a glowing word, blue runes floating around her in the dark cell"},
+    "s09": {"chars": ["salma", "flame"], "shot": "first dawn ray: the dungeon cell exploding outward, stones flying, girl at the center unharmed"},
+    "s10": {"chars": ["salma", "flame"], "shot": "the girl walking through blue fire across a courtyard at dawn, frozen guards unable to touch her"},
+    "s11": {"chars": ["hassan"], "shot": "a furious masked king on a dark throne pointing forward, hunter squad kneeling before him"},
+    "s12": {"chars": ["salma", "hassan"], "shot": "hunter squad marching at dawn led by a tall braided captain with a curved sword"},
+    "s13": {"chars": ["salma", "hassan"], "shot": "a curved sword falling from the captain's hand in shock as he recognizes the girl"},
+    "s14": {"chars": ["salma", "hassan"], "shot": "emotional reunion close-up: the smiling tearful girl facing her stunned brother"},
+    "s15": {"chars": ["hassan"], "shot": "the captain raising his sword again with tears in his eyes, painful duty"},
+    "s16": {"chars": ["salma"], "shot": "an old mother locked in a tower cell reaching her hand through bars toward the viewer"},
+    "s17": {"chars": ["salma", "hassan", "flame"], "shot": "the girl extending her hands, blue fire forming a glowing bridge between the siblings"},
+    "s18": {"chars": ["salma", "hassan", "flame"], "shot": "epic cliffhanger wide: the siblings facing a palace army at dawn, blue fire against steel"}
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "PROP-001": {"name": "iron shackles",
+               "desc": "heavy iron shackles with chain",
+               "owner": null, "holder": null, "location": "LOC-003", "condition": "new"},
+  "PROP-002": {"name": "hunter blade",
+               "desc": "curved sword with falcon pommel",
+               "shape_lock": true,
+               "owner": "CH-002", "holder": "CH-002", "location": "LOC-004", "condition": "sharp"}
+}

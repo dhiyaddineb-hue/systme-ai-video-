@@ -1,0 +1,6 @@
+{
+  "OUT-001": {"name": "maid rags", "owner": "CH-001",
+              "desc": "patched gray maid dress with rope belt", "season": "all"},
+  "OUT-002": {"name": "hunter uniform", "owner": "CH-002",
+              "desc": "dark leather hunter uniform with silver falcon badge", "season": "all"}
+}

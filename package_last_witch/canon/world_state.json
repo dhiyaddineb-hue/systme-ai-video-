@@ -1,0 +1,16 @@
+{
+  "time": "day1 05:50", "season": "spring", "weather": {"type": "clear"},
+  "characters": {
+    "CH-001": {"location": "LOC-001", "outfit": "OUT-001", "injuries": [],
+               "held": {"right": null, "left": null}, "emotion": "fearful"},
+    "CH-002": {"location": "LOC-004", "outfit": "OUT-002", "injuries": [],
+               "held": {"right": "PROP-002", "left": null}, "emotion": "cold"}
+  },
+  "props": {
+    "PROP-001": {"holder": null, "location": "LOC-003", "condition": "new"},
+    "PROP-002": {"holder": "CH-002", "location": "LOC-004", "condition": "sharp"}
+  },
+  "events": [], "changelog": [],
+  "knowledge": {"reader": [], "CH-001": [], "CH-002": []},
+  "threads": ["blue fire awakening", "mother hostage", "eclipse night"]
+}

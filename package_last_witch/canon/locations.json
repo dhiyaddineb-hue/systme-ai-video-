@@ -1,0 +1,10 @@
+{
+  "LOC-001": {"name": "ash kingdom", "type": "exterior",
+              "anchors": ["gray towers", "smoky sky", "palace square"]},
+  "LOC-002": {"name": "palace interior", "type": "interior",
+              "anchors": ["vast floor", "columns", "torch-lit hall"]},
+  "LOC-003": {"name": "dungeon", "type": "interior",
+              "anchors": ["stone cell", "iron bars", "single torch", "chains"]},
+  "LOC-004": {"name": "courtyard dawn", "type": "exterior",
+              "anchors": ["courtyard", "palace gate", "dawn sky", "assembled guards"]}
+}

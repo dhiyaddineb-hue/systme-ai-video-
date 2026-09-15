@@ -1,0 +1,19 @@
+{
+  "CH-001": {
+    "name": "سلمى", "level": "A",
+    "aliases": ["salma", "الخدامة", "الساحرة"],
+    "fixed": {"age": 19, "eyes": "green", "hair": "short uneven black",
+              "marks": "soot smudge + burn scars on wrists",
+              "lock": "19-year-old maid girl, sharp green eyes, short uneven black hair, soot smudge on cheek, patched gray maid dress with rope belt, old burn scars on wrists"},
+    "outfits": ["OUT-001"],
+    "refs": {"master": "refs/ref_salma.jpg", "version": 1, "status": "canon"}
+  },
+  "CH-002": {
+    "name": "حسن", "level": "A",
+    "aliases": ["hassan", "القائد", "الأخ"],
+    "fixed": {"age": 24, "hair": "long braided black", "eyes": "gray",
+              "lock": "24-year-old tall hunter captain, long braided black hair, cold gray eyes, dark leather hunter uniform with silver falcon badge, curved sword"},
+    "outfits": ["OUT-002"],
+    "refs": {"master": null, "version": 0, "status": "draft"}
+  }
+}

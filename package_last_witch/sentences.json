@@ -1,0 +1,24 @@
+{
+  "_note": "18 جملة = 18 مشهد (3 شيتات 3×2) — بلا سقف (§4.11).",
+  "gap": 0.4,
+  "units": [
+    {"id": 1, "beat": "hook", "sheet": "sheetA", "region": 0, "vo": "vo_sent/s01.mp3", "text": "النهارده… في مملكة الرماد… آخر ساحرة كان المفروض تموت من عشر سنين… ظهرت من جديد."},
+    {"id": 2, "beat": "question", "sheet": "sheetA", "region": 1, "vo": "vo_sent/s02.mp3", "text": "إزاي؟"},
+    {"id": 3, "beat": "hero", "sheet": "sheetA", "region": 2, "vo": "vo_sent/s03.mp3", "text": "اسمها سلمى… تسعتاشر سنة… بتشتغل خدامة في قصر الملك اللي قتل أبوها."},
+    {"id": 4, "beat": "hero", "sheet": "sheetA", "region": 3, "vo": "vo_sent/s04.mp3", "text": "وعايشة متنكرة… بشعر مقصوص ووش متغطي بالسخام… ومحدش يعرفها."},
+    {"id": 5, "beat": "turn", "sheet": "sheetA", "region": 4, "vo": "vo_sent/s05.mp3", "text": "لحد ما ليلة الكسوف… نار زرقا ولّعت في إيديها… قدام الحرس كله."},
+    {"id": 6, "beat": "shock", "sheet": "sheetA", "region": 5, "vo": "vo_sent/s06.mp3", "text": "واتقبض عليها… واتحكم عليها بالحرق… فجر الجمعة."},
+    {"id": 7, "beat": "turn", "sheet": "sheetB", "region": 0, "vo": "vo_sent/s07.mp3", "text": "بس في الزنزانة… عجوز غريبة همست لها: نارك مش لعنة… دي الوراثة."},
+    {"id": 8, "beat": "power", "sheet": "sheetB", "region": 1, "vo": "vo_sent/s08.mp3", "text": "وعلمتها في ليلة واحدة… الكلمة اللي بتفتح البوابات."},
+    {"id": 9, "beat": "power", "sheet": "sheetB", "region": 2, "vo": "vo_sent/s09.mp3", "text": "ومع أول شعاع فجر… سلمى قالت الكلمة… والزنزانة انفجرت."},
+    {"id": 10, "beat": "power", "sheet": "sheetB", "region": 3, "vo": "vo_sent/s10.mp3", "text": "وخرجت من النار الزرقا… ماشية وسط الحرس… ومحدش قادر يلمسها."},
+    {"id": 11, "beat": "threat", "sheet": "sheetB", "region": 4, "vo": "vo_sent/s11.mp3", "text": "والملك؟… بعت وراها فرقة الصيادين… اللي مبيفشلوش أبداً."},
+    {"id": 12, "beat": "threat", "sheet": "sheetB", "region": 5, "vo": "vo_sent/s12.mp3", "text": "وقائدهم… أخوها الكبير… اللي فاكرها ميتة من عشر سنين."},
+    {"id": 13, "beat": "cliff", "sheet": "sheetC", "region": 0, "vo": "vo_sent/s13.mp3", "text": "ولما شافها… السيف وقع من إيده…"},
+    {"id": 14, "beat": "cliff", "sheet": "sheetC", "region": 1, "vo": "vo_sent/s14.mp3", "text": "وسلمى؟… بصت له وقالت: وحشتني يا حسن."},
+    {"id": 15, "beat": "cliff", "sheet": "sheetC", "region": 2, "vo": "vo_sent/s15.mp3", "text": "بس حسن؟… رفع السيف تاني… وعينه بتدمع."},
+    {"id": 16, "beat": "cliff", "sheet": "sheetC", "region": 3, "vo": "vo_sent/s16.mp3", "text": "وقال لها: الملك خطف أمنا… ولو سبتك… هتدفع هي التمن."},
+    {"id": 17, "beat": "cliff", "sheet": "sheetC", "region": 4, "vo": "vo_sent/s17.mp3", "text": "وسلمى مدت إيديها… والنار الزرقا بقت جسر بينهم…"},
+    {"id": 18, "beat": "cliff", "sheet": "sheetC", "region": 5, "vo": "vo_sent/s18.mp3", "text": "يتبع."}
+  ]
+}
