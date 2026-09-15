@@ -59,6 +59,7 @@ for i, u in enumerate(units):
                                     os.path.join(PKG, "regions"), sh)
     mapping[u["id"]] = (sh, u["region"])
 audit_norepeat(mapping)
+assert len(mapping) == len(units), "RULE: every sentence must own exactly one scene"
 print("no-repeat audit: PASS (%d unique panels)" % len(mapping))
 
 shots = []
