@@ -1,13 +1,88 @@
 {
-  "time": "day1 06:00", "season": "spring", "weather": {"type": "clear"},
-  "characters": {
-    "CH-001": {"location": "LOC-001", "outfit": "OUT-001", "injuries": [],
-               "held": {"right": null, "left": null}, "emotion": "fearful"},
-    "CH-002": {"location": "LOC-004", "outfit": "OUT-002", "injuries": [],
-               "held": {}, "emotion": "calm"}
+ "time": "day2 08:00",
+ "season": "spring",
+ "weather": {
+  "type": "clear"
+ },
+ "characters": {
+  "CH-001": {
+   "location": "LOC-005",
+   "outfit": "OUT-001",
+   "injuries": [],
+   "held": {
+    "right": null,
+    "left": null
+   },
+   "emotion": "calm defiance"
   },
-  "props": {"PROP-001": {"holder": null, "location": "LOC-002", "condition": "sealed"}},
-  "events": [], "changelog": [],
-  "knowledge": {"reader": [], "CH-001": [], "CH-002": []},
-  "threads": ["seal awakening", "council verdict"]
+  "CH-002": {
+   "location": "LOC-004",
+   "outfit": "OUT-002",
+   "injuries": [],
+   "held": {},
+   "emotion": "rage"
+  }
+ },
+ "props": {
+  "PROP-001": {
+   "holder": "CH-001",
+   "location": "LOC-005",
+   "condition": "active bonded"
+  }
+ },
+ "events": [
+  {
+   "id": "EVT-001",
+   "time": "day1 20:00",
+   "location": "LOC-002",
+   "actors": [
+    "CH-001"
+   ],
+   "action": "touched the ninth seal",
+   "consequences": [
+    "black fire awakening"
+   ]
+  },
+  {
+   "id": "EVT-002",
+   "time": "day2 06:00",
+   "location": "LOC-002",
+   "actors": [
+    "CH-001"
+   ],
+   "action": "walked out of ash with dragon tattoo",
+   "consequences": [
+    "tower split",
+    "guild panic"
+   ]
+  },
+  {
+   "id": "EVT-003",
+   "time": "day2 07:30",
+   "location": "LOC-004",
+   "actors": [
+    "CH-002"
+   ],
+   "action": "council votes to eliminate the boy",
+   "consequences": [
+    "overheard cliffhanger"
+   ]
+  }
+ ],
+ "changelog": [
+  {
+   "scene": 12,
+   "at": "day2 08:00",
+   "summary": "ep1 approved: 12 panels verified, 10/12 VO done"
+  }
+ ],
+ "knowledge": {
+  "reader": [],
+  "CH-001": [],
+  "CH-002": []
+ },
+ "threads": [
+  "seal awakening",
+  "council verdict"
+ ]
 }
