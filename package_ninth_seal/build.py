@@ -23,10 +23,10 @@ except Exception:
     MOTION, MOOD_GRADE = {}, {}
 
 BEAT_STYLE = {
-    "hook": ("establish", "anticipation"), "question": ("detail", "tension"),
-    "hero": ("establish", "warmth"), "turn": ("detail", "suspense"),
-    "shock": ("key_action", "shock"), "power": ("key_action", "power"),
-    "threat": ("detail", "dread"), "cliff": ("detail", "mystery"),
+    "hook": ("establishing", "تشويق"), "question": ("reaction", "توتر"),
+    "hero": ("establishing", "دفء"), "turn": ("detail", "تشويق"),
+    "shock": ("key_action", "رهبة"), "power": ("key_action", "انفجار"),
+    "threat": ("detail", "رهبة"), "cliff": ("reaction", "انكسار"),
 }
 
 PKG = os.path.dirname(os.path.abspath(__file__))

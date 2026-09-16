@@ -1,0 +1,457 @@
+{
+ "story": "last_witch",
+ "status": "auto-approved (no-repeat audit PASS)",
+ "shots": [
+  {
+   "sent": 1,
+   "time": 0.0,
+   "dur": 2.08,
+   "type": "establishing",
+   "mood": "تشويق",
+   "still": [
+    "sheetA",
+    0
+   ]
+  },
+  {
+   "sent": 1,
+   "time": 2.08,
+   "dur": 2.08,
+   "type": "establishing",
+   "mood": "تشويق",
+   "still": [
+    "sheetA",
+    0
+   ]
+  },
+  {
+   "sent": 1,
+   "time": 4.16,
+   "dur": 2.08,
+   "type": "establishing",
+   "mood": "تشويق",
+   "still": [
+    "sheetA",
+    0
+   ]
+  },
+  {
+   "sent": 1,
+   "time": 6.24,
+   "dur": 2.06,
+   "type": "establishing",
+   "mood": "تشويق",
+   "still": [
+    "sheetA",
+    0
+   ]
+  },
+  {
+   "sent": 2,
+   "time": 8.7,
+   "dur": 0.67,
+   "type": "reaction",
+   "mood": "توتر",
+   "still": [
+    "sheetA",
+    1
+   ]
+  },
+  {
+   "sent": 2,
+   "time": 9.37,
+   "dur": 0.67,
+   "type": "reaction",
+   "mood": "توتر",
+   "still": [
+    "sheetA",
+    1
+   ]
+  },
+  {
+   "sent": 3,
+   "time": 10.44,
+   "dur": 2.45,
+   "type": "establishing",
+   "mood": "دفء",
+   "still": [
+    "sheetA",
+    2
+   ]
+  },
+  {
+   "sent": 3,
+   "time": 12.89,
+   "dur": 2.45,
+   "type": "establishing",
+   "mood": "دفء",
+   "still": [
+    "sheetA",
+    2
+   ]
+  },
+  {
+   "sent": 3,
+   "time": 15.34,
+   "dur": 2.44,
+   "type": "establishing",
+   "mood": "دفء",
+   "still": [
+    "sheetA",
+    2
+   ]
+  },
+  {
+   "sent": 4,
+   "time": 18.18,
+   "dur": 3.61,
+   "type": "establishing",
+   "mood": "دفء",
+   "still": [
+    "sheetA",
+    3
+   ]
+  },
+  {
+   "sent": 4,
+   "time": 21.79,
+   "dur": 3.61,
+   "type": "establishing",
+   "mood": "دفء",
+   "still": [
+    "sheetA",
+    3
+   ]
+  },
+  {
+   "sent": 5,
+   "time": 25.8,
+   "dur": 2.87,
+   "type": "detail",
+   "mood": "تشويق",
+   "still": [
+    "sheetA",
+    4
+   ]
+  },
+  {
+   "sent": 5,
+   "time": 28.67,
+   "dur": 2.87,
+   "type": "detail",
+   "mood": "تشويق",
+   "still": [
+    "sheetA",
+    4
+   ]
+  },
+  {
+   "sent": 5,
+   "time": 31.54,
+   "dur": 2.88,
+   "type": "detail",
+   "mood": "تشويق",
+   "still": [
+    "sheetA",
+    4
+   ]
+  },
+  {
+   "sent": 6,
+   "time": 34.82,
+   "dur": 2.45,
+   "type": "key_action",
+   "mood": "رهبة",
+   "still": [
+    "sheetA",
+    5
+   ]
+  },
+  {
+   "sent": 6,
+   "time": 37.27,
+   "dur": 2.45,
+   "type": "key_action",
+   "mood": "رهبة",
+   "still": [
+    "sheetA",
+    5
+   ]
+  },
+  {
+   "sent": 7,
+   "time": 40.12,
+   "dur": 2.65,
+   "type": "detail",
+   "mood": "تشويق",
+   "still": [
+    "sheetB",
+    0
+   ]
+  },
+  {
+   "sent": 7,
+   "time": 42.77,
+   "dur": 2.65,
+   "type": "detail",
+   "mood": "تشويق",
+   "still": [
+    "sheetB",
+    0
+   ]
+  },
+  {
+   "sent": 7,
+   "time": 45.42,
+   "dur": 2.64,
+   "type": "detail",
+   "mood": "تشويق",
+   "still": [
+    "sheetB",
+    0
+   ]
+  },
+  {
+   "sent": 8,
+   "time": 48.46,
+   "dur": 2.81,
+   "type": "key_action",
+   "mood": "انفجار",
+   "still": [
+    "sheetB",
+    1
+   ]
+  },
+  {
+   "sent": 8,
+   "time": 51.27,
+   "dur": 2.81,
+   "type": "key_action",
+   "mood": "انفجار",
+   "still": [
+    "sheetB",
+    1
+   ]
+  },
+  {
+   "sent": 9,
+   "time": 54.48,
+   "dur": 3.71,
+   "type": "key_action",
+   "mood": "انفجار",
+   "still": [
+    "sheetB",
+    2
+   ]
+  },
+  {
+   "sent": 9,
+   "time": 58.19,
+   "dur": 3.71,
+   "type": "key_action",
+   "mood": "انفجار",
+   "still": [
+    "sheetB",
+    2
+   ]
+  },
+  {
+   "sent": 10,
+   "time": 62.3,
+   "dur": 3.38,
+   "type": "key_action",
+   "mood": "انفجار",
+   "still": [
+    "sheetB",
+    3
+   ]
+  },
+  {
+   "sent": 10,
+   "time": 65.68,
+   "dur": 3.39,
+   "type": "key_action",
+   "mood": "انفجار",
+   "still": [
+    "sheetB",
+    3
+   ]
+  },
+  {
+   "sent": 11,
+   "time": 69.47,
+   "dur": 3.23,
+   "type": "detail",
+   "mood": "رهبة",
+   "still": [
+    "sheetB",
+    4
+   ]
+  },
+  {
+   "sent": 11,
+   "time": 72.7,
+   "dur": 3.23,
+   "type": "detail",
+   "mood": "رهبة",
+   "still": [
+    "sheetB",
+    4
+   ]
+  },
+  {
+   "sent": 12,
+   "time": 76.33,
+   "dur": 2.81,
+   "type": "detail",
+   "mood": "رهبة",
+   "still": [
+    "sheetB",
+    5
+   ]
+  },
+  {
+   "sent": 12,
+   "time": 79.14,
+   "dur": 2.81,
+   "type": "detail",
+   "mood": "رهبة",
+   "still": [
+    "sheetB",
+    5
+   ]
+  },
+  {
+   "sent": 13,
+   "time": 82.35,
+   "dur": 1.87,
+   "type": "reaction",
+   "mood": "انكسار",
+   "still": [
+    "sheetC",
+    0
+   ]
+  },
+  {
+   "sent": 13,
+   "time": 84.22,
+   "dur": 1.87,
+   "type": "reaction",
+   "mood": "انكسار",
+   "still": [
+    "sheetC",
+    0
+   ]
+  },
+  {
+   "sent": 14,
+   "time": 86.49,
+   "dur": 2.6,
+   "type": "reaction",
+   "mood": "انكسار",
+   "still": [
+    "sheetC",
+    1
+   ]
+  },
+  {
+   "sent": 14,
+   "time": 89.09,
+   "dur": 2.61,
+   "type": "reaction",
+   "mood": "انكسار",
+   "still": [
+    "sheetC",
+    1
+   ]
+  },
+  {
+   "sent": 15,
+   "time": 92.1,
+   "dur": 2.31,
+   "type": "reaction",
+   "mood": "انكسار",
+   "still": [
+    "sheetC",
+    2
+   ]
+  },
+  {
+   "sent": 15,
+   "time": 94.41,
+   "dur": 2.3,
+   "type": "reaction",
+   "mood": "انكسار",
+   "still": [
+    "sheetC",
+    2
+   ]
+  },
+  {
+   "sent": 16,
+   "time": 97.11,
+   "dur": 3.69,
+   "type": "reaction",
+   "mood": "انكسار",
+   "still": [
+    "sheetC",
+    3
+   ]
+  },
+  {
+   "sent": 16,
+   "time": 100.8,
+   "dur": 3.68,
+   "type": "reaction",
+   "mood": "انكسار",
+   "still": [
+    "sheetC",
+    3
+   ]
+  },
+  {
+   "sent": 17,
+   "time": 104.88,
+   "dur": 2.93,
+   "type": "reaction",
+   "mood": "انكسار",
+   "still": [
+    "sheetC",
+    4
+   ]
+  },
+  {
+   "sent": 17,
+   "time": 107.81,
+   "dur": 2.93,
+   "type": "reaction",
+   "mood": "انكسار",
+   "still": [
+    "sheetC",
+    4
+   ]
+  },
+  {
+   "sent": 18,
+   "time": 111.14,
+   "dur": 0.67,
+   "type": "reaction",
+   "mood": "انكسار",
+   "still": [
+    "sheetC",
+    5
+   ]
+  },
+  {
+   "sent": 18,
+   "time": 111.81,
+   "dur": 0.67,
+   "type": "reaction",
+   "mood": "انكسار",
+   "still": [
+    "sheetC",
+    5
+   ]
+  }
+ ]
+}

@@ -1,16 +1,101 @@
 {
-  "time": "day1 05:50", "season": "spring", "weather": {"type": "clear"},
-  "characters": {
-    "CH-001": {"location": "LOC-001", "outfit": "OUT-001", "injuries": [],
-               "held": {"right": null, "left": null}, "emotion": "fearful"},
-    "CH-002": {"location": "LOC-004", "outfit": "OUT-002", "injuries": [],
-               "held": {"right": "PROP-002", "left": null}, "emotion": "cold"}
+ "time": "day2 07:30",
+ "season": "spring",
+ "weather": {
+  "type": "clear"
+ },
+ "characters": {
+  "CH-001": {
+   "location": "LOC-004",
+   "outfit": "OUT-001",
+   "injuries": [],
+   "held": {
+    "right": null,
+    "left": null
+   },
+   "emotion": "defiant"
   },
-  "props": {
-    "PROP-001": {"holder": null, "location": "LOC-003", "condition": "new"},
-    "PROP-002": {"holder": "CH-002", "location": "LOC-004", "condition": "sharp"}
+  "CH-002": {
+   "location": "LOC-004",
+   "outfit": "OUT-002",
+   "injuries": [],
+   "held": {
+    "right": "PROP-002",
+    "left": null
+   },
+   "emotion": "resolved"
+  }
+ },
+ "props": {
+  "PROP-001": {
+   "holder": null,
+   "location": "LOC-003",
+   "condition": "shattered"
   },
-  "events": [], "changelog": [],
-  "knowledge": {"reader": [], "CH-001": [], "CH-002": []},
-  "threads": ["blue fire awakening", "mother hostage", "eclipse night"]
+  "PROP-002": {
+   "holder": "CH-002",
+   "location": "LOC-004",
+   "condition": "sharp"
+  }
+ },
+ "events": [
+  {
+   "id": "EVT-001",
+   "time": "day1 21:00",
+   "location": "LOC-002",
+   "actors": [
+    "CH-001"
+   ],
+   "action": "blue fire awakening",
+   "consequences": [
+    "arrest",
+    "power revealed"
+   ]
+  },
+  {
+   "id": "EVT-002",
+   "time": "day2 05:30",
+   "location": "LOC-003",
+   "actors": [
+    "CH-001"
+   ],
+   "action": "cell destroyed by the word",
+   "consequences": [
+    "escape",
+    "shackles shattered"
+   ]
+  },
+  {
+   "id": "EVT-003",
+   "time": "day2 07:12",
+   "location": "LOC-004",
+   "actors": [
+    "CH-001",
+    "CH-002"
+   ],
+   "action": "siblings reunion",
+   "consequences": [
+    "sword dropped",
+    "mother hostage revealed",
+    "fire bridge"
+   ]
+  }
+ ],
+ "changelog": [
+  {
+   "scene": 18,
+   "at": "day2 07:30",
+   "summary": "ep1 approved: 18 panels generated+verified, 18 VO done"
+  }
+ ],
+ "knowledge": {
+  "reader": [],
+  "CH-001": [],
+  "CH-002": []
+ },
+ "threads": [
+  "blue fire awakening",
+  "mother hostage",
+  "eclipse night"
+ ]
 }
