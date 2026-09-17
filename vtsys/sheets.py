@@ -9,6 +9,44 @@ import subprocess
 
 SIXTHS = [(c / 3.0, r / 2.0, 1 / 3.0, 1 / 2.0) for r in range(2) for c in range(3)]
 
+# §4.12 FILM MODE — كل بانل يُقصّ لـ 6 قصّات سينمائية 16:9 (فريم بفريم كالفيلم):
+# كل معنى (مقطع بين …) = لقطة بقصّة مختلفة وحركتها الخاصة. القطع كل ~2 ثانية.
+FILM_SUBS = {
+    "wide": "crop=iw:iw*9/16:x=(iw-ow)/2:y=(ih-oh)/2",
+    "left": "crop=iw*0.66:iw*0.66*9/16:x=0:y=(ih-oh)/2",
+    "right": "crop=iw*0.66:iw*0.66*9/16:x=iw-ow:y=(ih-oh)/2",
+    "punch": "crop=iw*0.54:iw*0.54*9/16:x=(iw-ow)/2:y=(ih-oh)*0.38",
+    "top": "crop=iw*0.72:iw*0.72*9/16:x=(iw-ow)/2:y=0",
+    "low": "crop=iw*0.72:iw*0.72*9/16:x=(iw-ow)/2:y=ih-oh",
+}
+SUB_ORDER = ["wide", "left", "right", "punch", "top", "low"]
+
+
+def extract_film_subs(ff, region_path, outdir, prefix):
+    """قصّ بانل واحد إلى 6 لقطات سينمائية 16:9. يعيد {sub_name: path}."""
+    import os
+    import subprocess
+    os.makedirs(outdir, exist_ok=True)
+    out = {}
+    for name in SUB_ORDER:
+        o = os.path.join(outdir, "%s_%s.jpg" % (prefix, name))
+        subprocess.run([ff, "-hide_banner", "-loglevel", "error", "-y",
+                        "-i", region_path, "-vf", FILM_SUBS[name], "-q:v", "2", o],
+                       check=True, capture_output=True)
+        out[name] = o
+    return out
+
+
+def audit_shots(stills):
+    """كل لقطة ملف فريد عالمياً — أي تكرار بلا غرض يرفض الرندر."""
+    seen = {}
+    for i, p in enumerate(stills):
+        if p in seen:
+            raise SystemExit("NO-REPEAT VIOLATION: shots %d and %d share %s"
+                             % (seen[p], i, p))
+        seen[p] = i
+    return True
+
 
 def extract_sixths(ff, sheet, outdir, prefix, inset=0.012):
     os.makedirs(outdir, exist_ok=True)

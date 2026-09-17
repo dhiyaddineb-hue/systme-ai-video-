@@ -4,453 +4,814 @@
  "shots": [
   {
    "sent": 1,
+   "seg": "النهارده",
+   "sub": "wide",
    "time": 0.0,
-   "dur": 2.08,
+   "dur": 0.84,
    "type": "establishing",
    "mood": "تشويق",
    "still": [
     "sheetA",
-    0
+    0,
+    "wide"
    ]
   },
   {
    "sent": 1,
-   "time": 2.08,
-   "dur": 2.08,
-   "type": "establishing",
+   "seg": "في مملكة الرماد",
+   "sub": "left",
+   "time": 0.84,
+   "dur": 1.71,
+   "type": "detail",
    "mood": "تشويق",
    "still": [
     "sheetA",
-    0
+    0,
+    "left"
    ]
   },
   {
    "sent": 1,
-   "time": 4.16,
-   "dur": 2.08,
-   "type": "establishing",
+   "seg": "آخر ساحرة كان المفروض",
+   "sub": "right",
+   "time": 2.55,
+   "dur": 2.13,
+   "type": "reaction",
    "mood": "تشويق",
    "still": [
     "sheetA",
-    0
+    0,
+    "right"
    ]
   },
   {
    "sent": 1,
-   "time": 6.24,
-   "dur": 2.06,
-   "type": "establishing",
+   "seg": "تموت من عشر سنين",
+   "sub": "top",
+   "time": 4.68,
+   "dur": 2.14,
+   "type": "detail",
    "mood": "تشويق",
    "still": [
     "sheetA",
-    0
+    0,
+    "top"
+   ]
+  },
+  {
+   "sent": 1,
+   "seg": "ظهرت من جديد.",
+   "sub": "punch",
+   "time": 6.82,
+   "dur": 1.48,
+   "type": "reaction",
+   "mood": "تشويق",
+   "still": [
+    "sheetA",
+    0,
+    "punch"
    ]
   },
   {
    "sent": 2,
+   "seg": "إزاي؟",
+   "sub": "punch",
    "time": 8.7,
-   "dur": 0.67,
+   "dur": 1.34,
    "type": "reaction",
    "mood": "توتر",
    "still": [
     "sheetA",
-    1
-   ]
-  },
-  {
-   "sent": 2,
-   "time": 9.37,
-   "dur": 0.67,
-   "type": "reaction",
-   "mood": "توتر",
-   "still": [
-    "sheetA",
-    1
+    1,
+    "punch"
    ]
   },
   {
    "sent": 3,
+   "seg": "اسمها سلمى",
+   "sub": "wide",
    "time": 10.44,
-   "dur": 2.45,
+   "dur": 1.25,
    "type": "establishing",
    "mood": "دفء",
    "still": [
     "sheetA",
-    2
+    2,
+    "wide"
    ]
   },
   {
    "sent": 3,
-   "time": 12.89,
-   "dur": 2.45,
-   "type": "establishing",
+   "seg": "تسعتاشر سنة",
+   "sub": "left",
+   "time": 11.69,
+   "dur": 1.33,
+   "type": "detail",
    "mood": "دفء",
    "still": [
     "sheetA",
-    2
+    2,
+    "left"
    ]
   },
   {
    "sent": 3,
-   "time": 15.34,
-   "dur": 2.44,
-   "type": "establishing",
+   "seg": "بتشتغل خدامة في قصر",
+   "sub": "right",
+   "time": 13.02,
+   "dur": 2.38,
+   "type": "reaction",
    "mood": "دفء",
    "still": [
     "sheetA",
-    2
+    2,
+    "right"
+   ]
+  },
+  {
+   "sent": 3,
+   "seg": "الملك اللي قتل أبوها.",
+   "sub": "punch",
+   "time": 15.4,
+   "dur": 2.38,
+   "type": "reaction",
+   "mood": "دفء",
+   "still": [
+    "sheetA",
+    2,
+    "punch"
    ]
   },
   {
    "sent": 4,
+   "seg": "وعايشة متنكرة",
+   "sub": "wide",
    "time": 18.18,
-   "dur": 3.61,
+   "dur": 1.76,
    "type": "establishing",
    "mood": "دفء",
    "still": [
     "sheetA",
-    3
+    3,
+    "wide"
    ]
   },
   {
    "sent": 4,
-   "time": 21.79,
-   "dur": 3.61,
-   "type": "establishing",
+   "seg": "بشعر مقصوص",
+   "sub": "left",
+   "time": 19.94,
+   "dur": 1.52,
+   "type": "detail",
    "mood": "دفء",
    "still": [
     "sheetA",
-    3
+    3,
+    "left"
+   ]
+  },
+  {
+   "sent": 4,
+   "seg": "ووش متغطي بالسخام",
+   "sub": "right",
+   "time": 21.46,
+   "dur": 2.27,
+   "type": "reaction",
+   "mood": "دفء",
+   "still": [
+    "sheetA",
+    3,
+    "right"
+   ]
+  },
+  {
+   "sent": 4,
+   "seg": "ومحدش يعرفها.",
+   "sub": "punch",
+   "time": 23.73,
+   "dur": 1.67,
+   "type": "reaction",
+   "mood": "دفء",
+   "still": [
+    "sheetA",
+    3,
+    "punch"
    ]
   },
   {
    "sent": 5,
+   "seg": "لحد ما ليلة الكسوف",
+   "sub": "wide",
    "time": 25.8,
-   "dur": 2.87,
-   "type": "detail",
+   "dur": 2.8,
+   "type": "establishing",
    "mood": "تشويق",
    "still": [
     "sheetA",
-    4
+    4,
+    "wide"
    ]
   },
   {
    "sent": 5,
-   "time": 28.67,
-   "dur": 2.87,
+   "seg": "نار زرقا",
+   "sub": "left",
+   "time": 28.6,
+   "dur": 1.46,
    "type": "detail",
    "mood": "تشويق",
    "still": [
     "sheetA",
-    4
+    4,
+    "left"
    ]
   },
   {
    "sent": 5,
-   "time": 31.54,
-   "dur": 2.88,
-   "type": "detail",
+   "seg": "ولّعت في إيديها",
+   "sub": "right",
+   "time": 30.06,
+   "dur": 2.19,
+   "type": "reaction",
    "mood": "تشويق",
    "still": [
     "sheetA",
-    4
+    4,
+    "right"
+   ]
+  },
+  {
+   "sent": 5,
+   "seg": "قدام الحرس كله.",
+   "sub": "punch",
+   "time": 32.25,
+   "dur": 2.17,
+   "type": "reaction",
+   "mood": "تشويق",
+   "still": [
+    "sheetA",
+    4,
+    "punch"
    ]
   },
   {
    "sent": 6,
+   "seg": "واتقبض عليها",
+   "sub": "wide",
    "time": 34.82,
-   "dur": 2.45,
-   "type": "key_action",
+   "dur": 1.44,
+   "type": "establishing",
    "mood": "رهبة",
    "still": [
     "sheetA",
-    5
+    5,
+    "wide"
    ]
   },
   {
    "sent": 6,
-   "time": 37.27,
-   "dur": 2.45,
+   "seg": "واتحكم عليها بالحرق",
+   "sub": "left",
+   "time": 36.26,
+   "dur": 2.2,
+   "type": "detail",
+   "mood": "رهبة",
+   "still": [
+    "sheetA",
+    5,
+    "left"
+   ]
+  },
+  {
+   "sent": 6,
+   "seg": "فجر الجمعة.",
+   "sub": "punch",
+   "time": 38.46,
+   "dur": 1.26,
    "type": "key_action",
    "mood": "رهبة",
    "still": [
     "sheetA",
-    5
+    5,
+    "punch"
    ]
   },
   {
    "sent": 7,
+   "seg": "بس في الزنزانة",
+   "sub": "wide",
    "time": 40.12,
-   "dur": 2.65,
-   "type": "detail",
+   "dur": 1.99,
+   "type": "establishing",
    "mood": "تشويق",
    "still": [
     "sheetB",
-    0
+    0,
+    "wide"
    ]
   },
   {
    "sent": 7,
-   "time": 42.77,
-   "dur": 2.65,
+   "seg": "عجوز غريبة همست",
+   "sub": "left",
+   "time": 42.11,
+   "dur": 1.94,
    "type": "detail",
    "mood": "تشويق",
    "still": [
     "sheetB",
-    0
+    0,
+    "left"
    ]
   },
   {
    "sent": 7,
-   "time": 45.42,
-   "dur": 2.64,
-   "type": "detail",
+   "seg": "لها: نارك مش لعنة",
+   "sub": "right",
+   "time": 44.05,
+   "dur": 2.58,
+   "type": "reaction",
    "mood": "تشويق",
    "still": [
     "sheetB",
-    0
+    0,
+    "right"
+   ]
+  },
+  {
+   "sent": 7,
+   "seg": "دي الوراثة.",
+   "sub": "punch",
+   "time": 46.63,
+   "dur": 1.43,
+   "type": "reaction",
+   "mood": "تشويق",
+   "still": [
+    "sheetB",
+    0,
+    "punch"
    ]
   },
   {
    "sent": 8,
+   "seg": "وعلمتها في ليلة واحدة",
+   "sub": "wide",
    "time": 48.46,
-   "dur": 2.81,
-   "type": "key_action",
+   "dur": 2.59,
+   "type": "establishing",
    "mood": "انفجار",
    "still": [
     "sheetB",
-    1
+    1,
+    "wide"
    ]
   },
   {
    "sent": 8,
-   "time": 51.27,
-   "dur": 2.81,
+   "seg": "الكلمة اللي",
+   "sub": "left",
+   "time": 51.05,
+   "dur": 1.51,
+   "type": "detail",
+   "mood": "انفجار",
+   "still": [
+    "sheetB",
+    1,
+    "left"
+   ]
+  },
+  {
+   "sent": 8,
+   "seg": "بتفتح البوابات.",
+   "sub": "punch",
+   "time": 52.56,
+   "dur": 1.52,
    "type": "key_action",
    "mood": "انفجار",
    "still": [
     "sheetB",
-    1
+    1,
+    "punch"
    ]
   },
   {
    "sent": 9,
+   "seg": "ومع أول شعاع فجر",
+   "sub": "wide",
    "time": 54.48,
-   "dur": 3.71,
-   "type": "key_action",
+   "dur": 2.6,
+   "type": "establishing",
    "mood": "انفجار",
    "still": [
     "sheetB",
-    2
+    2,
+    "wide"
    ]
   },
   {
    "sent": 9,
-   "time": 58.19,
-   "dur": 3.71,
+   "seg": "سلمى قالت الكلمة",
+   "sub": "left",
+   "time": 57.08,
+   "dur": 2.47,
+   "type": "detail",
+   "mood": "انفجار",
+   "still": [
+    "sheetB",
+    2,
+    "left"
+   ]
+  },
+  {
+   "sent": 9,
+   "seg": "والزنزانة انفجرت.",
+   "sub": "punch",
+   "time": 59.55,
+   "dur": 2.35,
    "type": "key_action",
    "mood": "انفجار",
    "still": [
     "sheetB",
-    2
+    2,
+    "punch"
    ]
   },
   {
    "sent": 10,
+   "seg": "وخرجت من النار الزرقا",
+   "sub": "wide",
    "time": 62.3,
-   "dur": 3.38,
-   "type": "key_action",
+   "dur": 2.67,
+   "type": "establishing",
    "mood": "انفجار",
    "still": [
     "sheetB",
-    3
+    3,
+    "wide"
    ]
   },
   {
    "sent": 10,
-   "time": 65.68,
-   "dur": 3.39,
+   "seg": "ماشية وسط الحرس",
+   "sub": "left",
+   "time": 64.97,
+   "dur": 1.95,
+   "type": "detail",
+   "mood": "انفجار",
+   "still": [
+    "sheetB",
+    3,
+    "left"
+   ]
+  },
+  {
+   "sent": 10,
+   "seg": "ومحدش قادر يلمسها.",
+   "sub": "punch",
+   "time": 66.92,
+   "dur": 2.15,
    "type": "key_action",
    "mood": "انفجار",
    "still": [
     "sheetB",
-    3
+    3,
+    "punch"
    ]
   },
   {
    "sent": 11,
+   "seg": "والملك؟",
+   "sub": "wide",
    "time": 69.47,
-   "dur": 3.23,
-   "type": "detail",
+   "dur": 0.87,
+   "type": "establishing",
    "mood": "رهبة",
    "still": [
     "sheetB",
-    4
+    4,
+    "wide"
    ]
   },
   {
    "sent": 11,
-   "time": 72.7,
-   "dur": 3.23,
+   "seg": "بعت وراها",
+   "sub": "left",
+   "time": 70.34,
+   "dur": 1.53,
    "type": "detail",
    "mood": "رهبة",
    "still": [
     "sheetB",
-    4
+    4,
+    "left"
+   ]
+  },
+  {
+   "sent": 11,
+   "seg": "فرقة الصيادين",
+   "sub": "right",
+   "time": 71.87,
+   "dur": 1.54,
+   "type": "reaction",
+   "mood": "رهبة",
+   "still": [
+    "sheetB",
+    4,
+    "right"
+   ]
+  },
+  {
+   "sent": 11,
+   "seg": "اللي مبيفشلوش أبداً.",
+   "sub": "punch",
+   "time": 73.41,
+   "dur": 2.52,
+   "type": "key_action",
+   "mood": "رهبة",
+   "still": [
+    "sheetB",
+    4,
+    "punch"
    ]
   },
   {
    "sent": 12,
+   "seg": "وقائدهم",
+   "sub": "wide",
    "time": 76.33,
-   "dur": 2.81,
-   "type": "detail",
+   "dur": 0.83,
+   "type": "establishing",
    "mood": "رهبة",
    "still": [
     "sheetB",
-    5
+    5,
+    "wide"
    ]
   },
   {
    "sent": 12,
-   "time": 79.14,
-   "dur": 2.81,
+   "seg": "أخوها الكبير",
+   "sub": "left",
+   "time": 77.16,
+   "dur": 1.4,
    "type": "detail",
    "mood": "رهبة",
    "still": [
     "sheetB",
-    5
+    5,
+    "left"
+   ]
+  },
+  {
+   "sent": 12,
+   "seg": "اللي فاكرها ميتة",
+   "sub": "right",
+   "time": 78.56,
+   "dur": 1.7,
+   "type": "reaction",
+   "mood": "رهبة",
+   "still": [
+    "sheetB",
+    5,
+    "right"
+   ]
+  },
+  {
+   "sent": 12,
+   "seg": "من عشر سنين.",
+   "sub": "punch",
+   "time": 80.26,
+   "dur": 1.69,
+   "type": "key_action",
+   "mood": "رهبة",
+   "still": [
+    "sheetB",
+    5,
+    "punch"
    ]
   },
   {
    "sent": 13,
+   "seg": "ولما شافها",
+   "sub": "wide",
    "time": 82.35,
-   "dur": 1.87,
-   "type": "reaction",
+   "dur": 1.38,
+   "type": "establishing",
    "mood": "انكسار",
    "still": [
     "sheetC",
-    0
+    0,
+    "wide"
    ]
   },
   {
    "sent": 13,
-   "time": 84.22,
-   "dur": 1.87,
-   "type": "reaction",
+   "seg": "السيف وقع من إيده",
+   "sub": "punch",
+   "time": 83.73,
+   "dur": 2.36,
+   "type": "key_action",
    "mood": "انكسار",
    "still": [
     "sheetC",
-    0
+    0,
+    "punch"
    ]
   },
   {
    "sent": 14,
+   "seg": "وسلمى؟",
+   "sub": "wide",
    "time": 86.49,
-   "dur": 2.6,
-   "type": "reaction",
+   "dur": 0.89,
+   "type": "establishing",
    "mood": "انكسار",
    "still": [
     "sheetC",
-    1
+    1,
+    "wide"
    ]
   },
   {
    "sent": 14,
-   "time": 89.09,
-   "dur": 2.61,
-   "type": "reaction",
+   "seg": "بصت له وقالت:",
+   "sub": "left",
+   "time": 87.38,
+   "dur": 2.16,
+   "type": "detail",
    "mood": "انكسار",
    "still": [
     "sheetC",
-    1
+    1,
+    "left"
+   ]
+  },
+  {
+   "sent": 14,
+   "seg": "وحشتني يا حسن.",
+   "sub": "punch",
+   "time": 89.54,
+   "dur": 2.16,
+   "type": "key_action",
+   "mood": "انكسار",
+   "still": [
+    "sheetC",
+    1,
+    "punch"
    ]
   },
   {
    "sent": 15,
+   "seg": "بس حسن؟",
+   "sub": "wide",
    "time": 92.1,
-   "dur": 2.31,
-   "type": "reaction",
+   "dur": 1.03,
+   "type": "establishing",
    "mood": "انكسار",
    "still": [
     "sheetC",
-    2
+    2,
+    "wide"
    ]
   },
   {
    "sent": 15,
-   "time": 94.41,
-   "dur": 2.3,
-   "type": "reaction",
+   "seg": "رفع السيف تاني",
+   "sub": "left",
+   "time": 93.13,
+   "dur": 2.02,
+   "type": "detail",
    "mood": "انكسار",
    "still": [
     "sheetC",
-    2
+    2,
+    "left"
+   ]
+  },
+  {
+   "sent": 15,
+   "seg": "وعينه بتدمع.",
+   "sub": "punch",
+   "time": 95.15,
+   "dur": 1.56,
+   "type": "key_action",
+   "mood": "انكسار",
+   "still": [
+    "sheetC",
+    2,
+    "punch"
    ]
   },
   {
    "sent": 16,
+   "seg": "وقال لها:",
+   "sub": "wide",
    "time": 97.11,
-   "dur": 3.69,
-   "type": "reaction",
+   "dur": 1.5,
+   "type": "establishing",
    "mood": "انكسار",
    "still": [
     "sheetC",
-    3
+    3,
+    "wide"
    ]
   },
   {
    "sent": 16,
-   "time": 100.8,
-   "dur": 3.68,
+   "seg": "الملك خطف أمنا",
+   "sub": "left",
+   "time": 98.61,
+   "dur": 2.24,
+   "type": "detail",
+   "mood": "انكسار",
+   "still": [
+    "sheetC",
+    3,
+    "left"
+   ]
+  },
+  {
+   "sent": 16,
+   "seg": "ولو سبتك",
+   "sub": "right",
+   "time": 100.85,
+   "dur": 1.37,
    "type": "reaction",
    "mood": "انكسار",
    "still": [
     "sheetC",
-    3
+    3,
+    "right"
+   ]
+  },
+  {
+   "sent": 16,
+   "seg": "هتدفع هي التمن.",
+   "sub": "punch",
+   "time": 102.22,
+   "dur": 2.26,
+   "type": "key_action",
+   "mood": "انكسار",
+   "still": [
+    "sheetC",
+    3,
+    "punch"
    ]
   },
   {
    "sent": 17,
+   "seg": "وسلمى مدت إيديها",
+   "sub": "wide",
    "time": 104.88,
-   "dur": 2.93,
-   "type": "reaction",
+   "dur": 2.21,
+   "type": "establishing",
    "mood": "انكسار",
    "still": [
     "sheetC",
-    4
+    4,
+    "wide"
    ]
   },
   {
    "sent": 17,
-   "time": 107.81,
-   "dur": 2.93,
-   "type": "reaction",
+   "seg": "والنار الزرقا",
+   "sub": "left",
+   "time": 107.09,
+   "dur": 1.46,
+   "type": "detail",
    "mood": "انكسار",
    "still": [
     "sheetC",
-    4
+    4,
+    "left"
+   ]
+  },
+  {
+   "sent": 17,
+   "seg": "بقت جسر بينهم",
+   "sub": "punch",
+   "time": 108.55,
+   "dur": 2.19,
+   "type": "key_action",
+   "mood": "انكسار",
+   "still": [
+    "sheetC",
+    4,
+    "punch"
    ]
   },
   {
    "sent": 18,
+   "seg": "يتبع.",
+   "sub": "punch",
    "time": 111.14,
-   "dur": 0.67,
+   "dur": 1.34,
    "type": "reaction",
    "mood": "انكسار",
    "still": [
     "sheetC",
-    5
-   ]
-  },
-  {
-   "sent": 18,
-   "time": 111.81,
-   "dur": 0.67,
-   "type": "reaction",
-   "mood": "انكسار",
-   "still": [
-    "sheetC",
-    5
+    5,
+    "punch"
    ]
   }
  ]

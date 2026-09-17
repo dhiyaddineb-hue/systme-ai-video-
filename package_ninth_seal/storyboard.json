@@ -4,332 +4,534 @@
  "shots": [
   {
    "sent": 1,
+   "seg": "النهارده",
+   "sub": "wide",
    "time": 0.0,
-   "dur": 2.7,
+   "dur": 0.86,
    "type": "establishing",
    "mood": "تشويق",
    "still": [
     "sheetA",
-    0
+    0,
+    "wide"
    ]
   },
   {
    "sent": 1,
-   "time": 2.7,
-   "dur": 2.7,
-   "type": "establishing",
+   "seg": "في مدينة الأبراج السبعة",
+   "sub": "left",
+   "time": 0.86,
+   "dur": 2.53,
+   "type": "detail",
    "mood": "تشويق",
    "still": [
     "sheetA",
-    0
+    0,
+    "left"
    ]
   },
   {
    "sent": 1,
-   "time": 5.4,
-   "dur": 2.69,
-   "type": "establishing",
+   "seg": "أجبن خادم في النقابة",
+   "sub": "right",
+   "time": 3.39,
+   "dur": 2.31,
+   "type": "reaction",
    "mood": "تشويق",
    "still": [
     "sheetA",
-    0
+    0,
+    "right"
+   ]
+  },
+  {
+   "sent": 1,
+   "seg": "بقى صاحب الختم التاسع.",
+   "sub": "punch",
+   "time": 5.7,
+   "dur": 2.39,
+   "type": "reaction",
+   "mood": "تشويق",
+   "still": [
+    "sheetA",
+    0,
+    "punch"
    ]
   },
   {
    "sent": 2,
+   "seg": "إزاي؟",
+   "sub": "punch",
    "time": 8.49,
-   "dur": 0.67,
+   "dur": 1.34,
    "type": "reaction",
    "mood": "توتر",
    "still": [
     "sheetA",
-    1
-   ]
-  },
-  {
-   "sent": 2,
-   "time": 9.16,
-   "dur": 0.67,
-   "type": "reaction",
-   "mood": "توتر",
-   "still": [
-    "sheetA",
-    1
+    1,
+    "punch"
    ]
   },
   {
    "sent": 3,
+   "seg": "اسمه ريّان",
+   "sub": "wide",
    "time": 10.23,
-   "dur": 3.17,
+   "dur": 1.33,
    "type": "establishing",
    "mood": "دفء",
    "still": [
     "sheetA",
-    2
+    2,
+    "wide"
    ]
   },
   {
    "sent": 3,
-   "time": 13.4,
-   "dur": 3.17,
-   "type": "establishing",
+   "seg": "ستاشر سنة",
+   "sub": "left",
+   "time": 11.56,
+   "dur": 1.23,
+   "type": "detail",
    "mood": "دفء",
    "still": [
     "sheetA",
-    2
+    2,
+    "left"
+   ]
+  },
+  {
+   "sent": 3,
+   "seg": "بيمسح بلاط النقابة",
+   "sub": "right",
+   "time": 12.79,
+   "dur": 1.89,
+   "type": "reaction",
+   "mood": "دفء",
+   "still": [
+    "sheetA",
+    2,
+    "right"
+   ]
+  },
+  {
+   "sent": 3,
+   "seg": "من وهو عيّل.",
+   "sub": "punch",
+   "time": 14.68,
+   "dur": 1.89,
+   "type": "reaction",
+   "mood": "دفء",
+   "still": [
+    "sheetA",
+    2,
+    "punch"
    ]
   },
   {
    "sent": 4,
+   "seg": "ويوم عيد الأختام",
+   "sub": "wide",
    "time": 16.97,
-   "dur": 2.34,
+   "dur": 1.75,
    "type": "establishing",
    "mood": "دفء",
    "still": [
     "sheetA",
-    3
+    3,
+    "wide"
    ]
   },
   {
    "sent": 4,
-   "time": 19.31,
-   "dur": 2.34,
-   "type": "establishing",
+   "seg": "الكبار كانوا بيوزعوا القوة",
+   "sub": "left",
+   "time": 18.72,
+   "dur": 2.65,
+   "type": "detail",
    "mood": "دفء",
    "still": [
     "sheetA",
-    3
+    3,
+    "left"
    ]
   },
   {
    "sent": 4,
-   "time": 21.65,
-   "dur": 2.33,
-   "type": "establishing",
+   "seg": "وهو بيتفرج من ورا الباب.",
+   "sub": "punch",
+   "time": 21.37,
+   "dur": 2.61,
+   "type": "reaction",
    "mood": "دفء",
    "still": [
     "sheetA",
-    3
+    3,
+    "punch"
    ]
   },
   {
    "sent": 5,
+   "seg": "لحد ما الختم التاسع",
+   "sub": "wide",
    "time": 24.38,
-   "dur": 2.1,
-   "type": "detail",
+   "dur": 2.22,
+   "type": "establishing",
    "mood": "تشويق",
    "still": [
     "sheetA",
-    4
+    4,
+    "wide"
    ]
   },
   {
    "sent": 5,
-   "time": 26.48,
-   "dur": 2.1,
+   "seg": "الملعون اللي حرق",
+   "sub": "left",
+   "time": 26.6,
+   "dur": 1.66,
    "type": "detail",
    "mood": "تشويق",
    "still": [
     "sheetA",
-    4
+    4,
+    "left"
    ]
   },
   {
    "sent": 5,
-   "time": 28.58,
-   "dur": 2.1,
-   "type": "detail",
+   "seg": "كل اللي لمسه",
+   "sub": "right",
+   "time": 28.26,
+   "dur": 1.65,
+   "type": "reaction",
    "mood": "تشويق",
    "still": [
     "sheetA",
-    4
+    4,
+    "right"
    ]
   },
   {
    "sent": 5,
-   "time": 30.68,
-   "dur": 2.08,
+   "seg": "طار من الصندوق",
+   "sub": "top",
+   "time": 29.91,
+   "dur": 1.66,
    "type": "detail",
    "mood": "تشويق",
    "still": [
     "sheetA",
-    4
+    4,
+    "top"
+   ]
+  },
+  {
+   "sent": 5,
+   "seg": "ووقع قدامه.",
+   "sub": "punch",
+   "time": 31.57,
+   "dur": 1.19,
+   "type": "reaction",
+   "mood": "تشويق",
+   "still": [
+    "sheetA",
+    4,
+    "punch"
    ]
   },
   {
    "sent": 6,
+   "seg": "ومدّ إيده",
+   "sub": "wide",
    "time": 33.16,
-   "dur": 1.51,
-   "type": "detail",
+   "dur": 1.9,
+   "type": "establishing",
    "mood": "تشويق",
    "still": [
     "sheetA",
-    5
+    5,
+    "wide"
    ]
   },
   {
    "sent": 6,
-   "time": 34.67,
-   "dur": 1.51,
-   "type": "detail",
+   "seg": "ومسكه.",
+   "sub": "punch",
+   "time": 35.06,
+   "dur": 1.12,
+   "type": "reaction",
    "mood": "تشويق",
    "still": [
     "sheetA",
-    5
+    5,
+    "punch"
    ]
   },
   {
    "sent": 7,
+   "seg": "النار",
+   "sub": "wide",
    "time": 36.58,
-   "dur": 3.19,
-   "type": "key_action",
+   "dur": 1.02,
+   "type": "establishing",
    "mood": "رهبة",
    "still": [
     "sheetB",
-    0
+    0,
+    "wide"
    ]
   },
   {
    "sent": 7,
-   "time": 39.77,
-   "dur": 3.19,
+   "seg": "السودة بلعته",
+   "sub": "left",
+   "time": 37.6,
+   "dur": 2.04,
+   "type": "detail",
+   "mood": "رهبة",
+   "still": [
+    "sheetB",
+    0,
+    "left"
+   ]
+  },
+  {
+   "sent": 7,
+   "seg": "والكل صرخ: خلاص",
+   "sub": "right",
+   "time": 39.64,
+   "dur": 2.63,
+   "type": "reaction",
+   "mood": "رهبة",
+   "still": [
+    "sheetB",
+    0,
+    "right"
+   ]
+  },
+  {
+   "sent": 7,
+   "seg": "مات.",
+   "sub": "punch",
+   "time": 42.27,
+   "dur": 0.69,
    "type": "key_action",
    "mood": "رهبة",
    "still": [
     "sheetB",
-    0
+    0,
+    "punch"
    ]
   },
   {
    "sent": 8,
+   "seg": "بس الصبح",
+   "sub": "wide",
    "time": 43.36,
-   "dur": 2.38,
-   "type": "key_action",
+   "dur": 1.2,
+   "type": "establishing",
    "mood": "انفجار",
    "still": [
     "sheetB",
-    1
+    1,
+    "wide"
    ]
   },
   {
    "sent": 8,
-   "time": 45.74,
-   "dur": 2.38,
-   "type": "key_action",
+   "seg": "ريّان خرج من الرماد",
+   "sub": "left",
+   "time": 44.56,
+   "dur": 2.6,
+   "type": "detail",
    "mood": "انفجار",
    "still": [
     "sheetB",
-    1
+    1,
+    "left"
    ]
   },
   {
    "sent": 8,
-   "time": 48.12,
-   "dur": 2.37,
+   "seg": "وعلى كتفه",
+   "sub": "right",
+   "time": 47.16,
+   "dur": 1.33,
+   "type": "reaction",
+   "mood": "انفجار",
+   "still": [
+    "sheetB",
+    1,
+    "right"
+   ]
+  },
+  {
+   "sent": 8,
+   "seg": "وشم تنين بيتحرك.",
+   "sub": "punch",
+   "time": 48.49,
+   "dur": 2.0,
    "type": "key_action",
    "mood": "انفجار",
    "still": [
     "sheetB",
-    1
+    1,
+    "punch"
    ]
   },
   {
    "sent": 9,
+   "seg": "وأول ما غضب",
+   "sub": "wide",
    "time": 50.89,
-   "dur": 3.11,
-   "type": "key_action",
+   "dur": 1.8,
+   "type": "establishing",
    "mood": "انفجار",
    "still": [
     "sheetB",
-    2
+    2,
+    "wide"
    ]
   },
   {
    "sent": 9,
-   "time": 54.0,
-   "dur": 3.11,
+   "seg": "البرج الأول",
+   "sub": "left",
+   "time": 52.69,
+   "dur": 1.66,
+   "type": "detail",
+   "mood": "انفجار",
+   "still": [
+    "sheetB",
+    2,
+    "left"
+   ]
+  },
+  {
+   "sent": 9,
+   "seg": "اتشق من فوقه لتحته.",
+   "sub": "punch",
+   "time": 54.35,
+   "dur": 2.76,
    "type": "key_action",
    "mood": "انفجار",
    "still": [
     "sheetB",
-    2
+    2,
+    "punch"
    ]
   },
   {
    "sent": 10,
+   "seg": "والنقابة؟",
+   "sub": "punch",
    "time": 57.51,
-   "dur": 0.71,
+   "dur": 1.42,
    "type": "reaction",
    "mood": "توتر",
    "still": [
     "sheetB",
-    3
-   ]
-  },
-  {
-   "sent": 10,
-   "time": 58.22,
-   "dur": 0.71,
-   "type": "reaction",
-   "mood": "توتر",
-   "still": [
-    "sheetB",
-    3
+    3,
+    "punch"
    ]
   },
   {
    "sent": 11,
+   "seg": "اجتمعت في نفس الليلة",
+   "sub": "wide",
    "time": 59.33,
-   "dur": 2.94,
-   "type": "detail",
+   "dur": 2.87,
+   "type": "establishing",
    "mood": "رهبة",
    "still": [
     "sheetB",
-    4
+    4,
+    "wide"
    ]
   },
   {
    "sent": 11,
-   "time": 62.27,
-   "dur": 2.94,
+   "seg": "وقررت: الولد ده لازم",
+   "sub": "left",
+   "time": 62.2,
+   "dur": 2.97,
    "type": "detail",
    "mood": "رهبة",
    "still": [
     "sheetB",
-    4
+    4,
+    "left"
    ]
   },
   {
    "sent": 11,
-   "time": 65.21,
-   "dur": 2.93,
-   "type": "detail",
+   "seg": "يختفي قبل اكتمال القمر.",
+   "sub": "punch",
+   "time": 65.17,
+   "dur": 2.97,
+   "type": "key_action",
    "mood": "رهبة",
    "still": [
     "sheetB",
-    4
+    4,
+    "punch"
    ]
   },
   {
    "sent": 12,
+   "seg": "وريّان؟",
+   "sub": "wide",
    "time": 68.54,
-   "dur": 3.25,
-   "type": "reaction",
+   "dur": 1.07,
+   "type": "establishing",
    "mood": "انكسار",
    "still": [
     "sheetB",
-    5
+    5,
+    "wide"
    ]
   },
   {
    "sent": 12,
-   "time": 71.79,
-   "dur": 3.25,
+   "seg": "كان واقف",
+   "sub": "left",
+   "time": 69.61,
+   "dur": 1.59,
+   "type": "detail",
+   "mood": "انكسار",
+   "still": [
+    "sheetB",
+    5,
+    "left"
+   ]
+  },
+  {
+   "sent": 12,
+   "seg": "ورا الشباك",
+   "sub": "right",
+   "time": 71.2,
+   "dur": 1.6,
    "type": "reaction",
    "mood": "انكسار",
    "still": [
     "sheetB",
-    5
+    5,
+    "right"
+   ]
+  },
+  {
+   "sent": 12,
+   "seg": "وسامع كل حاجة.",
+   "sub": "punch",
+   "time": 72.8,
+   "dur": 2.24,
+   "type": "key_action",
+   "mood": "انكسار",
+   "still": [
+    "sheetB",
+    5,
+    "punch"
    ]
   }
  ]

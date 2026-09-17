@@ -15,7 +15,9 @@ sys.path.insert(0, ROOT)
 from vtsys import config, env, captions, render  # noqa: E402
 from vtsys.tts import word_times  # noqa: E402
 from vtsys.scenes import duration  # noqa: E402
-from vtsys.sheets import extract_sixths, audit_norepeat  # noqa: E402
+from vtsys.sheets import extract_sixths, audit_norepeat, extract_film_subs, audit_shots  # noqa: E402
+
+FILM = "--film" in sys.argv
 
 try:
     from vtsys.dynamics import MOTION, MOOD_GRADE  # noqa: E402
@@ -28,6 +30,58 @@ BEAT_STYLE = {
     "shock": ("key_action", "رهبة"), "power": ("key_action", "انفجار"),
     "threat": ("detail", "رهبة"), "cliff": ("reaction", "انكسار"),
 }
+
+# §4.12 FILM MODE — فريم بفريم كالفيلم: كل معنى (مقطع بين …) = لقطة مستقلة
+# بقصّتها وحركتها. الأولى wide تأسيسية، الأخيرة punch ذروة، الوسط يتناوب.
+HOT_BEATS = ("shock", "power", "threat", "cliff")
+MID_TYPES = ("detail", "reaction")
+MID_FRAMES = ("left", "right", "top", "low")
+MAX_SHOT = 3.0  # أي لقطة أطول تُشطر — القطع كل ~2 ثانية كالفيلم
+
+
+def split_meanings(text):
+    parts = [p.strip() for p in text.replace("...", "…").split("…") if p.strip()]
+    return parts or [text]
+
+
+def plan_sentence_film(text, words, beat):
+    """words: [(word,dur)] من word_times. يعيد [(seg_text, dur, type, frame)]."""
+    segs = split_meanings(text)
+    out, wi = [], 0
+    for seg in segs:
+        nw = len(seg.split())
+        wd = words[wi:wi + nw]
+        wi += nw
+        out.append([seg, round(sum(x[1] for x in wd), 2)])
+    if wi < len(words):  # كلمات شاردة (ترقيم) → تُلحق بآخر مقطع
+        out[-1][1] = round(out[-1][1] + sum(x[1] for x in words[wi:]), 2)
+    final = []
+    for seg, d in out:  # أمان الإيقاع: شطر اللقطات الطويلة
+        if d > MAX_SHOT:
+            ws = seg.split()
+            h = max(1, len(ws) // 2)
+            d1 = round(d * h / len(ws), 2)
+            final += [(" ".join(ws[:h]), d1), (" ".join(ws[h:]), round(d - d1, 2))]
+        else:
+            final.append((seg, d))
+    n = len(final)
+    res = []
+    for k, (seg, d) in enumerate(final):
+        if n == 1:
+            typ = BEAT_STYLE.get(beat, ("establishing", "تشويق"))[0]
+            frm = "punch"
+        elif k == 0:
+            typ, frm = "establishing", "wide"
+        elif k == n - 1:
+            typ = "key_action" if beat in HOT_BEATS else "reaction"
+            frm = "punch"
+        else:
+            typ = MID_TYPES[(k - 1) % len(MID_TYPES)]
+            frm = MID_FRAMES[(k - 1) % len(MID_FRAMES)]
+        if MOTION and typ not in MOTION:
+            typ = sorted(MOTION)[0]
+        res.append((seg, d, typ, frm))
+    return res
 
 PKG = os.path.dirname(os.path.abspath(__file__))
 story = json.load(open(os.path.join(PKG, "story.json"), encoding="utf-8"))
@@ -62,17 +116,37 @@ audit_norepeat(mapping)
 assert len(mapping) == len(units), "RULE: every sentence must own exactly one scene"
 print("no-repeat audit: PASS (%d unique panels)" % len(mapping))
 
+subs = {}
+if FILM:
+    print("film subs (§4.12: 6 قصّات سينمائية لكل بانل) ...")
+    fdir = os.path.join(PKG, "filmshots")
+    for sh, paths in panels.items():
+        for rg, p in enumerate(paths):
+            subs[(sh, rg)] = extract_film_subs(ff, p, fdir, "%s_r%d" % (sh, rg))
+    print("film subs: %d panels x6" % len(subs))
+
 shots = []
 for i, u in enumerate(units):
-    st = BEAT_STYLE.get(u.get("beat", "hero"), ("establish", "warmth"))
-    typ = st[0] if (not MOTION or st[0] in MOTION) else sorted(MOTION)[0]
+    st = BEAT_STYLE.get(u.get("beat", "hero"), ("establishing", "تشويق"))
     mood = st[1] if (not MOOD_GRADE or st[1] in MOOD_GRADE) else sorted(MOOD_GRADE)[0]
-    bd = round(sents[i]["dur"] / sents[i]["nbeats"], 2)
-    for b in range(sents[i]["nbeats"]):
-        shots.append(dict(sent=u["id"], time=round(sents[i]["start"] + b * bd, 2),
-                           dur=bd if b < sents[i]["nbeats"] - 1 else
-                           round(sents[i]["dur"] - bd * b, 2),
-                           type=typ, mood=mood, still=mapping[u["id"]]))
+    if FILM:
+        plan = plan_sentence_film(u["text"], sents[i]["words"], u.get("beat", "hero"))
+        t0, acc = sents[i]["start"], 0.0
+        for k, (seg, d, typ, frm) in enumerate(plan):
+            dd = d if k < len(plan) - 1 else round(sents[i]["dur"] - acc, 2)
+            sh, rg = mapping[u["id"]]
+            shots.append(dict(sent=u["id"], seg=seg, sub=frm,
+                               time=round(t0 + acc, 2), dur=dd,
+                               type=typ, mood=mood, still=(sh, rg, frm)))
+            acc = round(acc + dd, 2)
+    else:
+        typ = st[0] if (not MOTION or st[0] in MOTION) else sorted(MOTION)[0]
+        bd = round(sents[i]["dur"] / sents[i]["nbeats"], 2)
+        for b in range(sents[i]["nbeats"]):
+            shots.append(dict(sent=u["id"], time=round(sents[i]["start"] + b * bd, 2),
+                               dur=bd if b < sents[i]["nbeats"] - 1 else
+                               round(sents[i]["dur"] - bd * b, 2),
+                               type=typ, mood=mood, still=mapping[u["id"]]))
 
 board = {"story": story["slug"], "status": "auto-approved (no-repeat audit PASS)",
          "shots": shots}
@@ -88,7 +162,12 @@ with open(os.path.join(PKG, "storyboard.md"), "w", encoding="utf-8") as f:
             sents[i]["start"], shots[[s["sent"] for s in shots].index(u["id"])]["type"]))
 print("board: %d shots" % len(shots))
 
-stills = [panels[sh][rg] for (sh, rg) in [s["still"] for s in shots]]
+if FILM:
+    stills = [subs[(sh, rg)][frm] for (sh, rg, frm) in [s["still"] for s in shots]]
+    audit_shots(stills)
+    print("shot audit: PASS (%d unique film shots)" % len(stills))
+else:
+    stills = [panels[sh][rg] for (sh, rg) in [s["still"] for s in shots]]
 v_sched = [dict(idx=i, scene_dur=s["dur"], start=s["time"],
                 shot={"type": s["type"], "mood": s["mood"]}) for i, s in enumerate(shots)]
 a_sched = [dict(idx=i, text="", file=s["file"], dur_narr=s["dur"],
@@ -142,7 +221,8 @@ captions.card(os.path.join(PKG, "end.png"),
                (story.get("endcard2", ""), "naskh", 50, 600, (230, 214, 160, 255), 3)], fp)
 
 print("render ...")
-out = os.path.join(PKG, story["out"])
+oname = story.get("out_film", story["out"]) if FILM else story["out"]
+out = os.path.join(PKG, oname)
 render.render_dynamic(ff, stills, v_sched, a_sched, sfx, win, ass,
                       os.path.join(PKG, "title.png"), os.path.join(PKG, "end.png"), out)
 print("OK", out)

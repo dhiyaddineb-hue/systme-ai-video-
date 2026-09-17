@@ -1,1 +1,11 @@
-{"ass": "manga_ninth_seal_v1.ass", "endcard": "يتبع", "endcard2": "الختم التاسع — الحلقة الثانية قريباً", "out": "ninth_seal_ep1_v1.mp4", "part": "الحلقة الأولى", "slug": "ninth_seal", "subtitle": "مدينة الأبراج السبعة", "title": "الختم التاسع"}
+{
+ "ass": "manga_ninth_seal_v1.ass",
+ "endcard": "يتبع",
+ "endcard2": "الختم التاسع — الحلقة الثانية قريباً",
+ "out": "ninth_seal_ep1_v1.mp4",
+ "part": "الحلقة الأولى",
+ "slug": "ninth_seal",
+ "subtitle": "مدينة الأبراج السبعة",
+ "title": "الختم التاسع",
+ "out_film": "ninth_seal_ep1_v2film.mp4"
+}
