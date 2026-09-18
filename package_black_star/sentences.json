@@ -1,0 +1,18 @@
+{
+  "_note": "12 جملة = 12 بانل فريد (شيتان 3×2). كل جملة تُقصّ في توقيتها فقط. المقاطع بين … = لقطات فيلمية مستقلة.",
+  "gap": 0.4,
+  "units": [
+    {"id": 1, "beat": "hook", "sheet": "sheetA", "region": 0, "vo": "vo_sent/s01.mp3", "text": "الليلة دي… في أكاديمية النجوم الساقطة… أضعف طالب في التاريخ… استدعى النجم الأسود."},
+    {"id": 2, "beat": "question", "sheet": "sheetA", "region": 1, "vo": "vo_sent/s02.mp3", "text": "إزاي؟"},
+    {"id": 3, "beat": "hero", "sheet": "sheetA", "region": 2, "vo": "vo_sent/s03.mp3", "text": "اسمه آدم… خمستاشر سنة… بيلمع أحذية الطلاب من وهو طفل."},
+    {"id": 4, "beat": "hero", "sheet": "sheetA", "region": 3, "vo": "vo_sent/s04.mp3", "text": "وليالي الاستدعاء… الكبار كانوا بيستدعوا نجوم ذهبية… وهو بيبص من ورا السور."},
+    {"id": 5, "beat": "turn", "sheet": "sheetA", "region": 4, "vo": "vo_sent/s05.mp3", "text": "لحد ما النجم الأسود… المحرّم اللي قتل كل من استدعاه… سمع صوته… ونزل."},
+    {"id": 6, "beat": "turn", "sheet": "sheetA", "region": 5, "vo": "vo_sent/s06.mp3", "text": "ومدّ إيده… ولمسه."},
+    {"id": 7, "beat": "shock", "sheet": "sheetB", "region": 0, "vo": "vo_sent/s07.mp3", "text": "الظلام بلعه… والكل صرخ: خلاص… انتهى."},
+    {"id": 8, "beat": "power", "sheet": "sheetB", "region": 1, "vo": "vo_sent/s08.mp3", "text": "بس الصبح… آدم خرج من السواد… وعينه اليمين صارت نجمة سودا بتلمع."},
+    {"id": 9, "beat": "power", "sheet": "sheetB", "region": 2, "vo": "vo_sent/s09.mp3", "text": "وأول ما غضب… البرج السماوي… انطفى نوره من فوق لتحت."},
+    {"id": 10, "beat": "question", "sheet": "sheetB", "region": 3, "vo": "vo_sent/s10.mp3", "text": "والأكاديمية؟"},
+    {"id": 11, "beat": "threat", "sheet": "sheetB", "region": 4, "vo": "vo_sent/s11.mp3", "text": "اجتمعت في نفس الليلة… وقررت: الولد ده لازم يُحكم قبل اكتمال النجم."},
+    {"id": 12, "beat": "cliff", "sheet": "sheetB", "region": 5, "vo": "vo_sent/s12.mp3", "text": "وآدم؟… كان واقف فوق السطح… وسامع كل حاجة."}
+  ]
+}

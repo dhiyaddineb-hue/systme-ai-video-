@@ -1,0 +1,42 @@
+{
+  "_note": "ميثاق هوية النجم الأسود (§4.10) — مصدر الحقيقة الوحيد.",
+  "style_lock": "dark fantasy manga anime style, cinematic lighting, dramatic composition, high detail, no text, no words, no letters, no watermark",
+  "characters": {
+    "adam": {
+      "label": "آدم",
+      "lock": "15-year-old academy servant boy, messy dark brown hair, tired amber eyes, patched gray servant coat with a worn rope belt, faint star-shaped birthmark on his left cheek",
+      "refs": ["refs/ref_adam.jpg"]
+    },
+    "blackstar": {
+      "label": "النجم الأسود",
+      "lock": "the black star: a fist-sized obsidian star with a swirling black-violet corona, floating, leaking wisps of dark smoke, cracks of purple light",
+      "refs": []
+    },
+    "grandmaster": {
+      "label": "العميد",
+      "lock": "academy grandmaster, stern middle-aged man, silver hair, crescent-moon eyepatch over left eye, deep-blue ceremonial robe with gold stars",
+      "refs": []
+    },
+    "star_eye": {
+      "label": "عين النجم",
+      "lock": "a living black star glowing in the boy's right eye socket, tiny black-violet corona, wisps of dark smoke curling from the eye",
+      "refs": []
+    }
+  },
+  "face_ref": "refs/ref_adam_face.jpg",
+  "layout_sheet": "six-panel manga page, 3 columns x 2 rows, thick black gutters, same characters with identical faces and outfits in every panel",
+  "scenes": {
+    "s01": {"chars": ["adam"], "shot": "fallen star academy at night, a small cowardly servant boy entering a grand starry hall among proud robed students"},
+    "s02": {"chars": ["adam"], "shot": "extreme close-up of a tired amber eye snapping open in shock, messy brown hair visible"},
+    "s03": {"chars": ["adam"], "shot": "the servant boy polishing boots in a grand academy corridor, shoe brushes and rags, ignored by passing students"},
+    "s04": {"chars": ["adam"], "shot": "star summoning night ceremony in a celestial courtyard, elders calling down golden stars, the boy peeking from behind a stone wall"},
+    "s05": {"chars": ["adam", "blackstar"], "shot": "an obsidian star with black-violet corona descending from a torn sky toward the stunned boy, dark smoke trailing"},
+    "s06": {"chars": ["adam", "blackstar"], "shot": "the boy's hand reaching up to touch the floating black star, a spark of purple light at his fingertips"},
+    "s07": {"chars": ["adam"], "shot": "darkness engulfing the boy as a horrified crowd screams, the celestial courtyard flooding with black smoke"},
+    "s08": {"chars": ["adam", "star_eye"], "shot": "morning: the boy walking out of black smoke unharmed, a living black star glowing in his right eye"},
+    "s09": {"chars": ["adam"], "shot": "the furious boy with a glowing star-eye as the tallest sky tower's light dies from top to bottom, debris floating"},
+    "s10": {"chars": ["grandmaster"], "shot": "terrified academy masters around a round table, the eyepatched grandmaster standing, dread and panic"},
+    "s11": {"chars": ["grandmaster"], "shot": "night council in a dark chamber, robed elders raising hands to vote, a full red moon through a tall window"},
+    "s12": {"chars": ["adam"], "shot": "the boy standing on a rooftop at night listening, faint smile, star-eye glowing on the right side of his face"}
+  }
+}

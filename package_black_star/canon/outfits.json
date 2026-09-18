@@ -1,0 +1,6 @@
+{
+  "OUT-001": {"name": "servant coat", "owner": "CH-001",
+              "desc": "patched gray servant coat with a worn rope belt", "season": "all"},
+  "OUT-002": {"name": "grandmaster robe", "owner": "CH-002",
+              "desc": "deep-blue ceremonial robe with gold stars", "season": "all"}
+}
