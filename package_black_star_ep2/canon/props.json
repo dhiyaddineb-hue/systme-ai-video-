@@ -1,0 +1,10 @@
+{
+  "PROP-001": {"name": "black star",
+               "desc": "fist-sized obsidian star with a swirling black-violet corona, leaking wisps of dark smoke, cracks of purple light",
+               "shape_lock": true, "color_lock": true,
+               "owner": "CH-001", "holder": null, "location": "LOC-003", "condition": "sealed"},
+  "PROP-002": {"name": "star eye",
+               "desc": "a living black star glowing in the boy's right eye socket, tiny black-violet corona, wisps of dark smoke",
+               "shape_lock": true, "color_lock": true,
+               "owner": "CH-001", "holder": "CH-001", "location": null, "condition": "active bonded"}
+}

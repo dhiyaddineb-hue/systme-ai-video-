@@ -1,0 +1,16 @@
+{
+  "_note":"12 جملة = 12 بانل فريد. كل معنى بين … لقطة فيلمية مستقلة.","gap":0.4,"units":[
+ {"id":1,"beat":"hook","sheet":"sheetA","region":0,"vo":"vo_sent/s01.mp3","text":"قبل الفجر… أبواب الأكاديمية اتقفلت… والحرس نزلوا يدوروا على آدم."},
+ {"id":2,"beat":"question","sheet":"sheetA","region":1,"vo":"vo_sent/s02.mp3","text":"بس آدم كان فين؟"},
+ {"id":3,"beat":"hero","sheet":"sheetA","region":2,"vo":"vo_sent/s03.mp3","text":"واقف فوق السطح… والنجمة السودا جوه عينه… بتوريه حاجات محدش شافها."},
+ {"id":4,"beat":"turn","sheet":"sheetA","region":3,"vo":"vo_sent/s04.mp3","text":"شاف ممرات تحت الأرض… وأختام قديمة… كلها بتنزف نور بنفسجي."},
+ {"id":5,"beat":"turn","sheet":"sheetA","region":4,"vo":"vo_sent/s05.mp3","text":"وفجأة… سمع صوت من جوه البرج… بينادي اسمه."},
+ {"id":6,"beat":"shock","sheet":"sheetA","region":5,"vo":"vo_sent/s06.mp3","text":"آدم نزل… رغم إن الصوت كان صوت الموت."},
+ {"id":7,"beat":"power","sheet":"sheetB","region":0,"vo":"vo_sent/s07.mp3","text":"في القاعة السرية… كان الأستاذ الأكبر مستنيه… ومعاه سبعة سحرة."},
+ {"id":8,"beat":"threat","sheet":"sheetB","region":1,"vo":"vo_sent/s08.mp3","text":"قالوله: عينك دي مش قوة… دي باب للهاوية."},
+ {"id":9,"beat":"power","sheet":"sheetB","region":2,"vo":"vo_sent/s09.mp3","text":"آدم رفع عينه… والشموع كلها انحنت ناحية السواد."},
+ {"id":10,"beat":"question","sheet":"sheetB","region":3,"vo":"vo_sent/s10.mp3","text":"مين اللي ناداني؟"},
+ {"id":11,"beat":"threat","sheet":"sheetB","region":4,"vo":"vo_sent/s11.mp3","text":"من تحت الأرض… رد صوت قديم: أنا أول واحد مات بسبب النجم."},
+ {"id":12,"beat":"cliff","sheet":"sheetB","region":5,"vo":"vo_sent/s12.mp3","text":"وساعتها… كل أختام الأكاديمية اتكسرت… وبدأ البرج يتنفس."}
+ ]
+}

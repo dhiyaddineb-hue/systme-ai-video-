@@ -1,0 +1,412 @@
+{
+ "story": "black_star_ep2",
+ "status": "auto-approved (no-repeat audit PASS)",
+ "shots": [
+  {
+   "sent": 1,
+   "seg": "قبل الفجر",
+   "sub": "wide",
+   "time": 0.0,
+   "dur": 1.06,
+   "type": "establishing",
+   "mood": "تشويق",
+   "still": [
+    "sheetA",
+    0,
+    "wide"
+   ]
+  },
+  {
+   "sent": 1,
+   "seg": "أبواب الأكاديمية اتقفلت",
+   "sub": "left",
+   "time": 1.06,
+   "dur": 2.24,
+   "type": "detail",
+   "mood": "تشويق",
+   "still": [
+    "sheetA",
+    0,
+    "left"
+   ]
+  },
+  {
+   "sent": 1,
+   "seg": "والحرس نزلوا يدوروا على آدم.",
+   "sub": "punch",
+   "time": 3.3,
+   "dur": 2.89,
+   "type": "reaction",
+   "mood": "تشويق",
+   "still": [
+    "sheetA",
+    0,
+    "punch"
+   ]
+  },
+  {
+   "sent": 2,
+   "seg": "بس آدم كان فين؟",
+   "sub": "punch",
+   "time": 6.59,
+   "dur": 1.7,
+   "type": "reaction",
+   "mood": "توتر",
+   "still": [
+    "sheetA",
+    1,
+    "punch"
+   ]
+  },
+  {
+   "sent": 3,
+   "seg": "واقف فوق السطح",
+   "sub": "wide",
+   "time": 8.69,
+   "dur": 1.35,
+   "type": "establishing",
+   "mood": "دفء",
+   "still": [
+    "sheetA",
+    2,
+    "wide"
+   ]
+  },
+  {
+   "sent": 3,
+   "seg": "والنجمة السودا جوه عينه",
+   "sub": "left",
+   "time": 10.04,
+   "dur": 2.0,
+   "type": "detail",
+   "mood": "دفء",
+   "still": [
+    "sheetA",
+    2,
+    "left"
+   ]
+  },
+  {
+   "sent": 3,
+   "seg": "بتوريه حاجات محدش شافها.",
+   "sub": "punch",
+   "time": 12.04,
+   "dur": 2.03,
+   "type": "reaction",
+   "mood": "دفء",
+   "still": [
+    "sheetA",
+    2,
+    "punch"
+   ]
+  },
+  {
+   "sent": 4,
+   "seg": "شاف ممرات تحت الأرض",
+   "sub": "wide",
+   "time": 14.47,
+   "dur": 2.14,
+   "type": "establishing",
+   "mood": "تشويق",
+   "still": [
+    "sheetA",
+    3,
+    "wide"
+   ]
+  },
+  {
+   "sent": 4,
+   "seg": "وأختام قديمة",
+   "sub": "left",
+   "time": 16.61,
+   "dur": 1.29,
+   "type": "detail",
+   "mood": "تشويق",
+   "still": [
+    "sheetA",
+    3,
+    "left"
+   ]
+  },
+  {
+   "sent": 4,
+   "seg": "كلها بتنزف نور بنفسجي.",
+   "sub": "punch",
+   "time": 17.9,
+   "dur": 2.29,
+   "type": "reaction",
+   "mood": "تشويق",
+   "still": [
+    "sheetA",
+    3,
+    "punch"
+   ]
+  },
+  {
+   "sent": 5,
+   "seg": "وفجأة",
+   "sub": "wide",
+   "time": 20.59,
+   "dur": 0.67,
+   "type": "establishing",
+   "mood": "تشويق",
+   "still": [
+    "sheetA",
+    4,
+    "wide"
+   ]
+  },
+  {
+   "sent": 5,
+   "seg": "سمع صوت من جوه البرج",
+   "sub": "left",
+   "time": 21.26,
+   "dur": 2.59,
+   "type": "detail",
+   "mood": "تشويق",
+   "still": [
+    "sheetA",
+    4,
+    "left"
+   ]
+  },
+  {
+   "sent": 5,
+   "seg": "بينادي اسمه.",
+   "sub": "punch",
+   "time": 23.85,
+   "dur": 1.34,
+   "type": "reaction",
+   "mood": "تشويق",
+   "still": [
+    "sheetA",
+    4,
+    "punch"
+   ]
+  },
+  {
+   "sent": 6,
+   "seg": "آدم نزل",
+   "sub": "wide",
+   "time": 25.59,
+   "dur": 0.86,
+   "type": "establishing",
+   "mood": "رهبة",
+   "still": [
+    "sheetA",
+    5,
+    "wide"
+   ]
+  },
+  {
+   "sent": 6,
+   "seg": "رغم إن الصوت كان صوت الموت.",
+   "sub": "punch",
+   "time": 26.45,
+   "dur": 2.77,
+   "type": "key_action",
+   "mood": "رهبة",
+   "still": [
+    "sheetA",
+    5,
+    "punch"
+   ]
+  },
+  {
+   "sent": 7,
+   "seg": "في القاعة السرية",
+   "sub": "wide",
+   "time": 29.62,
+   "dur": 1.8,
+   "type": "establishing",
+   "mood": "انفجار",
+   "still": [
+    "sheetB",
+    0,
+    "wide"
+   ]
+  },
+  {
+   "sent": 7,
+   "seg": "كان الأستاذ الأكبر مستنيه",
+   "sub": "left",
+   "time": 31.42,
+   "dur": 2.66,
+   "type": "detail",
+   "mood": "انفجار",
+   "still": [
+    "sheetB",
+    0,
+    "left"
+   ]
+  },
+  {
+   "sent": 7,
+   "seg": "ومعاه سبعة سحرة.",
+   "sub": "punch",
+   "time": 34.08,
+   "dur": 1.73,
+   "type": "key_action",
+   "mood": "انفجار",
+   "still": [
+    "sheetB",
+    0,
+    "punch"
+   ]
+  },
+  {
+   "sent": 8,
+   "seg": "قالوله: عينك دي مش قوة",
+   "sub": "wide",
+   "time": 36.21,
+   "dur": 2.27,
+   "type": "establishing",
+   "mood": "رهبة",
+   "still": [
+    "sheetB",
+    1,
+    "wide"
+   ]
+  },
+  {
+   "sent": 8,
+   "seg": "دي باب للهاوية.",
+   "sub": "punch",
+   "time": 38.48,
+   "dur": 1.44,
+   "type": "key_action",
+   "mood": "رهبة",
+   "still": [
+    "sheetB",
+    1,
+    "punch"
+   ]
+  },
+  {
+   "sent": 9,
+   "seg": "آدم رفع عينه",
+   "sub": "wide",
+   "time": 40.32,
+   "dur": 1.39,
+   "type": "establishing",
+   "mood": "انفجار",
+   "still": [
+    "sheetB",
+    2,
+    "wide"
+   ]
+  },
+  {
+   "sent": 9,
+   "seg": "والشموع كلها انحنت ناحية السواد.",
+   "sub": "punch",
+   "time": 41.71,
+   "dur": 2.97,
+   "type": "key_action",
+   "mood": "انفجار",
+   "still": [
+    "sheetB",
+    2,
+    "punch"
+   ]
+  },
+  {
+   "sent": 10,
+   "seg": "مين اللي ناداني؟",
+   "sub": "punch",
+   "time": 45.08,
+   "dur": 1.23,
+   "type": "reaction",
+   "mood": "توتر",
+   "still": [
+    "sheetB",
+    3,
+    "punch"
+   ]
+  },
+  {
+   "sent": 11,
+   "seg": "من تحت الأرض",
+   "sub": "wide",
+   "time": 46.71,
+   "dur": 1.35,
+   "type": "establishing",
+   "mood": "رهبة",
+   "still": [
+    "sheetB",
+    4,
+    "wide"
+   ]
+  },
+  {
+   "sent": 11,
+   "seg": "رد صوت قديم: أنا",
+   "sub": "left",
+   "time": 48.06,
+   "dur": 1.84,
+   "type": "detail",
+   "mood": "رهبة",
+   "still": [
+    "sheetB",
+    4,
+    "left"
+   ]
+  },
+  {
+   "sent": 11,
+   "seg": "أول واحد مات بسبب النجم.",
+   "sub": "punch",
+   "time": 49.9,
+   "dur": 2.3,
+   "type": "key_action",
+   "mood": "رهبة",
+   "still": [
+    "sheetB",
+    4,
+    "punch"
+   ]
+  },
+  {
+   "sent": 12,
+   "seg": "وساعتها",
+   "sub": "wide",
+   "time": 52.6,
+   "dur": 0.81,
+   "type": "establishing",
+   "mood": "انكسار",
+   "still": [
+    "sheetB",
+    5,
+    "wide"
+   ]
+  },
+  {
+   "sent": 12,
+   "seg": "كل أختام الأكاديمية اتكسرت",
+   "sub": "left",
+   "time": 53.41,
+   "dur": 2.84,
+   "type": "detail",
+   "mood": "انكسار",
+   "still": [
+    "sheetB",
+    5,
+    "left"
+   ]
+  },
+  {
+   "sent": 12,
+   "seg": "وبدأ البرج يتنفس.",
+   "sub": "punch",
+   "time": 56.25,
+   "dur": 1.89,
+   "type": "key_action",
+   "mood": "انكسار",
+   "still": [
+    "sheetB",
+    5,
+    "punch"
+   ]
+  }
+ ]
+}
