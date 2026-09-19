@@ -1,0 +1,552 @@
+{
+ "story": "black_star_ep3",
+ "status": "auto-approved (no-repeat audit PASS)",
+ "shots": [
+  {
+   "sent": 1,
+   "seg": "البرج بدأ يتنفس",
+   "sub": "wide",
+   "time": 0.0,
+   "dur": 1.87,
+   "type": "establishing",
+   "mood": "تشويق",
+   "still": [
+    "sheetA",
+    0,
+    "wide"
+   ]
+  },
+  {
+   "sent": 1,
+   "seg": "والحجارة اتحركت تحت",
+   "sub": "left",
+   "time": 1.87,
+   "dur": 2.06,
+   "type": "detail",
+   "mood": "تشويق",
+   "still": [
+    "sheetA",
+    0,
+    "left"
+   ]
+  },
+  {
+   "sent": 1,
+   "seg": "رجلين آدم.",
+   "sub": "punch",
+   "time": 3.93,
+   "dur": 1.37,
+   "type": "reaction",
+   "mood": "تشويق",
+   "still": [
+    "sheetA",
+    0,
+    "punch"
+   ]
+  },
+  {
+   "sent": 2,
+   "seg": "بس إيه اللي",
+   "sub": "wide",
+   "time": 5.7,
+   "dur": 1.06,
+   "type": "establishing",
+   "mood": "توتر",
+   "still": [
+    "sheetA",
+    1,
+    "wide"
+   ]
+  },
+  {
+   "sent": 2,
+   "seg": "كان بيعيش تحته؟",
+   "sub": "punch",
+   "time": 6.76,
+   "dur": 1.06,
+   "type": "reaction",
+   "mood": "توتر",
+   "still": [
+    "sheetA",
+    1,
+    "punch"
+   ]
+  },
+  {
+   "sent": 3,
+   "seg": "آدم بص",
+   "sub": "wide",
+   "time": 8.22,
+   "dur": 0.78,
+   "type": "establishing",
+   "mood": "دفء",
+   "still": [
+    "sheetA",
+    2,
+    "wide"
+   ]
+  },
+  {
+   "sent": 3,
+   "seg": "في البئر",
+   "sub": "left",
+   "time": 9.0,
+   "dur": 0.78,
+   "type": "detail",
+   "mood": "دفء",
+   "still": [
+    "sheetA",
+    2,
+    "left"
+   ]
+  },
+  {
+   "sent": 3,
+   "seg": "وشاف مدينة كاملة",
+   "sub": "right",
+   "time": 9.78,
+   "dur": 1.52,
+   "type": "reaction",
+   "mood": "دفء",
+   "still": [
+    "sheetA",
+    2,
+    "right"
+   ]
+  },
+  {
+   "sent": 3,
+   "seg": "مدفونة تحت الأكاديمية.",
+   "sub": "punch",
+   "time": 11.3,
+   "dur": 1.52,
+   "type": "reaction",
+   "mood": "دفء",
+   "still": [
+    "sheetA",
+    2,
+    "punch"
+   ]
+  },
+  {
+   "sent": 4,
+   "seg": "في شوارعها",
+   "sub": "wide",
+   "time": 13.22,
+   "dur": 1.3,
+   "type": "establishing",
+   "mood": "تشويق",
+   "still": [
+    "sheetA",
+    3,
+    "wide"
+   ]
+  },
+  {
+   "sent": 4,
+   "seg": "تماثيل السحرة",
+   "sub": "left",
+   "time": 14.52,
+   "dur": 1.5,
+   "type": "detail",
+   "mood": "تشويق",
+   "still": [
+    "sheetA",
+    3,
+    "left"
+   ]
+  },
+  {
+   "sent": 4,
+   "seg": "واقفة",
+   "sub": "right",
+   "time": 16.02,
+   "dur": 0.75,
+   "type": "reaction",
+   "mood": "تشويق",
+   "still": [
+    "sheetA",
+    3,
+    "right"
+   ]
+  },
+  {
+   "sent": 4,
+   "seg": "وكلها لابسة",
+   "sub": "top",
+   "time": 16.77,
+   "dur": 1.24,
+   "type": "detail",
+   "mood": "تشويق",
+   "still": [
+    "sheetA",
+    3,
+    "top"
+   ]
+  },
+  {
+   "sent": 4,
+   "seg": "نفس وشّه.",
+   "sub": "punch",
+   "time": 18.01,
+   "dur": 1.24,
+   "type": "reaction",
+   "mood": "تشويق",
+   "still": [
+    "sheetA",
+    3,
+    "punch"
+   ]
+  },
+  {
+   "sent": 5,
+   "seg": "واحد من التماثيل",
+   "sub": "wide",
+   "time": 19.65,
+   "dur": 1.57,
+   "type": "establishing",
+   "mood": "رهبة",
+   "still": [
+    "sheetA",
+    4,
+    "wide"
+   ]
+  },
+  {
+   "sent": 5,
+   "seg": "فتح عينه",
+   "sub": "left",
+   "time": 21.22,
+   "dur": 1.04,
+   "type": "detail",
+   "mood": "رهبة",
+   "still": [
+    "sheetA",
+    4,
+    "left"
+   ]
+  },
+  {
+   "sent": 5,
+   "seg": "وقال: رجعت يا",
+   "sub": "right",
+   "time": 22.26,
+   "dur": 1.57,
+   "type": "reaction",
+   "mood": "رهبة",
+   "still": [
+    "sheetA",
+    4,
+    "right"
+   ]
+  },
+  {
+   "sent": 5,
+   "seg": "وريث الظلام.",
+   "sub": "punch",
+   "time": 23.83,
+   "dur": 1.04,
+   "type": "key_action",
+   "mood": "رهبة",
+   "still": [
+    "sheetA",
+    4,
+    "punch"
+   ]
+  },
+  {
+   "sent": 6,
+   "seg": "آدم اتراجع",
+   "sub": "wide",
+   "time": 25.27,
+   "dur": 0.91,
+   "type": "establishing",
+   "mood": "تشويق",
+   "still": [
+    "sheetA",
+    5,
+    "wide"
+   ]
+  },
+  {
+   "sent": 6,
+   "seg": "لكن النجمة السودا",
+   "sub": "left",
+   "time": 26.18,
+   "dur": 1.36,
+   "type": "detail",
+   "mood": "تشويق",
+   "still": [
+    "sheetA",
+    5,
+    "left"
+   ]
+  },
+  {
+   "sent": 6,
+   "seg": "منعته من الهرب.",
+   "sub": "punch",
+   "time": 27.54,
+   "dur": 1.36,
+   "type": "reaction",
+   "mood": "تشويق",
+   "still": [
+    "sheetA",
+    5,
+    "punch"
+   ]
+  },
+  {
+   "sent": 7,
+   "seg": "فوقهم",
+   "sub": "wide",
+   "time": 29.3,
+   "dur": 0.75,
+   "type": "establishing",
+   "mood": "انفجار",
+   "still": [
+    "sheetB",
+    0,
+    "wide"
+   ]
+  },
+  {
+   "sent": 7,
+   "seg": "الأستاذ الأكبر كسر",
+   "sub": "left",
+   "time": 30.05,
+   "dur": 2.07,
+   "type": "detail",
+   "mood": "انفجار",
+   "still": [
+    "sheetB",
+    0,
+    "left"
+   ]
+  },
+  {
+   "sent": 7,
+   "seg": "آخر ختم",
+   "sub": "right",
+   "time": 32.12,
+   "dur": 1.38,
+   "type": "reaction",
+   "mood": "انفجار",
+   "still": [
+    "sheetB",
+    0,
+    "right"
+   ]
+  },
+  {
+   "sent": 7,
+   "seg": "ونزل ورا آدم.",
+   "sub": "punch",
+   "time": 33.5,
+   "dur": 1.76,
+   "type": "key_action",
+   "mood": "انفجار",
+   "still": [
+    "sheetB",
+    0,
+    "punch"
+   ]
+  },
+  {
+   "sent": 8,
+   "seg": "قال: المدينة دي",
+   "sub": "wide",
+   "time": 35.66,
+   "dur": 1.47,
+   "type": "establishing",
+   "mood": "رهبة",
+   "still": [
+    "sheetB",
+    1,
+    "wide"
+   ]
+  },
+  {
+   "sent": 8,
+   "seg": "كانت مملكة النجم",
+   "sub": "left",
+   "time": 37.13,
+   "dur": 1.47,
+   "type": "detail",
+   "mood": "رهبة",
+   "still": [
+    "sheetB",
+    1,
+    "left"
+   ]
+  },
+  {
+   "sent": 8,
+   "seg": "وإنت مفتاحها الوحيد.",
+   "sub": "punch",
+   "time": 38.6,
+   "dur": 1.66,
+   "type": "key_action",
+   "mood": "رهبة",
+   "still": [
+    "sheetB",
+    1,
+    "punch"
+   ]
+  },
+  {
+   "sent": 9,
+   "seg": "الأرض انشقت",
+   "sub": "wide",
+   "time": 40.66,
+   "dur": 1.16,
+   "type": "establishing",
+   "mood": "انفجار",
+   "still": [
+    "sheetB",
+    2,
+    "wide"
+   ]
+  },
+  {
+   "sent": 9,
+   "seg": "وخرج منها جيش من",
+   "sub": "left",
+   "time": 41.82,
+   "dur": 1.99,
+   "type": "detail",
+   "mood": "انفجار",
+   "still": [
+    "sheetB",
+    2,
+    "left"
+   ]
+  },
+  {
+   "sent": 9,
+   "seg": "الظلال بلا وجوه.",
+   "sub": "punch",
+   "time": 43.81,
+   "dur": 1.5,
+   "type": "key_action",
+   "mood": "انفجار",
+   "still": [
+    "sheetB",
+    2,
+    "punch"
+   ]
+  },
+  {
+   "sent": 10,
+   "seg": "آدم سأل: أقاتلهم؟",
+   "sub": "punch",
+   "time": 45.71,
+   "dur": 1.96,
+   "type": "reaction",
+   "mood": "توتر",
+   "still": [
+    "sheetB",
+    3,
+    "punch"
+   ]
+  },
+  {
+   "sent": 11,
+   "seg": "الصوت القديم ضحك",
+   "sub": "wide",
+   "time": 48.07,
+   "dur": 1.82,
+   "type": "establishing",
+   "mood": "رهبة",
+   "still": [
+    "sheetB",
+    4,
+    "wide"
+   ]
+  },
+  {
+   "sent": 11,
+   "seg": "وقال: لا، خلّيهم",
+   "sub": "left",
+   "time": 49.89,
+   "dur": 1.86,
+   "type": "detail",
+   "mood": "رهبة",
+   "still": [
+    "sheetB",
+    4,
+    "left"
+   ]
+  },
+  {
+   "sent": 11,
+   "seg": "يفتكروا مين سيدهم.",
+   "sub": "punch",
+   "time": 51.75,
+   "dur": 1.86,
+   "type": "key_action",
+   "mood": "رهبة",
+   "still": [
+    "sheetB",
+    4,
+    "punch"
+   ]
+  },
+  {
+   "sent": 12,
+   "seg": "ولما آدم",
+   "sub": "wide",
+   "time": 54.01,
+   "dur": 1.18,
+   "type": "establishing",
+   "mood": "انكسار",
+   "still": [
+    "sheetB",
+    5,
+    "wide"
+   ]
+  },
+  {
+   "sent": 12,
+   "seg": "فتح عينه",
+   "sub": "left",
+   "time": 55.19,
+   "dur": 1.18,
+   "type": "detail",
+   "mood": "انكسار",
+   "still": [
+    "sheetB",
+    5,
+    "left"
+   ]
+  },
+  {
+   "sent": 12,
+   "seg": "كل الظلال ركعت",
+   "sub": "right",
+   "time": 56.37,
+   "dur": 1.93,
+   "type": "reaction",
+   "mood": "انكسار",
+   "still": [
+    "sheetB",
+    5,
+    "right"
+   ]
+  },
+  {
+   "sent": 12,
+   "seg": "والمدينة صحيت.",
+   "sub": "punch",
+   "time": 58.3,
+   "dur": 1.67,
+   "type": "key_action",
+   "mood": "انكسار",
+   "still": [
+    "sheetB",
+    5,
+    "punch"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{"_note":"12 جملة = 12 بانل فريد، كل معنى بين … لقطة فيلمية مستقلة.","gap":0.4,"units":[
+{"id":1,"beat":"hook","sheet":"sheetA","region":0,"vo":"vo_sent/s01.mp3","text":"البرج بدأ يتنفس… والحجارة اتحركت تحت رجلين آدم."},
+{"id":2,"beat":"question","sheet":"sheetA","region":1,"vo":"vo_sent/s02.mp3","text":"بس إيه اللي كان بيعيش تحته؟"},
+{"id":3,"beat":"hero","sheet":"sheetA","region":2,"vo":"vo_sent/s03.mp3","text":"آدم بص في البئر… وشاف مدينة كاملة مدفونة تحت الأكاديمية."},
+{"id":4,"beat":"turn","sheet":"sheetA","region":3,"vo":"vo_sent/s04.mp3","text":"في شوارعها… تماثيل السحرة واقفة… وكلها لابسة نفس وشّه."},
+{"id":5,"beat":"shock","sheet":"sheetA","region":4,"vo":"vo_sent/s05.mp3","text":"واحد من التماثيل فتح عينه… وقال: رجعت يا وريث الظلام."},
+{"id":6,"beat":"turn","sheet":"sheetA","region":5,"vo":"vo_sent/s06.mp3","text":"آدم اتراجع… لكن النجمة السودا منعته من الهرب."},
+{"id":7,"beat":"power","sheet":"sheetB","region":0,"vo":"vo_sent/s07.mp3","text":"فوقهم… الأستاذ الأكبر كسر آخر ختم… ونزل ورا آدم."},
+{"id":8,"beat":"threat","sheet":"sheetB","region":1,"vo":"vo_sent/s08.mp3","text":"قال: المدينة دي كانت مملكة النجم… وإنت مفتاحها الوحيد."},
+{"id":9,"beat":"power","sheet":"sheetB","region":2,"vo":"vo_sent/s09.mp3","text":"الأرض انشقت… وخرج منها جيش من الظلال بلا وجوه."},
+{"id":10,"beat":"question","sheet":"sheetB","region":3,"vo":"vo_sent/s10.mp3","text":"آدم سأل: أقاتلهم؟"},
+{"id":11,"beat":"threat","sheet":"sheetB","region":4,"vo":"vo_sent/s11.mp3","text":"الصوت القديم ضحك… وقال: لا، خلّيهم يفتكروا مين سيدهم."},
+{"id":12,"beat":"cliff","sheet":"sheetB","region":5,"vo":"vo_sent/s12.mp3","text":"ولما آدم فتح عينه… كل الظلال ركعت… والمدينة صحيت."}
+]}
