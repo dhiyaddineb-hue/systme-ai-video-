@@ -3,7 +3,7 @@
 import argparse, json, os, glob
 
 from . import config, env, decision, youtube, scenes, scriptwriter, tts, \
-    captions, render, queue as q, storage, thumb
+    captions, render, queue as q, storage, thumb, audit
 
 def _ff(cfg):
     return env.ensure_ffmpeg(cfg["_root"])
@@ -19,6 +19,12 @@ def cmd_selftest(a, cfg):
     rep = env.selftest(cfg["_root"])
     print(json.dumps(rep, ensure_ascii=False, indent=2))
     print("💾", storage.report(cfg["_root"], cfg["storage_budget_mb"]))
+
+def cmd_audit(a, cfg):
+    rep = audit.audit_package(a.package, rendered=a.rendered)
+    print(json.dumps(rep, ensure_ascii=False, indent=2))
+    if rep["status"] != "PASS":
+        raise SystemExit(2)
 
 def cmd_decide(a, cfg):
     m = youtube.meta(a.url)
@@ -163,6 +169,9 @@ def main(argv=None):
     ap = argparse.ArgumentParser(prog="vtsys")
     sub = ap.add_subparsers(dest="cmd", required=True)
     p = sub.add_parser("selftest"); p.set_defaults(fn=cmd_selftest)
+    p = sub.add_parser("audit", help="preflight/postflight audit for a story package")
+    p.add_argument("package"); p.add_argument("--rendered", action="store_true")
+    p.set_defaults(fn=cmd_audit)
     p = sub.add_parser("decide"); p.add_argument("url"); p.add_argument("--niche", nargs="*")
     p.add_argument("--out"); p.add_argument("--enqueue", action="store_true"); p.set_defaults(fn=cmd_decide)
     p = sub.add_parser("scan"); p.add_argument("--query", required=True); p.add_argument("--limit", type=int, default=6)

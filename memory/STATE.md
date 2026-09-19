@@ -46,3 +46,9 @@
 - [x] الصوت العربي الموحّد مكتمل 12/12.
 - [x] رندر الفيلم §4.12: `black_star_ep2_v2film.mp4` — 58.16 ثانية، 29 لقطة، no-repeat PASS وshot audit PASS، whoosh ×29 وimpact ×6.
 - [x] QC: ثلاث لقطات مختلفة MD5، 1280×720 H.264/AAC، صفحة معاينة وربط الحلقة الثانية في الصفحة الرئيسية.
+
+## 2026-09-19 — ترقية بوابات الإنتاج
+- [x] إضافة `vtsys/audit.py` وبوابة CLI: `python3 -m vtsys audit <package> [--rendered]`.
+- [x] التدقيق يتحقق من JSON، اكتمال الصوت والشيتات، no-repeat، storyboard، والفيديو النهائي.
+- [x] حزمتا `package_black_star` و`package_black_star_ep2` اجتازتا preflight/postflight.
+- [x] خارطة التطوير محفوظة في `docs/PRODUCTION_UPGRADES.md`.
