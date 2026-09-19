@@ -36,7 +36,7 @@ BEAT_STYLE = {
 HOT_BEATS = ("shock", "power", "threat", "cliff")
 MID_TYPES = ("detail", "reaction")
 MID_FRAMES = ("left", "right", "top", "low")
-MAX_SHOT = 3.0  # أي لقطة أطول تُشطر — القطع كل ~2 ثانية كالفيلم
+MAX_SHOT = 2.2  # إيقاع سينمائي: لا لقطة ثابتة أطول من نحو ثانيتين
 
 
 def split_meanings(text):
@@ -56,14 +56,26 @@ def plan_sentence_film(text, words, beat):
     if wi < len(words):  # كلمات شاردة (ترقيم) → تُلحق بآخر مقطع
         out[-1][1] = round(out[-1][1] + sum(x[1] for x in words[wi:]), 2)
     final = []
-    for seg, d in out:  # أمان الإيقاع: شطر اللقطات الطويلة
-        if d > MAX_SHOT:
-            ws = seg.split()
-            h = max(1, len(ws) // 2)
-            d1 = round(d * h / len(ws), 2)
-            final += [(" ".join(ws[:h]), d1), (" ".join(ws[h:]), round(d - d1, 2))]
-        else:
+    for seg, d in out:
+        # لغة الفيلم: حتى المعنى القصير يأخذ انتقالاً داخلياً إذا سمح الصوت.
+        # لا نكرر صورة واحدة؛ كل انتقال يستخدم crop مختلفاً من نفس البانل.
+        ws = seg.split()
+        pieces = max(1, int((d + MAX_SHOT - 0.01) // MAX_SHOT))
+        if pieces == 1 and len(ws) >= 4 and d >= 1.35:
+            pieces = 2
+        pieces = min(pieces, 6)
+        if pieces == 1 or len(ws) < pieces:
             final.append((seg, d))
+        else:
+            base = len(ws) // pieces
+            rem = len(ws) % pieces
+            at = 0
+            for j in range(pieces):
+                take = base + (1 if j < rem else 0)
+                part = " ".join(ws[at:at + take])
+                dd = round(d * take / len(ws), 2)
+                final.append((part, dd))
+                at += take
     n = len(final)
     res = []
     for k, (seg, d) in enumerate(final):
