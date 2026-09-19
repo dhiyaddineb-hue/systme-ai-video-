@@ -15,7 +15,7 @@ sys.path.insert(0, ROOT)
 from vtsys import config, env, captions, render  # noqa: E402
 from vtsys.tts import word_times  # noqa: E402
 from vtsys.scenes import duration  # noqa: E402
-from vtsys.sheets import extract_sixths, audit_norepeat, extract_film_subs, audit_shots  # noqa: E402
+from vtsys.sheets import extract_sixths, load_individual_panels, audit_norepeat, extract_film_subs, audit_shots  # noqa: E402
 
 FILM = "--film" in sys.argv
 
@@ -121,8 +121,9 @@ panels, mapping = {}, {}
 for i, u in enumerate(units):
     sh = u["sheet"]
     if sh not in panels:
-        panels[sh] = extract_sixths(ff, os.path.join(PKG, "sheets", sh + ".jpg"),
-                                    os.path.join(PKG, "regions"), sh)
+        individual = load_individual_panels(os.path.join(PKG, "panels"), sh)
+        panels[sh] = individual or extract_sixths(ff, os.path.join(PKG, "sheets", sh + ".jpg"),
+                                                  os.path.join(PKG, "regions"), sh)
     mapping[u["id"]] = (sh, u["region"])
 audit_norepeat(mapping)
 assert len(mapping) == len(units), "RULE: every sentence must own exactly one scene"

@@ -15,7 +15,7 @@ sys.path.insert(0, ROOT)
 from vtsys import config, env, captions, render  # noqa: E402
 from vtsys.tts import word_times  # noqa: E402
 from vtsys.scenes import duration  # noqa: E402
-from vtsys.sheets import extract_sixths, audit_norepeat, extract_film_subs, audit_shots  # noqa: E402
+from vtsys.sheets import extract_sixths, load_individual_panels, audit_norepeat, extract_film_subs, audit_shots  # noqa: E402
 
 FILM = "--film" in sys.argv
 

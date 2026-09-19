@@ -48,6 +48,23 @@ def audit_shots(stills):
     return True
 
 
+def load_individual_panels(panel_dir, prefix):
+    """Load six individually generated panels when available.
+
+    Individual 16:9 panels are the preferred quality path; the legacy contact
+    sheet remains a deterministic fallback for older packages.
+    """
+    found = []
+    for i in range(6):
+        candidates = [os.path.join(panel_dir, f"{prefix}_r{i}.jpg"),
+                      os.path.join(panel_dir, f"{prefix}_r{i}.png")]
+        hit = next((p for p in candidates if os.path.exists(p)), None)
+        if not hit:
+            return None
+        found.append(hit)
+    return found
+
+
 def extract_sixths(ff, sheet, outdir, prefix, inset=0.012):
     os.makedirs(outdir, exist_ok=True)
     paths = []
