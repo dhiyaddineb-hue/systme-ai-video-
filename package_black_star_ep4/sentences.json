@@ -1,0 +1,14 @@
+{"_note":"12 جملة، وكل جملة تملك لوحة منفردة عالية الجودة داخل panels/.","gap":0.4,"units":[
+{"id":1,"beat":"hook","sheet":"sheetA","region":0,"vo":"vo_sent/s01.mp3","text":"المدينة صحيت… وأول حاجة عملتها… إنها نادت باسم آدم."},
+{"id":2,"beat":"question","sheet":"sheetA","region":1,"vo":"vo_sent/s02.mp3","text":"ليه أنا؟"},
+{"id":3,"beat":"hero","sheet":"sheetA","region":2,"vo":"vo_sent/s03.mp3","text":"التماثيل كلها بصت له… وفتحت عيونها السودا في نفس اللحظة."},
+{"id":4,"beat":"turn","sheet":"sheetA","region":3,"vo":"vo_sent/s04.mp3","text":"ومن قلب الساحة… طلع تاج من حجر أسود… عليه نفس النجمة اللي في عينه."},
+{"id":5,"beat":"shock","sheet":"sheetA","region":4,"vo":"vo_sent/s05.mp3","text":"الأستاذ الأكبر صرخ: ما تلمسوش! التاج ده قتل سبعة ملوك."},
+{"id":6,"beat":"power","sheet":"sheetA","region":5,"vo":"vo_sent/s06.mp3","text":"لكن التاج طار لوحده… واستقر فوق رأس آدم."},
+{"id":7,"beat":"threat","sheet":"sheetB","region":0,"vo":"vo_sent/s07.mp3","text":"في لحظة… كل ذكريات المملكة دخلت دماغه… حرب… خيانة… وسقوط."},
+{"id":8,"beat":"question","sheet":"sheetB","region":1,"vo":"vo_sent/s08.mp3","text":"والصوت قال: افتكر يا وريثي."},
+{"id":9,"beat":"power","sheet":"sheetB","region":2,"vo":"vo_sent/s09.mp3","text":"آدم رفع إيده… والظلال لبست دروعاً من النجوم السوداء."},
+{"id":10,"beat":"shock","sheet":"sheetB","region":3,"vo":"vo_sent/s10.mp3","text":"الأستاذ الأكبر فهم الحقيقة… آدم مش مفتاح المملكة."},
+{"id":11,"beat":"threat","sheet":"sheetB","region":4,"vo":"vo_sent/s11.mp3","text":"ده الملك اللي المملكة كانت مستنياه يرجع."},
+{"id":12,"beat":"cliff","sheet":"sheetB","region":5,"vo":"vo_sent/s12.mp3","text":"وآدم؟… ابتسم لأول مرة… وقال: افتحوا أبواب الحرب."}
+]}

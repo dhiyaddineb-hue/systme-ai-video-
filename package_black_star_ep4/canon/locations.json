@@ -1,0 +1,14 @@
+{
+  "LOC-001": {"name": "fallen star academy", "type": "exterior",
+              "anchors": ["starry hall", "stone wall", "torn sky", "night"]},
+  "LOC-002": {"name": "academy corridor", "type": "interior",
+              "anchors": ["boots", "polish rags", "grand corridor"]},
+  "LOC-003": {"name": "celestial courtyard", "type": "exterior",
+              "anchors": ["summoning circles", "golden stars", "black smoke"]},
+  "LOC-004": {"name": "sky tower", "type": "exterior",
+              "anchors": ["tallest tower", "dying light", "floating debris"]},
+  "LOC-005": {"name": "council chamber", "type": "interior",
+              "anchors": ["round table", "red moon", "tall window", "robed elders"]},
+  "LOC-006": {"name": "rooftop night", "type": "exterior", "time": "night",
+              "anchors": ["rooftop", "night sky", "star-eye glow"]}
+}

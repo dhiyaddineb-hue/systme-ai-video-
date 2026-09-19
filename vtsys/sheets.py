@@ -12,7 +12,7 @@ SIXTHS = [(c / 3.0, r / 2.0, 1 / 3.0, 1 / 2.0) for r in range(2) for c in range(
 # §4.12 FILM MODE — كل بانل يُقصّ لـ 6 قصّات سينمائية 16:9 (فريم بفريم كالفيلم):
 # كل معنى (مقطع بين …) = لقطة بقصّة مختلفة وحركتها الخاصة. القطع كل ~2 ثانية.
 FILM_SUBS = {
-    "wide": "crop=iw:iw*9/16:x=(iw-ow)/2:y=(ih-oh)/2",
+    "wide": "crop=iw:ih:x=0:y=0",
     "left": "crop=iw*0.66:iw*0.66*9/16:x=0:y=(ih-oh)/2",
     "right": "crop=iw*0.66:iw*0.66*9/16:x=iw-ow:y=(ih-oh)/2",
     "punch": "crop=iw*0.54:iw*0.54*9/16:x=(iw-ow)/2:y=(ih-oh)*0.38",

@@ -1,0 +1,80 @@
+{
+ "time": "day2 08:00",
+ "season": "autumn",
+ "weather": {
+  "type": "clear"
+ },
+ "characters": {
+  "CH-001": {
+   "location": "LOC-006",
+   "outfit": "OUT-001",
+   "injuries": [],
+   "held": {
+    "right": null,
+    "left": null
+   },
+   "emotion": "calm defiance"
+  },
+  "CH-002": {
+   "location": "LOC-005",
+   "outfit": "OUT-002",
+   "injuries": [],
+   "held": {},
+   "emotion": "rage"
+  }
+ },
+ "props": {
+  "PROP-001": {
+   "holder": "CH-001",
+   "location": "LOC-006",
+   "condition": "active bonded"
+  },
+  "PROP-002": {
+   "holder": "CH-001",
+   "location": "LOC-006",
+   "condition": "active bonded"
+  }
+ },
+ "events": [
+  {
+   "id": "EVT-001",
+   "time": "day1 22:00",
+   "location": "LOC-003",
+   "actors": ["CH-001"],
+   "action": "touched the black star",
+   "consequences": ["darkness engulfment"]
+  },
+  {
+   "id": "EVT-002",
+   "time": "day2 06:00",
+   "location": "LOC-003",
+   "actors": ["CH-001"],
+   "action": "walked out of black smoke with star-eye",
+   "consequences": ["sky tower light died", "academy panic"]
+  },
+  {
+   "id": "EVT-003",
+   "time": "day2 07:30",
+   "location": "LOC-005",
+   "actors": ["CH-002"],
+   "action": "council votes to seal the boy",
+   "consequences": ["overheard cliffhanger"]
+  }
+ ],
+ "changelog": [
+  {
+   "scene": 12,
+   "at": "day2 08:00",
+   "summary": "ep1 approved: 12 panels planned"
+  }
+ ],
+ "knowledge": {
+  "reader": [],
+  "CH-001": [],
+  "CH-002": []
+ },
+ "threads": [
+  "black star awakening",
+  "council verdict"
+ ]
+}
