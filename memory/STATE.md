@@ -52,3 +52,8 @@
 - [x] التدقيق يتحقق من JSON، اكتمال الصوت والشيتات، no-repeat، storyboard، والفيديو النهائي.
 - [x] حزمتا `package_black_star` و`package_black_star_ep2` اجتازتا preflight/postflight.
 - [x] خارطة التطوير محفوظة في `docs/PRODUCTION_UPGRADES.md`.
+
+## 2026-09-19 — إصلاح الصور والمونتاج
+- [x] اكتُشف أن title/end cards كانت overlays فوق المادة السردية في render_dynamic؛ وضع الفيلم صار بدون cards فوق اللقطات (`cards=not FILM`).
+- [x] أُعيد رندر `package_black_star_ep2` والتحقق من بداية نظيفة وcrop متحرك.
+- [ ] تطوير الصور التالي: لوحات منفردة مع مرجع شخصية وcontinuity قبل تركيب الشيت.

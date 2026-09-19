@@ -143,7 +143,7 @@ def render_wordcut(ff, stills, v_sched, a_sched, win, ass, title, end, out):
     _run(cmd)
     return out
 
-def render_dynamic(ff, stills, v_sched, a_sched, sfx, win, ass, title, end, out):
+def render_dynamic(ff, stills, v_sched, a_sched, sfx, win, ass, title, end, out, cards=True):
     """§4.8: رندر سينمائي — حركة لكل لقطة + فلاش لحظات القوة + SFX.
     v_sched[i]: {scene_dur, shot:{type,mood}} · sfx: {whoosh:[t], impact:[t], riser:[t],
     flash:[t], whoosh_file, impact_file, riser_file}."""
@@ -171,17 +171,19 @@ def render_dynamic(ff, stills, v_sched, a_sched, sfx, win, ass, title, end, out)
     flashes = "".join(
         f",drawbox=x=0:y=0:w=1280:h=720:color=white@0.8:t=fill:enable='between(t,{t:.2f},{t + 0.1:.2f})'"
         for t in sfx["flash"])
+    video_base = (f"[basev]drawbox=y=0:h=74:color=black:t=fill,drawbox=y=646:h=74:color=black:t=fill{flashes}[b1];"
+                  f"[b1]ass={ass}[vout]" if not cards else
+                  f"[basev]drawbox=y=0:h=74:color=black:t=fill,drawbox=y=646:h=74:color=black:t=fill{flashes}[b1];"
+                  f"[b1]ass={ass}[b2];"
+                  f"[b2]drawbox=x=0:y=0:w=1280:h=720:color=black@0.6:t=fill:enable='gte(t,{win - 4.2:.1f})'[b3];"
+                  f"[{v + W + I + R}:v]scale=1280:720,format=rgba,fade=t=in:st=0.6:d=1.0:alpha=1,fade=t=out:st=4.2:d=1.0:alpha=1[ti];"
+                  f"[{v + W + I + R + 1}:v]scale=1280:720,format=rgba,fade=t=in:st={win - 4.0:.1f}:d=0.9:alpha=1[en];"
+                  f"[b3][ti]overlay=0:0:enable='between(t,0.4,5.3)'[b4];"
+                  f"[b4][en]overlay=0:0:enable='gte(t,{win - 4.1:.1f})'[vout]")
     fc = (";".join(parts) + ";" + a + ";" + beds(win) + ";" + ";".join(wp + ip + rp) + ";"
           + sfxmix + ";"
           "[amb0][vo1]sidechaincompress=threshold=0.03:ratio=6:attack=25:release=400[ambd];"
-          "[ambd][vo2][im]amix=inputs=3:duration=first:normalize=0,loudnorm=I=-16:TP=-1.5:LRA=11[aout];"
-          f"[basev]drawbox=y=0:h=74:color=black:t=fill,drawbox=y=646:h=74:color=black:t=fill{flashes}[b1];"
-          f"[b1]ass={ass}[b2];"
-          f"[b2]drawbox=x=0:y=0:w=1280:h=720:color=black@0.6:t=fill:enable='gte(t,{win - 4.2:.1f})'[b3];"
-          f"[{v + W + I + R}:v]scale=1280:720,format=rgba,fade=t=in:st=0.6:d=1.0:alpha=1,fade=t=out:st=4.2:d=1.0:alpha=1[ti];"
-          f"[{v + W + I + R + 1}:v]scale=1280:720,format=rgba,fade=t=in:st={win - 4.0:.1f}:d=0.9:alpha=1[en];"
-          f"[b3][ti]overlay=0:0:enable='between(t,0.4,5.3)'[b4];"
-          f"[b4][en]overlay=0:0:enable='gte(t,{win - 4.1:.1f})'[vout]")
+          "[ambd][vo2][im]amix=inputs=3:duration=first:normalize=0,loudnorm=I=-16:TP=-1.5:LRA=11[aout];" + video_base)
     cmd = [ff, "-hide_banner", "-loglevel", "warning"]
     for i, s in enumerate(v_sched):
         cmd += ["-loop", "1", "-framerate", "25", "-t", f"{s['scene_dur']}", "-i", stills[i]]

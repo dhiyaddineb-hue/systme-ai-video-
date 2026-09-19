@@ -224,5 +224,5 @@ print("render ...")
 oname = story.get("out_film", story["out"]) if FILM else story["out"]
 out = os.path.join(PKG, oname)
 render.render_dynamic(ff, stills, v_sched, a_sched, sfx, win, ass,
-                      os.path.join(PKG, "title.png"), os.path.join(PKG, "end.png"), out)
+                      os.path.join(PKG, "title.png"), os.path.join(PKG, "end.png"), out, cards=not FILM)
 print("OK", out)
