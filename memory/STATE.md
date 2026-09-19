@@ -79,3 +79,8 @@
 - [x] الصوت 12/12، storyboard من 42 micro-shot، سقف اللقطة 2.2 ثانية.
 - [x] رندر `black_star_ep4_v2film.mp4`: 58.60 ثانية، whoosh ×42 وimpact ×7، no-repeat وshot audit PASS.
 - [x] QC ثلاثي MD5 مختلف، 1280×720 H.264/AAC، صفحة المعاينة وربط الحلقة الرابعة.
+
+## 2026-09-19 — تثبيت ستايل الحلقة الأولى
+- [x] اعتماد `package_black_star/black_star_ep1_v2film.mp4` كمرجع أسلوبي ملزم.
+- [x] الحلقة الرابعة أعيد رندرها بنفس voice-01، dynamic renderer، whoosh/impact، وبطاقات البداية/النهاية.
+- [x] النتيجة الجديدة: 41 لقطة، shot audit PASS؛ لم يعد مسار micro-shot الجديد يغيّر شخصية المونتاج دون طلب.

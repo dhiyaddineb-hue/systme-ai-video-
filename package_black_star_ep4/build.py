@@ -36,7 +36,7 @@ BEAT_STYLE = {
 HOT_BEATS = ("shock", "power", "threat", "cliff")
 MID_TYPES = ("detail", "reaction")
 MID_FRAMES = ("left", "right", "top", "low")
-MAX_SHOT = 2.2  # إيقاع سينمائي: لا لقطة ثابتة أطول من نحو ثانيتين
+MAX_SHOT = 3.0  # style lock: نفس إيقاع الحلقة الأولى
 
 
 def split_meanings(text):
@@ -237,5 +237,5 @@ print("render ...")
 oname = story.get("out_film", story["out"]) if FILM else story["out"]
 out = os.path.join(PKG, oname)
 render.render_dynamic(ff, stills, v_sched, a_sched, sfx, win, ass,
-                      os.path.join(PKG, "title.png"), os.path.join(PKG, "end.png"), out, cards=not FILM)
+                      os.path.join(PKG, "title.png"), os.path.join(PKG, "end.png"), out, cards=True)
 print("OK", out)
