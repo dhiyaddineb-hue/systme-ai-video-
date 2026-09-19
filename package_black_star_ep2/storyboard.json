@@ -18,10 +18,10 @@
   },
   {
    "sent": 1,
-   "seg": "أبواب الأكاديمية اتقفلت",
+   "seg": "أبواب الأكاديمية",
    "sub": "left",
    "time": 1.06,
-   "dur": 2.24,
+   "dur": 1.49,
    "type": "detail",
    "mood": "تشويق",
    "still": [
@@ -32,10 +32,38 @@
   },
   {
    "sent": 1,
-   "seg": "والحرس نزلوا يدوروا على آدم.",
-   "sub": "punch",
+   "seg": "اتقفلت",
+   "sub": "right",
+   "time": 2.55,
+   "dur": 0.75,
+   "type": "reaction",
+   "mood": "تشويق",
+   "still": [
+    "sheetA",
+    0,
+    "right"
+   ]
+  },
+  {
+   "sent": 1,
+   "seg": "والحرس نزلوا يدوروا",
+   "sub": "top",
    "time": 3.3,
-   "dur": 2.89,
+   "dur": 1.73,
+   "type": "detail",
+   "mood": "تشويق",
+   "still": [
+    "sheetA",
+    0,
+    "top"
+   ]
+  },
+  {
+   "sent": 1,
+   "seg": "على آدم.",
+   "sub": "punch",
+   "time": 5.03,
+   "dur": 1.16,
    "type": "reaction",
    "mood": "تشويق",
    "still": [
@@ -46,10 +74,24 @@
   },
   {
    "sent": 2,
-   "seg": "بس آدم كان فين؟",
-   "sub": "punch",
+   "seg": "بس آدم",
+   "sub": "wide",
    "time": 6.59,
-   "dur": 1.7,
+   "dur": 0.85,
+   "type": "establishing",
+   "mood": "توتر",
+   "still": [
+    "sheetA",
+    1,
+    "wide"
+   ]
+  },
+  {
+   "sent": 2,
+   "seg": "كان فين؟",
+   "sub": "punch",
+   "time": 7.44,
+   "dur": 0.85,
    "type": "reaction",
    "mood": "توتر",
    "still": [
@@ -74,10 +116,10 @@
   },
   {
    "sent": 3,
-   "seg": "والنجمة السودا جوه عينه",
+   "seg": "والنجمة السودا",
    "sub": "left",
    "time": 10.04,
-   "dur": 2.0,
+   "dur": 1.0,
    "type": "detail",
    "mood": "دفء",
    "still": [
@@ -88,10 +130,38 @@
   },
   {
    "sent": 3,
-   "seg": "بتوريه حاجات محدش شافها.",
-   "sub": "punch",
+   "seg": "جوه عينه",
+   "sub": "right",
+   "time": 11.04,
+   "dur": 1.0,
+   "type": "reaction",
+   "mood": "دفء",
+   "still": [
+    "sheetA",
+    2,
+    "right"
+   ]
+  },
+  {
+   "sent": 3,
+   "seg": "بتوريه حاجات",
+   "sub": "top",
    "time": 12.04,
-   "dur": 2.03,
+   "dur": 1.01,
+   "type": "detail",
+   "mood": "دفء",
+   "still": [
+    "sheetA",
+    2,
+    "top"
+   ]
+  },
+  {
+   "sent": 3,
+   "seg": "محدش شافها.",
+   "sub": "punch",
+   "time": 13.05,
+   "dur": 1.02,
    "type": "reaction",
    "mood": "دفء",
    "still": [
@@ -102,10 +172,10 @@
   },
   {
    "sent": 4,
-   "seg": "شاف ممرات تحت الأرض",
+   "seg": "شاف ممرات",
    "sub": "wide",
    "time": 14.47,
-   "dur": 2.14,
+   "dur": 1.07,
    "type": "establishing",
    "mood": "تشويق",
    "still": [
@@ -116,10 +186,10 @@
   },
   {
    "sent": 4,
-   "seg": "وأختام قديمة",
+   "seg": "تحت الأرض",
    "sub": "left",
-   "time": 16.61,
-   "dur": 1.29,
+   "time": 15.54,
+   "dur": 1.07,
    "type": "detail",
    "mood": "تشويق",
    "still": [
@@ -130,10 +200,38 @@
   },
   {
    "sent": 4,
-   "seg": "كلها بتنزف نور بنفسجي.",
-   "sub": "punch",
+   "seg": "وأختام قديمة",
+   "sub": "right",
+   "time": 16.61,
+   "dur": 1.29,
+   "type": "reaction",
+   "mood": "تشويق",
+   "still": [
+    "sheetA",
+    3,
+    "right"
+   ]
+  },
+  {
+   "sent": 4,
+   "seg": "كلها بتنزف",
+   "sub": "top",
    "time": 17.9,
-   "dur": 2.29,
+   "dur": 1.15,
+   "type": "detail",
+   "mood": "تشويق",
+   "still": [
+    "sheetA",
+    3,
+    "top"
+   ]
+  },
+  {
+   "sent": 4,
+   "seg": "نور بنفسجي.",
+   "sub": "punch",
+   "time": 19.05,
+   "dur": 1.14,
    "type": "reaction",
    "mood": "تشويق",
    "still": [
@@ -158,16 +256,30 @@
   },
   {
    "sent": 5,
-   "seg": "سمع صوت من جوه البرج",
+   "seg": "سمع صوت من",
    "sub": "left",
    "time": 21.26,
-   "dur": 2.59,
+   "dur": 1.55,
    "type": "detail",
    "mood": "تشويق",
    "still": [
     "sheetA",
     4,
     "left"
+   ]
+  },
+  {
+   "sent": 5,
+   "seg": "جوه البرج",
+   "sub": "right",
+   "time": 22.81,
+   "dur": 1.04,
+   "type": "reaction",
+   "mood": "تشويق",
+   "still": [
+    "sheetA",
+    4,
+    "right"
    ]
   },
   {
@@ -200,10 +312,24 @@
   },
   {
    "sent": 6,
-   "seg": "رغم إن الصوت كان صوت الموت.",
-   "sub": "punch",
+   "seg": "رغم إن الصوت",
+   "sub": "left",
    "time": 26.45,
-   "dur": 2.77,
+   "dur": 1.39,
+   "type": "detail",
+   "mood": "رهبة",
+   "still": [
+    "sheetA",
+    5,
+    "left"
+   ]
+  },
+  {
+   "sent": 6,
+   "seg": "كان صوت الموت.",
+   "sub": "punch",
+   "time": 27.84,
+   "dur": 1.38,
    "type": "key_action",
    "mood": "رهبة",
    "still": [
@@ -228,16 +354,30 @@
   },
   {
    "sent": 7,
-   "seg": "كان الأستاذ الأكبر مستنيه",
+   "seg": "كان الأستاذ",
    "sub": "left",
    "time": 31.42,
-   "dur": 2.66,
+   "dur": 1.33,
    "type": "detail",
    "mood": "انفجار",
    "still": [
     "sheetB",
     0,
     "left"
+   ]
+  },
+  {
+   "sent": 7,
+   "seg": "الأكبر مستنيه",
+   "sub": "right",
+   "time": 32.75,
+   "dur": 1.33,
+   "type": "reaction",
+   "mood": "انفجار",
+   "still": [
+    "sheetB",
+    0,
+    "right"
    ]
   },
   {
@@ -256,16 +396,30 @@
   },
   {
    "sent": 8,
-   "seg": "قالوله: عينك دي مش قوة",
+   "seg": "قالوله: عينك دي",
    "sub": "wide",
    "time": 36.21,
-   "dur": 2.27,
+   "dur": 1.36,
    "type": "establishing",
    "mood": "رهبة",
    "still": [
     "sheetB",
     1,
     "wide"
+   ]
+  },
+  {
+   "sent": 8,
+   "seg": "مش قوة",
+   "sub": "left",
+   "time": 37.57,
+   "dur": 0.91,
+   "type": "detail",
+   "mood": "رهبة",
+   "still": [
+    "sheetB",
+    1,
+    "left"
    ]
   },
   {
@@ -298,10 +452,24 @@
   },
   {
    "sent": 9,
-   "seg": "والشموع كلها انحنت ناحية السواد.",
-   "sub": "punch",
+   "seg": "والشموع كلها انحنت",
+   "sub": "left",
    "time": 41.71,
-   "dur": 2.97,
+   "dur": 1.78,
+   "type": "detail",
+   "mood": "انفجار",
+   "still": [
+    "sheetB",
+    2,
+    "left"
+   ]
+  },
+  {
+   "sent": 9,
+   "seg": "ناحية السواد.",
+   "sub": "punch",
+   "time": 43.49,
+   "dur": 1.19,
    "type": "key_action",
    "mood": "انفجار",
    "still": [
@@ -340,10 +508,10 @@
   },
   {
    "sent": 11,
-   "seg": "رد صوت قديم: أنا",
+   "seg": "رد صوت قديم: أنا أول",
    "sub": "left",
    "time": 48.06,
-   "dur": 1.84,
+   "dur": 2.3,
    "type": "detail",
    "mood": "رهبة",
    "still": [
@@ -354,10 +522,10 @@
   },
   {
    "sent": 11,
-   "seg": "أول واحد مات بسبب النجم.",
+   "seg": "واحد مات بسبب النجم.",
    "sub": "punch",
-   "time": 49.9,
-   "dur": 2.3,
+   "time": 50.36,
+   "dur": 1.84,
    "type": "key_action",
    "mood": "رهبة",
    "still": [
@@ -382,16 +550,30 @@
   },
   {
    "sent": 12,
-   "seg": "كل أختام الأكاديمية اتكسرت",
+   "seg": "كل أختام",
    "sub": "left",
    "time": 53.41,
-   "dur": 2.84,
+   "dur": 1.42,
    "type": "detail",
    "mood": "انكسار",
    "still": [
     "sheetB",
     5,
     "left"
+   ]
+  },
+  {
+   "sent": 12,
+   "seg": "الأكاديمية اتكسرت",
+   "sub": "right",
+   "time": 54.83,
+   "dur": 1.42,
+   "type": "reaction",
+   "mood": "انكسار",
+   "still": [
+    "sheetB",
+    5,
+    "right"
    ]
   },
   {
