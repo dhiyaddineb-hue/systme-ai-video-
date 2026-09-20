@@ -1,0 +1,281 @@
+{
+ "story": "silent_valley",
+ "status": "auto-approved (no-repeat audit PASS)",
+ "shots": [
+  {
+   "sent": 1,
+   "time": 0.0,
+   "dur": 2.94,
+   "type": "establishing",
+   "mood": "تشويق",
+   "still": [
+    "p01",
+    "wide"
+   ]
+  },
+  {
+   "sent": 1,
+   "time": 2.94,
+   "dur": 2.94,
+   "type": "detail",
+   "mood": "تشويق",
+   "still": [
+    "p01",
+    "left"
+   ]
+  },
+  {
+   "sent": 1,
+   "time": 5.89,
+   "dur": 2.94,
+   "type": "reaction",
+   "mood": "تشويق",
+   "still": [
+    "p01",
+    "right"
+   ]
+  },
+  {
+   "sent": 2,
+   "time": 9.43,
+   "dur": 3.47,
+   "type": "establishing",
+   "mood": "تشويق",
+   "still": [
+    "p02",
+    "wide"
+   ]
+  },
+  {
+   "sent": 2,
+   "time": 12.9,
+   "dur": 3.47,
+   "type": "detail",
+   "mood": "تشويق",
+   "still": [
+    "p02",
+    "left"
+   ]
+  },
+  {
+   "sent": 2,
+   "time": 16.38,
+   "dur": 3.47,
+   "type": "reaction",
+   "mood": "تشويق",
+   "still": [
+    "p02",
+    "right"
+   ]
+  },
+  {
+   "sent": 3,
+   "time": 20.45,
+   "dur": 3.02,
+   "type": "establishing",
+   "mood": "تشويق",
+   "still": [
+    "p03",
+    "wide"
+   ]
+  },
+  {
+   "sent": 3,
+   "time": 23.47,
+   "dur": 3.02,
+   "type": "detail",
+   "mood": "تشويق",
+   "still": [
+    "p03",
+    "left"
+   ]
+  },
+  {
+   "sent": 3,
+   "time": 26.49,
+   "dur": 3.02,
+   "type": "reaction",
+   "mood": "تشويق",
+   "still": [
+    "p03",
+    "right"
+   ]
+  },
+  {
+   "sent": 4,
+   "time": 30.11,
+   "dur": 2.07,
+   "type": "establishing",
+   "mood": "تشويق",
+   "still": [
+    "p04",
+    "wide"
+   ]
+  },
+  {
+   "sent": 4,
+   "time": 32.18,
+   "dur": 2.07,
+   "type": "detail",
+   "mood": "تشويق",
+   "still": [
+    "p04",
+    "left"
+   ]
+  },
+  {
+   "sent": 4,
+   "time": 34.25,
+   "dur": 2.07,
+   "type": "reaction",
+   "mood": "تشويق",
+   "still": [
+    "p04",
+    "right"
+   ]
+  },
+  {
+   "sent": 4,
+   "time": 36.32,
+   "dur": 2.07,
+   "type": "key_action",
+   "mood": "تشويق",
+   "still": [
+    "p04",
+    "top"
+   ]
+  },
+  {
+   "sent": 5,
+   "time": 38.99,
+   "dur": 3.05,
+   "type": "establishing",
+   "mood": "تشويق",
+   "still": [
+    "p05",
+    "wide"
+   ]
+  },
+  {
+   "sent": 5,
+   "time": 42.04,
+   "dur": 3.05,
+   "type": "detail",
+   "mood": "تشويق",
+   "still": [
+    "p05",
+    "left"
+   ]
+  },
+  {
+   "sent": 5,
+   "time": 45.08,
+   "dur": 3.05,
+   "type": "key_action",
+   "mood": "تشويق",
+   "still": [
+    "p05",
+    "right"
+   ]
+  },
+  {
+   "sent": 6,
+   "time": 48.73,
+   "dur": 2.39,
+   "type": "establishing",
+   "mood": "دفء",
+   "still": [
+    "p06",
+    "wide"
+   ]
+  },
+  {
+   "sent": 6,
+   "time": 51.12,
+   "dur": 2.39,
+   "type": "detail",
+   "mood": "دفء",
+   "still": [
+    "p06",
+    "left"
+   ]
+  },
+  {
+   "sent": 6,
+   "time": 53.5,
+   "dur": 2.39,
+   "type": "key_action",
+   "mood": "دفء",
+   "still": [
+    "p06",
+    "right"
+   ]
+  },
+  {
+   "sent": 7,
+   "time": 56.49,
+   "dur": 2.76,
+   "type": "establishing",
+   "mood": "دفء",
+   "still": [
+    "p07",
+    "wide"
+   ]
+  },
+  {
+   "sent": 7,
+   "time": 59.25,
+   "dur": 2.76,
+   "type": "detail",
+   "mood": "دفء",
+   "still": [
+    "p07",
+    "left"
+   ]
+  },
+  {
+   "sent": 7,
+   "time": 62.01,
+   "dur": 2.76,
+   "type": "reaction",
+   "mood": "دفء",
+   "still": [
+    "p07",
+    "right"
+   ]
+  },
+  {
+   "sent": 8,
+   "time": 65.37,
+   "dur": 2.65,
+   "type": "establishing",
+   "mood": "تشويق",
+   "still": [
+    "p08",
+    "wide"
+   ]
+  },
+  {
+   "sent": 8,
+   "time": 68.02,
+   "dur": 2.65,
+   "type": "detail",
+   "mood": "تشويق",
+   "still": [
+    "p08",
+    "left"
+   ]
+  },
+  {
+   "sent": 8,
+   "time": 70.66,
+   "dur": 2.65,
+   "type": "key_action",
+   "mood": "تشويق",
+   "still": [
+    "p08",
+    "right"
+   ]
+  }
+ ]
+}
