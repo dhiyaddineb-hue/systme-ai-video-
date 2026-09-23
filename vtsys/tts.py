@@ -3,13 +3,22 @@
 import asyncio, os, subprocess
 from .scenes import duration
 
+def normalize_spoken_arabic(text):
+    """Make pauses and punctuation explicit without changing caption text."""
+    import re
+    text = text.replace("…", ", ").replace("...", ", ")
+    text = re.sub(r"[\\[\\]{}<>]", "", text)
+    text = re.sub(r"\\s+", " ", text).strip()
+    return text
+
 def synth(ffmpeg, lines, voice, rate=None, pitch=None, adir="narr"):
     import edge_tts
     os.makedirs(adir, exist_ok=True)
     async def run():
         for i, l in enumerate(lines):
             f = os.path.join(adir, f"n{i:02d}.mp3")
-            c = edge_tts.Communicate(l["text"], voice,
+            spoken = normalize_spoken_arabic(l["text"])
+            c = edge_tts.Communicate(spoken, voice,
                                      rate=rate or "-4%", pitch=pitch or "+0Hz")
             await c.save(f)
             l["file"] = f

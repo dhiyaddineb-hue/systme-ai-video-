@@ -112,3 +112,10 @@
 - [x] استبدال لوحات النسخة المانغا برسوم monochrome واقعية: anatomy طبيعي، ink wash، cross-hatching، بدون ألوان.
 - [x] رندر `package_silent_valley/silent_valley_ep1_bw.mp4`: 73.32 ثانية، 25 لقطة، shot audit PASS، H.264/AAC، QC متنوع.
 - [x] صفحة المعاينة تعرض الأبيض والأسود أولاً مع روابط نسخة الألوان والنسخة الواقعية.
+
+## 2026-09-23 — بوابات الصوت والرسم والسيناريو
+- [x] إضافة `vtsys/audio_qc.py`: فحص mean/peak والصمت ومخاطر clipping.
+- [x] إضافة `vtsys/visual_qc.py`: فحص 16:9، الدقة، والتكرار البصري.
+- [x] إضافة `vtsys/script_audit.py`: فحص الجمل والـ beats والمالكين البصريين.
+- [x] `tts.normalize_spoken_arabic` ينظف الوقفات قبل TTS دون تغيير الكابشن.
+- [x] حزمة الوادي الصامت اجتازت script/visual/audio audit.

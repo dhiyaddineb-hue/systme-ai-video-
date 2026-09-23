@@ -3,7 +3,7 @@
 import argparse, json, os, glob
 
 from . import config, env, decision, youtube, scenes, scriptwriter, tts, \
-    captions, render, queue as q, storage, thumb, audit
+    captions, render, queue as q, storage, thumb, audit, audio_qc, script_audit, visual_qc
 
 def _ff(cfg):
     return env.ensure_ffmpeg(cfg["_root"])
@@ -25,6 +25,21 @@ def cmd_audit(a, cfg):
     print(json.dumps(rep, ensure_ascii=False, indent=2))
     if rep["status"] != "PASS":
         raise SystemExit(2)
+
+def cmd_audio_audit(a, cfg):
+    ff = _ff(cfg); rep = audio_qc.audit(ff, a.files)
+    print(json.dumps(rep, ensure_ascii=False, indent=2))
+    if rep['status'] != 'PASS': raise SystemExit(2)
+
+def cmd_script_audit(a, cfg):
+    rep = script_audit.audit(a.script, max_words=a.max_words)
+    print(json.dumps(rep, ensure_ascii=False, indent=2))
+    if rep['status'] != 'PASS': raise SystemExit(2)
+
+def cmd_visual_audit(a, cfg):
+    rep = visual_qc.audit(a.files, min_width=a.min_width, min_height=a.min_height)
+    print(json.dumps(rep, ensure_ascii=False, indent=2))
+    if rep['status'] != 'PASS': raise SystemExit(2)
 
 def cmd_decide(a, cfg):
     m = youtube.meta(a.url)
@@ -172,6 +187,9 @@ def main(argv=None):
     p = sub.add_parser("audit", help="preflight/postflight audit for a story package")
     p.add_argument("package"); p.add_argument("--rendered", action="store_true")
     p.set_defaults(fn=cmd_audit)
+    p = sub.add_parser("audio-audit"); p.add_argument("files", nargs='+'); p.set_defaults(fn=cmd_audio_audit)
+    p = sub.add_parser("script-audit"); p.add_argument("script"); p.add_argument("--max-words", type=int, default=38); p.set_defaults(fn=cmd_script_audit)
+    p = sub.add_parser("visual-audit"); p.add_argument("files", nargs='+'); p.add_argument("--min-width", type=int, default=1280); p.add_argument("--min-height", type=int, default=720); p.set_defaults(fn=cmd_visual_audit)
     p = sub.add_parser("decide"); p.add_argument("url"); p.add_argument("--niche", nargs="*")
     p.add_argument("--out"); p.add_argument("--enqueue", action="store_true"); p.set_defaults(fn=cmd_decide)
     p = sub.add_parser("scan"); p.add_argument("--query", required=True); p.add_argument("--limit", type=int, default=6)

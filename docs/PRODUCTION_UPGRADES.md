@@ -91,3 +91,18 @@ package_story/panels/sheetB_r0.jpg ... sheetB_r5.jpg
 - الـ whoosh يُطلق عند cuts الفعلية.
 - الـ impact يُقفل على لقطات الفأس/العاصفة/النار.
 - آخر لقطة من كل جملة تمتص gap الصوت حتى لا يحدث drift بين الصوت والصورة.
+
+## طبقة الصوت والرسم والسيناريو — 2026-09-23
+
+أضيفت ثلاث بوابات جديدة:
+
+```bash
+python3 -m vtsys script-audit package_silent_valley/sentences.json
+python3 -m vtsys visual-audit package_silent_valley/panels_bw/*.jpg
+python3 -m vtsys audio-audit package_silent_valley/vo_sent/*.mp3
+```
+
+- `script-audit`: يمنع الجمل الفارغة، المالك البصري المكرر، والجمل الطويلة بلا تنبيه.
+- `visual-audit`: يفحص 16:9، الحد الأدنى للدقة، والملفات المكررة.
+- `audio-audit`: يفحص متوسط الصوت، clipping، وأحداث الصمت.
+- TTS صار ينظف علامات الوقف قبل التوليد مع إبقاء النص الأصلي للكابشن.
