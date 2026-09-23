@@ -56,16 +56,20 @@ mk('whoosh',['-f','lavfi','-i','anoisesrc=color=pink:d=0.35','-af','highpass=f=5
 mk('impact',['-f','lavfi','-i','sine=frequency=70:duration=0.45','-af','afade=t=out:st=0.15:d=0.3,volume=0.18','-ar','48000','-ac','2'])
 mk('riser',['-f','lavfi','-i','anoisesrc=color=pink:d=1','-af','highpass=f=700,afade=t=in:st=0:d=1,volume=0.12','-ar','48000','-ac','2'])
 key=[sents[i]['start'] for i,u in enumerate(units) if u['beat'] in ('build','storm','fire','cliff')]; sfx={'whoosh':[s['start'] for s in sents[1:]],'impact':[round(x+.05,2) for x in key],'riser':[],'flash':[], 'whoosh_file':WAV['whoosh'],'impact_file':WAV['impact'],'riser_file':WAV['riser']}
-# render_dynamic is designed for per-shot audio; give it the sentence audio schedule and hold each sentence's first shot.
-v_sched2=[]
-for i,s in enumerate(shots): v_sched2.append({'idx':i,'scene_dur':s['dur'],'start':s['time'],'shot':{'type':s['type'],'mood':s['mood']}})
-# duplicate audio schedule per sentence is not needed; use render_manga_panels-compatible schedule by sentence windows
-# Build a compact per-sentence visual timeline with each sentence's first film crop; captions remain sentence-timed.
-base_stills=[film[u['panel']]['wide'] for u in units]
-vs=[]
-for i,u in enumerate(units):
- vs.append({'idx':i,'scene_dur':sents[i]['dur']+data.get('gap',.6),'start':sents[i]['start'],'shot':{'type':'establishing','mood':'دفء' if u['beat'] in ('fire','shelter') else 'تشويق'}})
+# Shot-level assembly: every documentary crop is now a real edit shot.
+# The final shot of each sentence absorbs the narration gap so picture and audio stay aligned.
+shot_stills=[]; vshots=[]; rel=0.0
+for j,sh in enumerate(shots):
+    panel, frame = sh['still']; shot_stills.append(film[panel][frame])
+    extra = data.get('gap', .6) if j == len(shots)-1 or shots[j+1]['sent'] != sh['sent'] else 0.0
+    dur = round(sh['dur'] + extra, 2)
+    vshots.append({'idx':j,'scene_dur':dur,'start':round(rel,2),'shot':{'type':sh['type'],'mood':sh['mood']}})
+    rel = round(rel + dur, 2)
+# SFX follows actual cut points, not sentence starts.
+cut_times=[v['start'] for v in vshots[1:]]
+impact=[round(v['start']+.05,2) for v,sh in zip(vshots,shots) if sh['type']=='key_action']
+sfx['whoosh']=cut_times; sfx['impact']=impact
 out=os.path.join(PKG,story['out_film'])
 ass=captions.ass_kinetic(os.path.join(PKG,story['ass']),[{'start':s['start'],'words':s['words']} for s in sents],0.0)
-render.render_dynamic(ff,base_stills,vs,a_sched,sfx,win,ass,os.path.join(PKG,'title.png'),os.path.join(PKG,'end.png'),out,cards=True)
+render.render_dynamic(ff,shot_stills,vshots,a_sched,sfx,win,ass,os.path.join(PKG,'title.png'),os.path.join(PKG,'end.png'),out,cards=True)
 print('OK',out)
