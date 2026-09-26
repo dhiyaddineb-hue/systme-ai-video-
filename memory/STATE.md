@@ -146,3 +146,10 @@
 - [x] اختبارات: script-audit PASS، visual-audit PASS، audio-audit PASS، فحص streams والمدة PASS، مراجعة فريمات 1s/10s/20s.
 - [x] حفظ `shot_list.json` و`experiment_acceptance.md` مع فصل ما اختُبر عما لم يُختبر.
 - [ ] انتظار اعتماد المستخدم قبل إنتاج الحلقة الكاملة بهذا الـ voice/style.
+
+## 2026-09-26 — نموذج v4 مستلهم من مرجع الذئب
+- [x] مراجعة صفحة المرجع والتفريغ المتاح؛ لم ندّعِ مشاهدة/استماعاً مباشراً أو توقيتات غير متاحة.
+- [x] إنتاج `package_silent_valley/experiment_v4/`: 3 صور جديدة، 3 ملفات صوت جديدة بـ voice-05، نص factual أصلي.
+- [x] الفيديو `silent_valley_experiment_v4.mp4`: 30.08 ثانية، تأسيس/فعل/نتيجة ووقفة بيئية، 1280×720 H.264/AAC.
+- [x] audio-audit وvisual-audit وfحص الترميز PASS؛ فريمات QC عند 1s/16s/28s.
+- [ ] انتظار اعتماد المستخدم قبل الحلقة الكاملة.
