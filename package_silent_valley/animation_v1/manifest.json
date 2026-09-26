@@ -12,5 +12,18 @@
     "b_start": 8.0
   },
   "lip_sync": false,
-  "output": "/home/user/systme-ai-video-/package_silent_valley/animation_v1/snow_cabin_cutout_animation_v1.mp4"
+  "output": "/home/user/systme-ai-video-/package_silent_valley/animation_v1/snow_cabin_cutout_animation_v1.mp4",
+  "generated_assets": [
+    "background_snow_cabin.jpg",
+    "character_reference.jpg",
+    "rig/character.png",
+    "rig/*.png",
+    "vo_a.mp3",
+    "vo_b.mp3"
+  ],
+  "limitations": [
+    "2d cutout keyframe prototype, not frame-by-frame drawn animation",
+    "external narration; no lip sync",
+    "generated hero layer is a consistent cutout; joint-level articulated fallback remains available"
+  ]
 }
