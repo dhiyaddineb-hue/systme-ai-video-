@@ -49,5 +49,8 @@ venv/
 
 # ملاحظة: queue.json و memory/ و examples/ متتبَّعة عمداً (ذاكرة سجلية)
 
+# animation renders are reproducible and intentionally kept out of git
+package_*/animation_v1/frames/
+
 # نظام
 .DS_Store

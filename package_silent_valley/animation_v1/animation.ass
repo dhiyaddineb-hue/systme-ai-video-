@@ -1,0 +1,15 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Doc,Noto Naskh Arabic,48,&H00F0F0F0,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,1.5,0,1,2,1,2,140,140,34,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:09.65,Doc,,0,0,0,,.ﺔﺻﺮﻓ ﻪﺤﻨﻤﻳ ﻩﺩﻮﺟﻭ ﻦﻜﻟ ،ﺎﻘﻠﻐﻣ ﺏﺎﺒﻟﺍ ﻝﺍﺰﻳ ﻻ .ﺥﻮﻜﻟﺍ ﻦﻣ ﻞﺟﺮﻟﺍ ﺏﺮﺘﻘﻳ ،ﻞﻴﻠﻟﺍ ﻝﻮﻠﺣ ﻞﺒﻗ
+Dialogue: 0,0:00:08.00,0:00:19.33,Doc,,0,0,0,,.ﺮﻈﺘﻨﺗ ﻰﺘﻣ ﻑﺮﻌﺗ ﻥﺃ ﻲﻫ ﻢﻫﻷﺍ ﺓﻮﻄﺨﻟﺍ ﻥﻮﻜﺗ ﺎﻧﺎﻴﺣﺃ ،ﻱﺩﺍﻮﻟﺍ ﺍﺬﻫ ﻲﻓ .ﻒﻗﻮﺘﻳ ﻢﺛ ،ﺱﺄﻔﻟﺍ ﻚﺴﻤﻳ
