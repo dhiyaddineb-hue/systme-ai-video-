@@ -162,7 +162,8 @@ def render_dynamic(ff, stills, v_sched, a_sched, sfx, win, ass, title, end, out,
     rp = [f"[{v + W + I + i}:a]adelay={int(t * 1000)}|{int(t * 1000)},volume=0.3[rs{i}]"
           for i, t in enumerate(sfx["riser"])]
     wp.append("".join(f"[w{i}]" for i in range(W)) + f"amix=inputs={W}:duration=longest:normalize=0[wh]")
-    ip.append("".join(f"[im{i}]" for i in range(I)) + f"amix=inputs={I}:duration=longest:normalize=0[im]")
+    if I:
+        ip.append("".join(f"[im{i}]" for i in range(I)) + f"amix=inputs={I}:duration=longest:normalize=0[im]")
     if R:
         rp.append("".join(f"[rs{i}]" for i in range(R)) + f"amix=inputs={R}:duration=longest:normalize=0[rs]")
         sfxmix = "[amb][wh][rs]amix=inputs=3:normalize=0[amb0]"
@@ -183,7 +184,9 @@ def render_dynamic(ff, stills, v_sched, a_sched, sfx, win, ass, title, end, out,
     fc = (";".join(parts) + ";" + a + ";" + beds(win) + ";" + ";".join(wp + ip + rp) + ";"
           + sfxmix + ";"
           "[amb0][vo1]sidechaincompress=threshold=0.03:ratio=6:attack=25:release=400[ambd];"
-          "[ambd][vo2][im]amix=inputs=3:duration=first:normalize=0,loudnorm=I=-16:TP=-1.5:LRA=11[aout];" + video_base)
+          + ("[ambd][vo2][im]amix=inputs=3:duration=first:normalize=0," if I else
+             "[ambd][vo2]amix=inputs=2:duration=first:normalize=0,")
+          + "loudnorm=I=-16:TP=-1.5:LRA=11[aout];" + video_base)
     cmd = [ff, "-hide_banner", "-loglevel", "warning"]
     for i, s in enumerate(v_sched):
         cmd += ["-loop", "1", "-framerate", "25", "-t", f"{s['scene_dur']}", "-i", stills[i]]

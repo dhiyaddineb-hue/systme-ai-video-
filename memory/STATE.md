@@ -119,3 +119,11 @@
 - [x] إضافة `vtsys/script_audit.py`: فحص الجمل والـ beats والمالكين البصريين.
 - [x] `tts.normalize_spoken_arabic` ينظف الوقفات قبل TTS دون تغيير الكابشن.
 - [x] حزمة الوادي الصامت اجتازت script/visual/audio audit.
+
+## 2026-09-26 — تجربة تطوير الصوت والنطق والرسم
+- [x] إنتاج مقطع تجريبي جديد `package_silent_valley/experiment_v2/silent_valley_experiment_v2.mp4` مدته 27.85 ثانية.
+- [x] 3 صور جديدة مولدة داخل Arena، واقعية manga أبيض وأسود، 16:9، 1376×768.
+- [x] 3 ملفات صوت جديدة بصوت `voice-04`; mean نحو -19 dB، peak أقل من -1.5 dB، بدون clipping.
+- [x] `script-audit`, `visual-audit`, `audio-audit` كلها PASS؛ فحص الفيديو PASS: H.264/AAC، 1280×720، 25fps.
+- [x] إصلاح `render_dynamic` حتى لا يفشل عند قائمة impact فارغة (`amix inputs=0`).
+- [ ] اعتماد النطق النهائي للحلقة الكاملة يحتاج مراجعة المستخدم للعينة التجريبية.
