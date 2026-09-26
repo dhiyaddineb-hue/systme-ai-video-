@@ -1,0 +1,10 @@
+{
+  "project":"silent_valley_experiment_v3",
+  "style":"realistic black-and-white seinen documentary manga",
+  "voice":"voice-05",
+  "shots":[
+    {"shot_id":"S01","function":"تأسيس المكان","visible_action":"رجل يدخل الوادي وسط العاصفة","framing":"wide","camera":"slow push-in","light":"سماء شتوية منتشرة","sound":"voice + wind bed","transition":"direct cut"},
+    {"shot_id":"S02","function":"اكتشاف","visible_action":"العثور على الكوخ ولمس بابه","framing":"medium to close","camera":"gentle lateral move","light":"ضوء ثلجي بارد","sound":"voice + wood/frost ambience","transition":"direct cut"},
+    {"shot_id":"S03","function":"وقفة شعورية","visible_action":"الرجل بجانب النار وكوب الشاي","framing":"medium/detail","camera":"slow settle","light":"نار دافئة داخل ظل بارد","sound":"voice + low fire/room tone","transition":"direct cut"}
+  ]
+}
