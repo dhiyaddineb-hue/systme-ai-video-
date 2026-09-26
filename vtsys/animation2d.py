@@ -28,6 +28,19 @@ def make_rig_assets(out):
     axe=Image.new('RGBA',(220,70),(0,0,0,0)); d=ImageDraw.Draw(axe)
     d.line((15,52,205,18),fill=(35,35,35,255),width=12); d.polygon([(55,48),(95,5),(125,8),(92,58)],fill=(180,180,180,255),outline=(20,20,20,255))
     axe.save(out/'axe.png')
+    # Prefer the generated, consistent character sheet for the visible hero.
+    # The procedural parts remain available as the articulated fallback.
+    ref = out.parent / 'character_reference.jpg'
+    if ref.exists():
+        src = Image.open(ref).convert('RGB').crop((0, 0, 285, 735))
+        pix = src.load(); alpha = Image.new('L', src.size, 0); ap = alpha.load()
+        for yy in range(src.height):
+            for xx in range(src.width):
+                r,g,b = pix[xx,yy]
+                # remove the white sheet while preserving ink and shading
+                ap[xx,yy] = max(0, min(255, 255 - min(r,g,b)))
+        src.putalpha(alpha)
+        src.save(out/'character.png')
 
 def _rot(im,deg): return im.rotate(deg,resample=Image.Resampling.BICUBIC,expand=True)
 
@@ -37,6 +50,10 @@ def render_frames(background, rig_dir, out_dir, fps=25, duration=20.0):
     out=Path(out_dir); out.mkdir(parents=True,exist_ok=True)
     bg=Image.open(background).convert('RGB').resize((W,H),Image.Resampling.LANCZOS).convert('RGBA')
     parts={n:Image.open(Path(rig_dir)/(n+'.png')).convert('RGBA') for n in ('head','torso','upper_arm','lower_arm','upper_leg','lower_leg','axe')}
+    hero_path=Path(rig_dir)/'character.png'
+    hero=Image.open(hero_path).convert('RGBA') if hero_path.exists() else None
+    if hero is not None:
+        hero.thumbnail((245, 460), Image.Resampling.LANCZOS)
     random.seed(7); flakes=[(random.randrange(W),random.randrange(H),random.randrange(1,4)) for _ in range(120)]
     frames=int(duration*fps)
     for k in range(frames):
@@ -49,21 +66,28 @@ def render_frames(background, rig_dir, out_dir, fps=25, duration=20.0):
         elif t<13: x=700; lean=4*math.sin((t-6)*.7)
         else: x=700; lean=0
         base_y=500
-        # feet remain planted during reach; walk stride only during approach.
-        stride=18*math.sin(t*7) if t<6 else 0
-        _place(c,_rot(parts['lower_leg'],lean+stride/3),(x-34,base_y+100))
-        _place(c,_rot(parts['lower_leg'],-lean-stride/3),(x+34,base_y+100))
-        _place(c,_rot(parts['upper_leg'],lean),(x-28,base_y+22))
-        _place(c,_rot(parts['upper_leg'],-lean),(x+28,base_y+22))
-        _place(c,_rot(parts['torso'],lean),(x,base_y-75))
-        reach=0
-        if 6<=t<13: reach=-28*min(1,(t-6)/2)
-        _place(c,_rot(parts['upper_arm'],35+reach),(x-72,base_y-95))
-        _place(c,_rot(parts['lower_arm'],55+reach),(x-100,base_y-175))
-        _place(c,_rot(parts['upper_arm'],-20),(x+72,base_y-95))
-        _place(c,_rot(parts['lower_arm'],-15),(x+92,base_y-170))
-        _place(c,parts['head'],(x,base_y-230))
-        axe_angle=-18 if t<6 else (-48 if t<13 else -30)
-        _place(c,_rot(parts['axe'],axe_angle),(x+125,base_y-150))
+        if hero is not None:
+            # Generated inked hero keeps face, clothing and boots consistent.
+            # Keyframes still provide approach, reach/reaction body language and settle.
+            bob = 3*math.sin(t*7) if t < 6 else (5*math.sin((t-6)*2.2) if t < 13 else 0)
+            tilt = lean + (4*math.sin((t-6)*2.0) if 6 <= t < 13 else 0)
+            _place(c, _rot(hero, tilt), (x, base_y-hero.height/2+25+bob))
+        else:
+            # articulated fallback rig
+            stride=18*math.sin(t*7) if t<6 else 0
+            _place(c,_rot(parts['lower_leg'],lean+stride/3),(x-34,base_y+100))
+            _place(c,_rot(parts['lower_leg'],-lean-stride/3),(x+34,base_y+100))
+            _place(c,_rot(parts['upper_leg'],lean),(x-28,base_y+22))
+            _place(c,_rot(parts['upper_leg'],-lean),(x+28,base_y+22))
+            _place(c,_rot(parts['torso'],lean),(x,base_y-75))
+            reach=0
+            if 6<=t<13: reach=-28*min(1,(t-6)/2)
+            _place(c,_rot(parts['upper_arm'],35+reach),(x-72,base_y-95))
+            _place(c,_rot(parts['lower_arm'],55+reach),(x-100,base_y-175))
+            _place(c,_rot(parts['upper_arm'],-20),(x+72,base_y-95))
+            _place(c,_rot(parts['lower_arm'],-15),(x+92,base_y-170))
+            _place(c,parts['head'],(x,base_y-230))
+            axe_angle=-18 if t<6 else (-48 if t<13 else -30)
+            _place(c,_rot(parts['axe'],axe_angle),(x+125,base_y-150))
         c.convert('RGB').save(out/f'frame_{k:05d}.jpg',quality=94)
     return frames
