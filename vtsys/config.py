@@ -15,6 +15,19 @@ DEFAULTS = {
     "coverage": {"doc": [0.40, 0.60], "story": [0.60, 0.75]},
     "storage_budget_mb": 110,
     "max_deliverable_mb": 30,
+    "active_project": "silent_valley",
+    "narration_profile": {
+        "voice_id": "voice-05", "language": "ar",
+        "style": "natural-geographic-documentary",
+        "register": "modern-smooth-fusha",
+        "pace": "slow-controlled", "tone": "deep-warm-composed",
+        "rules": [
+            "add context instead of describing every visible object",
+            "leave intentional pauses for natural ambience",
+            "avoid announcer energy, excessive bass, theatricality, and constant whispering",
+            "do not imitate a named broadcaster or channel"
+        ]
+    },
     "fonts": {"sans": "assets/fonts/NotoSansArabic-Bold.ttf",
               "naskh": "assets/fonts/NotoNaskhArabic.ttf",
               "latin": "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"},
