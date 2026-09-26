@@ -62,6 +62,13 @@ def render_frames(background, rig_dir, out_dir, fps=25, duration=20.0):
         for x,y,r in flakes:
             yy=(y+int(26*t))%H; d.ellipse((x,yy,x+r,yy+r),fill=(245,245,245,150))
         # keyframes: approach, reach/axe, then deliberate settle.
+        # The cabin door is a persistent prop landmark: its opening and glow make
+        # the object interaction readable even when the hero is a textured cutout.
+        if 6 <= t < 13:
+            p=min(1.0,(t-6)/2.0)
+            door_x, door_y = 945, 430
+            d.line((door_x,door_y,door_x+int(34*p),door_y+8), fill=(42,28,22,220), width=7)
+            d.ellipse((door_x-18,door_y-20,door_x+18,door_y+16), outline=(232,201,120,150), width=3)
         if t<6: u=t/6; x=220+480*(u*u*(3-2*u)); lean=-4+4*u
         elif t<13: x=700; lean=4*math.sin((t-6)*.7)
         else: x=700; lean=0
