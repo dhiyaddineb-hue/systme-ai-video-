@@ -1,0 +1,94 @@
+{
+ "story": "silent_valley_episode_v5",
+ "status": "auto-approved (no-repeat audit PASS)",
+ "shots": [
+  {
+   "sent": 1,
+   "time": 0.0,
+   "dur": 6.14,
+   "type": "establishing",
+   "mood": "تشويق",
+   "still": [
+    "p01",
+    "wide"
+   ]
+  },
+  {
+   "sent": 2,
+   "time": 7.14,
+   "dur": 7.82,
+   "type": "establishing",
+   "mood": "تشويق",
+   "still": [
+    "p02",
+    "wide"
+   ]
+  },
+  {
+   "sent": 3,
+   "time": 15.96,
+   "dur": 9.34,
+   "type": "establishing",
+   "mood": "تشويق",
+   "still": [
+    "p03",
+    "wide"
+   ]
+  },
+  {
+   "sent": 4,
+   "time": 26.3,
+   "dur": 8.54,
+   "type": "establishing",
+   "mood": "تشويق",
+   "still": [
+    "p04",
+    "wide"
+   ]
+  },
+  {
+   "sent": 5,
+   "time": 35.84,
+   "dur": 7.73,
+   "type": "establishing",
+   "mood": "تشويق",
+   "still": [
+    "p05",
+    "wide"
+   ]
+  },
+  {
+   "sent": 6,
+   "time": 44.57,
+   "dur": 8.33,
+   "type": "establishing",
+   "mood": "تشويق",
+   "still": [
+    "p06",
+    "wide"
+   ]
+  },
+  {
+   "sent": 7,
+   "time": 53.9,
+   "dur": 10.37,
+   "type": "establishing",
+   "mood": "تشويق",
+   "still": [
+    "p07",
+    "wide"
+   ]
+  },
+  {
+   "sent": 8,
+   "time": 65.27,
+   "dur": 10.61,
+   "type": "establishing",
+   "mood": "تشويق",
+   "still": [
+    "p08",
+    "wide"
+   ]
+  }
+ ]
+}
